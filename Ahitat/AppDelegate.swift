@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         setWindow()
@@ -22,8 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func setWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let initialVc = UIViewController()
-        let navController = UINavigationController(rootViewController: initialVc)
+        let initialVc = MainViewController()
+        let navController = UINavigationController()
+        navController.setViewControllers([initialVc], animated: true)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
     }

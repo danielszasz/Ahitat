@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D8ECCA45716EBBD2AA9BD012E273925 /* Pods-AhitatTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E114FBB7029D403BF6FAA671955FE5 /* Pods-AhitatTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1809ED794A191066CF1BF381031C35F7 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */; };
+		1CDFBF352D3E9068D347D1E941CCA654 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		38C4BCE477720A90D4EE283E2CCAED23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5C386BFE61F09AAE843AB4576CAD1056 /* Pods-AhitatUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A450AAD91F366CCE64B9FC38CB01B2E /* Pods-AhitatUITests-dummy.m */; };
+		5F8951F0BE016FFEC601BA14CAD2E56B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		72627368CC4518D4558C1BA1B75B729C /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A697DF2FCE66AA6D825AB2713FAFD4E /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B68DC0DA739E2D59D1CA8CB34E20B59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8090F3034B0365297E0A82C1DC0A40EB /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */; };
+		8FA717387227FB0AC73BBC823FE22598 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEFF7ED29543D1E78DEE7A6BB17CADE /* SideMenu-dummy.m */; };
+		B7375E7E2B27F5303C1FAE9102A36E66 /* Pods-AhitatUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBC72307721A7980A5749C54CEE5236 /* Pods-AhitatUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5879A8F2CEAFA7C95321641738CEBA4 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */; };
+		DC0B373D4160CC06781ABBD17034D475 /* Pods-AhitatTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F13B5522D74AB1FC4558760C1EA5D9 /* Pods-AhitatTests-dummy.m */; };
+		E9CEDDBD730D08F40503F44265DAE699 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */; };
+		EE35870A05B94B215CB2C37B9A214EB6 /* Pods-Ahitat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3794D0BEAC180FE6813E578F07569 /* Pods-Ahitat-dummy.m */; };
+		F0403E67043CE5E3CD028977A39C5602 /* Pods-Ahitat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE40ED63050C03D8B10E7F9F10AAA159 /* Pods-Ahitat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13511E7A615987F0887DC743DCD86811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449C84A2B7CDE12287889CAAED339A96;
+			remoteInfo = "Pods-Ahitat";
+		};
+		E18DF4B14278B9455B64B11CB7FAEE1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449C84A2B7CDE12287889CAAED339A96;
+			remoteInfo = "Pods-Ahitat";
+		};
+		E3D01ED777FE9E33F54704B28907BBBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7C590EA9B5808B3A116E361801C0864;
+			remoteInfo = SideMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		0A89D240201EFF5370734B3A4FDCD6CF /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC3F6E2B85B64D7AED49071CEB17CA8 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		13A6BB9CB05501DF5A38F7F0D7BE88E3 /* Pods_AhitatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AhitatUITests.framework; path = "Pods-AhitatUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1709997DCE7865629C75E522705A3224 /* Pods-AhitatTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AhitatTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1FEFF7ED29543D1E78DEE7A6BB17CADE /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		3A1381C41C67558C81D995CBF9713FDF /* Pods-AhitatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AhitatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3F948D2C45FEFEBDB5DF326083CC5632 /* Pods-AhitatTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AhitatTests.modulemap"; sourceTree = "<group>"; };
+		4584AC83A1749C69CDD8A501F48E8F0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6571EA1B6CC1FEBD9ABA3F573FB4D6 /* Pods-AhitatTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AhitatTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4AAA88510C63098926CFFED1C23E5853 /* Pods_Ahitat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ahitat.framework; path = "Pods-Ahitat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		550B6E016234C200A630B907DD5CF612 /* Pods-Ahitat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ahitat-frameworks.sh"; sourceTree = "<group>"; };
+		606BD2B50ED98151BB84DE476A541232 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		61CA30D4087EBD1F34EDCF673E421608 /* Pods-AhitatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		635B412528E96FF1D89002CC65E84523 /* Pods-Ahitat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ahitat.debug.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66E114FBB7029D403BF6FAA671955FE5 /* Pods-AhitatTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AhitatTests-umbrella.h"; sourceTree = "<group>"; };
+		68376E532F0125632B84F42C1227160E /* Pods-AhitatTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AhitatTests-resources.sh"; sourceTree = "<group>"; };
+		6F2E6EEB3C5962018C72A78D6B61485D /* Pods-Ahitat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ahitat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		79953EEEE2786DBE8183FD164E151A67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A450AAD91F366CCE64B9FC38CB01B2E /* Pods-AhitatUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AhitatUITests-dummy.m"; sourceTree = "<group>"; };
+		7A697DF2FCE66AA6D825AB2713FAFD4E /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		7F4479FD04FA37F37CD17075297C8D81 /* Pods-AhitatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83E18C66D2AD2FACCC4E840693BABD1C /* Pods-AhitatUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AhitatUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8E52A674E91DEAB4ADE6EC94C499D701 /* Pods-Ahitat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ahitat-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CA3794D0BEAC180FE6813E578F07569 /* Pods-Ahitat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ahitat-dummy.m"; sourceTree = "<group>"; };
+		9CB0BA7F177AD8E85AC2774D5243A18B /* Pods-AhitatUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AhitatUITests.modulemap"; sourceTree = "<group>"; };
+		A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
+		AD1F1D6B39C7E8784E3169A483DC4F2C /* Pods-AhitatTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AhitatTests-frameworks.sh"; sourceTree = "<group>"; };
+		B0F13B5522D74AB1FC4558760C1EA5D9 /* Pods-AhitatTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AhitatTests-dummy.m"; sourceTree = "<group>"; };
+		BE40ED63050C03D8B10E7F9F10AAA159 /* Pods-Ahitat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ahitat-umbrella.h"; sourceTree = "<group>"; };
+		CFC10DAE160917B3A9FD2D5FC4641D07 /* Pods-AhitatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DA81A9FEB0292AAD28AA45C257A71270 /* Pods-Ahitat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ahitat-resources.sh"; sourceTree = "<group>"; };
+		DBCCF73E99F96DCA234FA11182F7AF5C /* Pods_AhitatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AhitatTests.framework; path = "Pods-AhitatTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBC72307721A7980A5749C54CEE5236 /* Pods-AhitatUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AhitatUITests-umbrella.h"; sourceTree = "<group>"; };
+		E56D3C68BBCDD2DF0E9A52C303875E6C /* Pods-AhitatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
+		EEAAA6BFA12D55FE654249B89D709200 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEDC80972425373213900011E0AB6690 /* Pods-Ahitat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ahitat.release.xcconfig"; sourceTree = "<group>"; };
+		F610C71E0164A7671BEBF955B7FBB1CC /* Pods-Ahitat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ahitat.modulemap"; sourceTree = "<group>"; };
+		F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+		FC789A334569E5999307B817840ED37D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF596FCA1183BC20F08134526762B516 /* Pods-AhitatUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AhitatUITests-resources.sh"; sourceTree = "<group>"; };
+		FFD3D5615EB36CBE82DD4FF9E9A66725 /* Pods-AhitatUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AhitatUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C19460A4484577DCED99240B5430562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CDFBF352D3E9068D347D1E941CCA654 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34E2EB4160A0754AD69B51986CD68A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8951F0BE016FFEC601BA14CAD2E56B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AE96C7F699667A3D32A6ED60B19A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C4BCE477720A90D4EE283E2CCAED23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C494DBB3103923A3865317DEEF9ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B68DC0DA739E2D59D1CA8CB34E20B59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0588B462469020386FC4A4F5450A2C47 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEAAA6BFA12D55FE654249B89D709200 /* Info.plist */,
+				606BD2B50ED98151BB84DE476A541232 /* SideMenu.modulemap */,
+				F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */,
+				1FEFF7ED29543D1E78DEE7A6BB17CADE /* SideMenu-dummy.m */,
+				0AC3F6E2B85B64D7AED49071CEB17CA8 /* SideMenu-prefix.pch */,
+				7A697DF2FCE66AA6D825AB2713FAFD4E /* SideMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
+			sourceTree = "<group>";
+		};
+		4C7DECB9505A3661801AB8D77F9249EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */,
+				A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */,
+				EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */,
+				38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */,
+				0588B462469020386FC4A4F5450A2C47 /* Support Files */,
+			);
+			name = SideMenu;
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		64E68E439AD101709D263ACF38BB0BF0 /* Pods-Ahitat */ = {
+			isa = PBXGroup;
+			children = (
+				4584AC83A1749C69CDD8A501F48E8F0E /* Info.plist */,
+				F610C71E0164A7671BEBF955B7FBB1CC /* Pods-Ahitat.modulemap */,
+				6F2E6EEB3C5962018C72A78D6B61485D /* Pods-Ahitat-acknowledgements.markdown */,
+				8E52A674E91DEAB4ADE6EC94C499D701 /* Pods-Ahitat-acknowledgements.plist */,
+				9CA3794D0BEAC180FE6813E578F07569 /* Pods-Ahitat-dummy.m */,
+				550B6E016234C200A630B907DD5CF612 /* Pods-Ahitat-frameworks.sh */,
+				DA81A9FEB0292AAD28AA45C257A71270 /* Pods-Ahitat-resources.sh */,
+				BE40ED63050C03D8B10E7F9F10AAA159 /* Pods-Ahitat-umbrella.h */,
+				635B412528E96FF1D89002CC65E84523 /* Pods-Ahitat.debug.xcconfig */,
+				EEDC80972425373213900011E0AB6690 /* Pods-Ahitat.release.xcconfig */,
+			);
+			name = "Pods-Ahitat";
+			path = "Target Support Files/Pods-Ahitat";
+			sourceTree = "<group>";
+		};
+		6E2AF5982894730ACE17DC309584CCD9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64E68E439AD101709D263ACF38BB0BF0 /* Pods-Ahitat */,
+				C742BE78CA0A297923EDAD38A55A6B33 /* Pods-AhitatTests */,
+				7777DE5E394DDF9AD674EF4771E6B78C /* Pods-AhitatUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7777DE5E394DDF9AD674EF4771E6B78C /* Pods-AhitatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79953EEEE2786DBE8183FD164E151A67 /* Info.plist */,
+				9CB0BA7F177AD8E85AC2774D5243A18B /* Pods-AhitatUITests.modulemap */,
+				3A1381C41C67558C81D995CBF9713FDF /* Pods-AhitatUITests-acknowledgements.markdown */,
+				FFD3D5615EB36CBE82DD4FF9E9A66725 /* Pods-AhitatUITests-acknowledgements.plist */,
+				7A450AAD91F366CCE64B9FC38CB01B2E /* Pods-AhitatUITests-dummy.m */,
+				83E18C66D2AD2FACCC4E840693BABD1C /* Pods-AhitatUITests-frameworks.sh */,
+				FF596FCA1183BC20F08134526762B516 /* Pods-AhitatUITests-resources.sh */,
+				DFBC72307721A7980A5749C54CEE5236 /* Pods-AhitatUITests-umbrella.h */,
+				7F4479FD04FA37F37CD17075297C8D81 /* Pods-AhitatUITests.debug.xcconfig */,
+				CFC10DAE160917B3A9FD2D5FC4641D07 /* Pods-AhitatUITests.release.xcconfig */,
+			);
+			name = "Pods-AhitatUITests";
+			path = "Target Support Files/Pods-AhitatUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4C7DECB9505A3661801AB8D77F9249EF /* Pods */,
+				DD959ACEC46FBAF234112A57E643EF08 /* Products */,
+				6E2AF5982894730ACE17DC309584CCD9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C742BE78CA0A297923EDAD38A55A6B33 /* Pods-AhitatTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC789A334569E5999307B817840ED37D /* Info.plist */,
+				3F948D2C45FEFEBDB5DF326083CC5632 /* Pods-AhitatTests.modulemap */,
+				4A6571EA1B6CC1FEBD9ABA3F573FB4D6 /* Pods-AhitatTests-acknowledgements.markdown */,
+				1709997DCE7865629C75E522705A3224 /* Pods-AhitatTests-acknowledgements.plist */,
+				B0F13B5522D74AB1FC4558760C1EA5D9 /* Pods-AhitatTests-dummy.m */,
+				AD1F1D6B39C7E8784E3169A483DC4F2C /* Pods-AhitatTests-frameworks.sh */,
+				68376E532F0125632B84F42C1227160E /* Pods-AhitatTests-resources.sh */,
+				66E114FBB7029D403BF6FAA671955FE5 /* Pods-AhitatTests-umbrella.h */,
+				61CA30D4087EBD1F34EDCF673E421608 /* Pods-AhitatTests.debug.xcconfig */,
+				E56D3C68BBCDD2DF0E9A52C303875E6C /* Pods-AhitatTests.release.xcconfig */,
+			);
+			name = "Pods-AhitatTests";
+			path = "Target Support Files/Pods-AhitatTests";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DD959ACEC46FBAF234112A57E643EF08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AAA88510C63098926CFFED1C23E5853 /* Pods_Ahitat.framework */,
+				DBCCF73E99F96DCA234FA11182F7AF5C /* Pods_AhitatTests.framework */,
+				13A6BB9CB05501DF5A38F7F0D7BE88E3 /* Pods_AhitatUITests.framework */,
+				0A89D240201EFF5370734B3A4FDCD6CF /* SideMenu.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73E4BFE3F7F6FC010072A6670C91D302 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0403E67043CE5E3CD028977A39C5602 /* Pods-Ahitat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A5001A9E89831789F3777C9AD946FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72627368CC4518D4558C1BA1B75B729C /* SideMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B416EB39D1AA8B6D424640276AAF7C2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8ECCA45716EBBD2AA9BD012E273925 /* Pods-AhitatTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8921A2451C3BC479D484FFCB0A6DB30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7375E7E2B27F5303C1FAE9102A36E66 /* Pods-AhitatUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		449C84A2B7CDE12287889CAAED339A96 /* Pods-Ahitat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BE3E83968AE51FD30C48A77753C1073 /* Build configuration list for PBXNativeTarget "Pods-Ahitat" */;
+			buildPhases = (
+				95E23AB983B937BB17B64E6F19DE92DB /* Sources */,
+				D1AE96C7F699667A3D32A6ED60B19A59 /* Frameworks */,
+				73E4BFE3F7F6FC010072A6670C91D302 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DBA6A8A8D742CC89DC8B91A59A4D6E3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Ahitat";
+			productName = "Pods-Ahitat";
+			productReference = 4AAA88510C63098926CFFED1C23E5853 /* Pods_Ahitat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B688D96C226475FBFAB0DD5DCAB72B6F /* Pods-AhitatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5045935622285EF129A6AD93A22DC7BF /* Build configuration list for PBXNativeTarget "Pods-AhitatTests" */;
+			buildPhases = (
+				AEA912EE640DB01515CD2C0D3E6C7AAB /* Sources */,
+				A34E2EB4160A0754AD69B51986CD68A0 /* Frameworks */,
+				B416EB39D1AA8B6D424640276AAF7C2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFFBB719E73770050AAD7E44E3186FC7 /* PBXTargetDependency */,
+			);
+			name = "Pods-AhitatTests";
+			productName = "Pods-AhitatTests";
+			productReference = DBCCF73E99F96DCA234FA11182F7AF5C /* Pods_AhitatTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D666B240C07528010590C0965B1DB967 /* Pods-AhitatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D92D3C11A563FE3186E38ACA070194 /* Build configuration list for PBXNativeTarget "Pods-AhitatUITests" */;
+			buildPhases = (
+				A7B5AF7642DF190E3FC49139E299D87F /* Sources */,
+				F2C494DBB3103923A3865317DEEF9ABA /* Frameworks */,
+				D8921A2451C3BC479D484FFCB0A6DB30 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90CF84C31C1B6362925F45526AE180E /* PBXTargetDependency */,
+			);
+			name = "Pods-AhitatUITests";
+			productName = "Pods-AhitatUITests";
+			productReference = 13A6BB9CB05501DF5A38F7F0D7BE88E3 /* Pods_AhitatUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7C590EA9B5808B3A116E361801C0864 /* SideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B77579B49436E04C3390A7D821B9B1 /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildPhases = (
+				07A60FE46630C86F78B5712EF1B84DED /* Sources */,
+				5C19460A4484577DCED99240B5430562 /* Frameworks */,
+				88A5001A9E89831789F3777C9AD946FC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideMenu;
+			productName = SideMenu;
+			productReference = 0A89D240201EFF5370734B3A4FDCD6CF /* SideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DD959ACEC46FBAF234112A57E643EF08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				449C84A2B7CDE12287889CAAED339A96 /* Pods-Ahitat */,
+				B688D96C226475FBFAB0DD5DCAB72B6F /* Pods-AhitatTests */,
+				D666B240C07528010590C0965B1DB967 /* Pods-AhitatUITests */,
+				D7C590EA9B5808B3A116E361801C0864 /* SideMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07A60FE46630C86F78B5712EF1B84DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA717387227FB0AC73BBC823FE22598 /* SideMenu-dummy.m in Sources */,
+				E9CEDDBD730D08F40503F44265DAE699 /* SideMenuManager.swift in Sources */,
+				8090F3034B0365297E0A82C1DC0A40EB /* SideMenuTransition.swift in Sources */,
+				1809ED794A191066CF1BF381031C35F7 /* UISideMenuNavigationController.swift in Sources */,
+				C5879A8F2CEAFA7C95321641738CEBA4 /* UITableViewVibrantCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E23AB983B937BB17B64E6F19DE92DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE35870A05B94B215CB2C37B9A214EB6 /* Pods-Ahitat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B5AF7642DF190E3FC49139E299D87F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C386BFE61F09AAE843AB4576CAD1056 /* Pods-AhitatUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEA912EE640DB01515CD2C0D3E6C7AAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0B373D4160CC06781ABBD17034D475 /* Pods-AhitatTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DBA6A8A8D742CC89DC8B91A59A4D6E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			target = D7C590EA9B5808B3A116E361801C0864 /* SideMenu */;
+			targetProxy = E3D01ED777FE9E33F54704B28907BBBF /* PBXContainerItemProxy */;
+		};
+		CFFBB719E73770050AAD7E44E3186FC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Ahitat";
+			target = 449C84A2B7CDE12287889CAAED339A96 /* Pods-Ahitat */;
+			targetProxy = 13511E7A615987F0887DC743DCD86811 /* PBXContainerItemProxy */;
+		};
+		E90CF84C31C1B6362925F45526AE180E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Ahitat";
+			target = 449C84A2B7CDE12287889CAAED339A96 /* Pods-Ahitat */;
+			targetProxy = E18DF4B14278B9455B64B11CB7FAEE1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EBA2915F63937F80675D0C39F0AE319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_MODULE_NAME = SideMenu;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12DBE8F8445CE6D087B94838AD2637B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635B412528E96FF1D89002CC65E84523 /* Pods-Ahitat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ahitat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ahitat/Pods-Ahitat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35239690C61F0AA9E3A1B8514750CBC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC10DAE160917B3A9FD2D5FC4641D07 /* Pods-AhitatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AhitatUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E7905FE78FCFAB1B87D7E2C4EA632F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_MODULE_NAME = SideMenu;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		627F5FD91F0F4E4A5739FCA168B34BB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CA30D4087EBD1F34EDCF673E421608 /* Pods-AhitatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AhitatTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AhitatTests/Pods-AhitatTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A057F81353495FB188070D330C286402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEDC80972425373213900011E0AB6690 /* Pods-Ahitat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ahitat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ahitat/Pods-Ahitat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A79B20708BFA993D9D789917D154BCC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E56D3C68BBCDD2DF0E9A52C303875E6C /* Pods-AhitatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AhitatTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AhitatTests/Pods-AhitatTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F4E71FE5178F537A1DB4B7CEE69055B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F4479FD04FA37F37CD17075297C8D81 /* Pods-AhitatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AhitatUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BE3E83968AE51FD30C48A77753C1073 /* Build configuration list for PBXNativeTarget "Pods-Ahitat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12DBE8F8445CE6D087B94838AD2637B6 /* Debug */,
+				A057F81353495FB188070D330C286402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5045935622285EF129A6AD93A22DC7BF /* Build configuration list for PBXNativeTarget "Pods-AhitatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627F5FD91F0F4E4A5739FCA168B34BB1 /* Debug */,
+				A79B20708BFA993D9D789917D154BCC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69B77579B49436E04C3390A7D821B9B1 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EBA2915F63937F80675D0C39F0AE319 /* Debug */,
+				4E7905FE78FCFAB1B87D7E2C4EA632F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D92D3C11A563FE3186E38ACA070194 /* Build configuration list for PBXNativeTarget "Pods-AhitatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E71FE5178F537A1DB4B7CEE69055B5 /* Debug */,
+				35239690C61F0AA9E3A1B8514750CBC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

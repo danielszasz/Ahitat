@@ -1,0 +1,6 @@
+framework module Pods_AhitatUITests {
+  umbrella header "Pods-AhitatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

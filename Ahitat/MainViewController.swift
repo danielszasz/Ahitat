@@ -11,10 +11,6 @@ import SideMenu
 
 class MainViewController: UIViewController {
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return UIStatusBarStyle.lightContent
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +24,12 @@ class MainViewController: UIViewController {
     private func configureSideMenu() {
         // Define the menus
         let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: MenuViewController())
+
         SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
+        SideMenuManager.default.menuFadeStatusBar = false
+        SideMenuManager.default.menuPresentMode = .menuSlideIn
+        SideMenuManager.default.menuWidth = UIScreen.main.bounds.width * 0.70
+        SideMenuManager.default.menuAnimationFadeStrength = 0.4
     }
 
     private func addNavBarButtons() {

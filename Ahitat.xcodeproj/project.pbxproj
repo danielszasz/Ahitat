@@ -19,6 +19,9 @@
 		0F3B5DD3214C521E00B93F54 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */; };
 		0F3B5DD5214CFD7000B93F54 /* Ahitat + UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DD4214CFD7000B93F54 /* Ahitat + UINavigationController.swift */; };
 		0F3B5DD7214D0A5000B93F54 /* devotional2017.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B5DD6214D0A4F00B93F54 /* devotional2017.sqlite */; };
+		0F3B5DDB214D0C6700B93F54 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDA214D0C6700B93F54 /* DatabaseHandler.swift */; };
+		0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDD214D0D2F00B93F54 /* Meditation.swift */; };
+		0F3B5DE0214E890E00B93F54 /* DailyMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */; };
 		1F0AA631C783D9F193475A34 /* Pods_Ahitat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D5B0DE9FCA05A02B352B7E /* Pods_Ahitat.framework */; };
 		1F99FB93D3D1A62090364ED4 /* Pods_AhitatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5D43F57293EFCB77FE1260 /* Pods_AhitatTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +62,9 @@
 		0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		0F3B5DD4214CFD7000B93F54 /* Ahitat + UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UINavigationController.swift"; sourceTree = "<group>"; };
 		0F3B5DD6214D0A4F00B93F54 /* devotional2017.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2017.sqlite; sourceTree = "<group>"; };
+		0F3B5DDA214D0C6700B93F54 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		0F3B5DDD214D0D2F00B93F54 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMeditation.swift; sourceTree = "<group>"; };
 		2F5D43F57293EFCB77FE1260 /* Pods_AhitatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhitatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D5302D79E059E9A99A295E /* Pods-AhitatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhitatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		353D3B72D34834E3F82CE665 /* Pods-Ahitat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ahitat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ahitat/Pods-Ahitat.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,13 +131,14 @@
 				0F3B5D9C214C435500B93F54 /* AppDelegate.swift */,
 				0F3B5DCC214C4F6C00B93F54 /* MainViewController.swift */,
 				0F3B5DCD214C4F6C00B93F54 /* MainViewController.xib */,
-				0F3B5DD6214D0A4F00B93F54 /* devotional2017.sqlite */,
+				0F3B5DD9214D0C2C00B93F54 /* Resources */,
 				0F3B5DA3214C435600B93F54 /* Assets.xcassets */,
 				0F3B5DA5214C435600B93F54 /* LaunchScreen.storyboard */,
 				0F3B5DA8214C435600B93F54 /* Info.plist */,
 				0F3B5DD0214C521E00B93F54 /* MenuViewController.swift */,
 				0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */,
-				0F3B5DD4214CFD7000B93F54 /* Ahitat + UINavigationController.swift */,
+				0F3B5DD8214D0C2200B93F54 /* Extensions */,
+				0F3B5DDC214D0C8B00B93F54 /* Models */,
 			);
 			path = Ahitat;
 			sourceTree = "<group>";
@@ -152,6 +159,32 @@
 				0F3B5DBE214C435600B93F54 /* Info.plist */,
 			);
 			path = AhitatUITests;
+			sourceTree = "<group>";
+		};
+		0F3B5DD8214D0C2200B93F54 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F3B5DD4214CFD7000B93F54 /* Ahitat + UINavigationController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F3B5DD9214D0C2C00B93F54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0F3B5DD6214D0A4F00B93F54 /* devotional2017.sqlite */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0F3B5DDC214D0C8B00B93F54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F3B5DDA214D0C6700B93F54 /* DatabaseHandler.swift */,
+				0F3B5DDD214D0D2F00B93F54 /* Meditation.swift */,
+				0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		235DECA7FBAEB369464C27A3 /* Frameworks */ = {
@@ -335,10 +368,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ahitat/Pods-Ahitat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,8 +424,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3B5DDB214D0C6700B93F54 /* DatabaseHandler.swift in Sources */,
 				0F3B5DD5214CFD7000B93F54 /* Ahitat + UINavigationController.swift in Sources */,
 				0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */,
+				0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */,
+				0F3B5DE0214E890E00B93F54 /* DailyMeditation.swift in Sources */,
 				0F3B5DD2214C521E00B93F54 /* MenuViewController.swift in Sources */,
 				0F3B5DCE214C4F6C00B93F54 /* MainViewController.swift in Sources */,
 			);

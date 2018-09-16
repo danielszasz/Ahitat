@@ -19,6 +19,8 @@ class MainViewController: UIViewController {
 
         self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "bgHeader"), for: .topAttached, barMetrics: .default)
         self.navigationController?.navigationBar.tintColor = .white
+
+        let meditations = DatabaseHandler().getMeditations()
     }
 
     private func configureSideMenu() {

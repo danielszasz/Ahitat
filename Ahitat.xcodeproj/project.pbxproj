@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0AC9705D72957729F022FB24 /* Pods_AhitatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E441E8149E5EA377FADD5F9 /* Pods_AhitatUITests.framework */; };
+		0F057E4921D39ACF002559F2 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F057E4821D39ACF002559F2 /* CustomView.swift */; };
+		0F057E4C21D39B11002559F2 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F057E4B21D39B11002559F2 /* CalendarView.swift */; };
+		0F057E4E21D39B29002559F2 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F057E4D21D39B29002559F2 /* CalendarView.xib */; };
+		0F057E5021D39BB2002559F2 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F057E4F21D39BB2002559F2 /* Box.swift */; };
+		0F057E5421D3A239002559F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F057E5621D3A239002559F2 /* Localizable.strings */; };
+		0F057E5821D3A498002559F2 /* Ahitat + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F057E5721D3A498002559F2 /* Ahitat + UIColor.swift */; };
+		0F057E5A21D3A4CC002559F2 /* Ahitat + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F057E5921D3A4CC002559F2 /* Ahitat + UIFont.swift */; };
 		0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5D9C214C435500B93F54 /* AppDelegate.swift */; };
 		0F3B5DA4214C435600B93F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B5DA3214C435600B93F54 /* Assets.xcassets */; };
 		0F3B5DA7214C435600B93F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B5DA5214C435600B93F54 /* LaunchScreen.storyboard */; };
@@ -45,6 +52,14 @@
 
 /* Begin PBXFileReference section */
 		0E441E8149E5EA377FADD5F9 /* Pods_AhitatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhitatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F057E4821D39ACF002559F2 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		0F057E4B21D39B11002559F2 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		0F057E4D21D39B29002559F2 /* CalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
+		0F057E4F21D39BB2002559F2 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		0F057E5121D3A1F6002559F2 /* hu-HU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "hu-HU"; path = "hu-HU.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		0F057E5521D3A239002559F2 /* hu-HU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "hu-HU"; path = "hu-HU.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0F057E5721D3A498002559F2 /* Ahitat + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UIColor.swift"; sourceTree = "<group>"; };
+		0F057E5921D3A4CC002559F2 /* Ahitat + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UIFont.swift"; sourceTree = "<group>"; };
 		0F3B5D99214C435500B93F54 /* Ahitat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ahitat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3B5D9C214C435500B93F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3B5DA3214C435600B93F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +118,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F057E4A21D39AD2002559F2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0F057E4F21D39BB2002559F2 /* Box.swift */,
+				0F057E4821D39ACF002559F2 /* CustomView.swift */,
+				0F057E4B21D39B11002559F2 /* CalendarView.swift */,
+				0F057E4D21D39B29002559F2 /* CalendarView.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		0F3B5D90214C435500B93F54 = {
 			isa = PBXGroup;
 			children = (
@@ -128,12 +154,14 @@
 		0F3B5D9B214C435500B93F54 /* Ahitat */ = {
 			isa = PBXGroup;
 			children = (
+				0F057E5621D3A239002559F2 /* Localizable.strings */,
 				0F3B5D9C214C435500B93F54 /* AppDelegate.swift */,
 				0F3B5DCC214C4F6C00B93F54 /* MainViewController.swift */,
 				0F3B5DCD214C4F6C00B93F54 /* MainViewController.xib */,
 				0F3B5DD9214D0C2C00B93F54 /* Resources */,
 				0F3B5DA3214C435600B93F54 /* Assets.xcassets */,
 				0F3B5DA5214C435600B93F54 /* LaunchScreen.storyboard */,
+				0F057E4A21D39AD2002559F2 /* Components */,
 				0F3B5DA8214C435600B93F54 /* Info.plist */,
 				0F3B5DD0214C521E00B93F54 /* MenuViewController.swift */,
 				0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */,
@@ -165,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				0F3B5DD4214CFD7000B93F54 /* Ahitat + UINavigationController.swift */,
+				0F057E5721D3A498002559F2 /* Ahitat + UIColor.swift */,
+				0F057E5921D3A4CC002559F2 /* Ahitat + UIFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,13 +312,16 @@
 				TargetAttributes = {
 					0F3B5D98214C435500B93F54 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					0F3B5DAC214C435600B93F54 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 0F3B5D98214C435500B93F54;
 					};
 					0F3B5DB7214C435600B93F54 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 0F3B5D98214C435500B93F54;
 					};
 				};
@@ -318,8 +351,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F057E4E21D39B29002559F2 /* CalendarView.xib in Resources */,
 				0F3B5DA7214C435600B93F54 /* LaunchScreen.storyboard in Resources */,
 				0F3B5DD7214D0A5000B93F54 /* devotional2017.sqlite in Resources */,
+				0F057E5421D3A239002559F2 /* Localizable.strings in Resources */,
 				0F3B5DCF214C4F6C00B93F54 /* MainViewController.xib in Resources */,
 				0F3B5DA4214C435600B93F54 /* Assets.xcassets in Resources */,
 				0F3B5DD3214C521E00B93F54 /* MenuViewController.xib in Resources */,
@@ -425,12 +460,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F3B5DDB214D0C6700B93F54 /* DatabaseHandler.swift in Sources */,
+				0F057E4921D39ACF002559F2 /* CustomView.swift in Sources */,
 				0F3B5DD5214CFD7000B93F54 /* Ahitat + UINavigationController.swift in Sources */,
+				0F057E5A21D3A4CC002559F2 /* Ahitat + UIFont.swift in Sources */,
 				0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */,
 				0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */,
+				0F057E4C21D39B11002559F2 /* CalendarView.swift in Sources */,
 				0F3B5DE0214E890E00B93F54 /* DailyMeditation.swift in Sources */,
 				0F3B5DD2214C521E00B93F54 /* MenuViewController.swift in Sources */,
 				0F3B5DCE214C4F6C00B93F54 /* MainViewController.swift in Sources */,
+				0F057E5021D39BB2002559F2 /* Box.swift in Sources */,
+				0F057E5821D3A498002559F2 /* Ahitat + UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,10 +506,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0F057E5621D3A239002559F2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F057E5521D3A239002559F2 /* hu-HU */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		0F3B5DA5214C435600B93F54 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0F3B5DA6214C435600B93F54 /* Base */,
+				0F057E5121D3A1F6002559F2 /* hu-HU */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -481,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -541,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -605,7 +656,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -624,7 +675,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -645,7 +696,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.AhitatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ahitat.app/Ahitat";
 			};
@@ -667,7 +718,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.AhitatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ahitat.app/Ahitat";
 			};
@@ -688,7 +739,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.AhitatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Ahitat;
 			};
@@ -709,7 +760,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.AhitatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Ahitat;
 			};

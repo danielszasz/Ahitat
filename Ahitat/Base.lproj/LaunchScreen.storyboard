@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,7 +28,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vh0-N8-ClA" secondAttribute="trailing" id="5kC-FP-AI9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vh0-N8-ClA" secondAttribute="bottom" id="ZmP-HB-znZ"/>
+                            <constraint firstAttribute="bottom" secondItem="vh0-N8-ClA" secondAttribute="bottom" id="ZmP-HB-znZ"/>
                             <constraint firstItem="bXs-3z-K1I" firstAttribute="centerX" secondItem="vh0-N8-ClA" secondAttribute="centerX" id="ayd-2d-xZ3"/>
                             <constraint firstItem="vh0-N8-ClA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sWR-Wf-VeZ"/>
                             <constraint firstItem="vh0-N8-ClA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="syF-iu-mek"/>

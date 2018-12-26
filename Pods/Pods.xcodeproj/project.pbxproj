@@ -669,43 +669,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0BCC105E5888B9B6BD497FB0FDBA8560 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09491CD1238709F3EDD368A9CE3DF698 /* SQLite.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				PRODUCT_MODULE_NAME = SQLite;
-				PRODUCT_NAME = SQLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1B820D70CD8E1D81C4AF58F68E517579 /* Release */ = {
+		347612694704EF2F6D49D706A3836C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C64BEB76F51D3A76BF716C03F02D3066 /* SideMenu.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -718,7 +686,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
 				PRODUCT_MODULE_NAME = SideMenu;
@@ -726,41 +694,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2A6AF5B74E7BF58A1D795373A9F1FFBF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09491CD1238709F3EDD368A9CE3DF698 /* SQLite.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				PRODUCT_MODULE_NAME = SQLite;
-				PRODUCT_NAME = SQLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -801,6 +736,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		38EDC43012E32C0F4017F3A9CC49D606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09491CD1238709F3EDD368A9CE3DF698 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				PRODUCT_MODULE_NAME = SQLite;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		42E4E2046712094552CA78EB55725609 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -971,9 +938,9 @@
 			};
 			name = Debug;
 		};
-		7DE4311E450A971EE280691ADA2438C1 /* Debug */ = {
+		6F721FCB673F5A6DF2EE1465CE15ABA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C64BEB76F51D3A76BF716C03F02D3066 /* SideMenu.xcconfig */;
+			baseConfigurationReference = 09491CD1238709F3EDD368A9CE3DF698 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -984,24 +951,25 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_MODULE_NAME = SideMenu;
-				PRODUCT_NAME = SideMenu;
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				PRODUCT_MODULE_NAME = SQLite;
+				PRODUCT_NAME = SQLite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		A79B20708BFA993D9D789917D154BCC6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1096,6 +1064,40 @@
 			};
 			name = Release;
 		};
+		E30812116742CF8CB74CAD3B61915190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64BEB76F51D3A76BF716C03F02D3066 /* SideMenu.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_MODULE_NAME = SideMenu;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F4E71FE5178F537A1DB4B7CEE69055B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F4479FD04FA37F37CD17075297C8D81 /* Pods-AhitatUITests.debug.xcconfig */;
@@ -1172,8 +1174,8 @@
 		776680D6E08DC5CFDC86CA6B14DDBA4E /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A6AF5B74E7BF58A1D795373A9F1FFBF /* Debug */,
-				0BCC105E5888B9B6BD497FB0FDBA8560 /* Release */,
+				38EDC43012E32C0F4017F3A9CC49D606 /* Debug */,
+				6F721FCB673F5A6DF2EE1465CE15ABA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1181,8 +1183,8 @@
 		80F43088417979A0763432AECD32ACBB /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DE4311E450A971EE280691ADA2438C1 /* Debug */,
-				1B820D70CD8E1D81C4AF58F68E517579 /* Release */,
+				347612694704EF2F6D49D706A3836C1C /* Debug */,
+				E30812116742CF8CB74CAD3B61915190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

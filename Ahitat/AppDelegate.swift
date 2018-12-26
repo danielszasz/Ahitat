@@ -13,9 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         setWindow()
+        printAllFonts()
         return true
     }
 
@@ -26,6 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navController.setViewControllers([initialVc], animated: true)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
+    }
+
+
+    private func printAllFonts() {
+        UIFont.familyNames.forEach({ familyName in
+            let fontNames = UIFont.fontNames(forFamilyName: familyName)
+            print(familyName, fontNames)
+        })
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

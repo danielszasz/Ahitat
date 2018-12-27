@@ -10,9 +10,15 @@ import UIKit
 import SideMenu
 
 class MainViewController: UIViewController {
-
+    @IBOutlet private weak var calendarView: CalendarView!
+    @IBOutlet private weak var stackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        calendarView.backgroundColor = .black16
+        stackView.alpha = 0
+        calendarView.isHidden = true
 
         configureSideMenu()
         addNavBarButtons()
@@ -49,6 +55,15 @@ class MainViewController: UIViewController {
     }
 
     @objc private func toggleCalendar() {
-
+        //when appearing we need it before animation
+        if calendarView.isHidden {
+            calendarView.isHidden = false
+        }
+            UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlUp, animations: {
+            self.stackView.alpha = self.stackView.alpha == 0 ? 1 : 0
+        }, completion: { _ in
+            guard self.calendarView.isHidden  else {return}
+                self.calendarView.isHidden = false
+        })
     }
 }

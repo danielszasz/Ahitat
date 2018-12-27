@@ -26,13 +26,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yx5-Oh-JCA">
                     <rect key="frame" x="0.0" y="0.0" width="380" height="46"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGj-g7-yrz">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGj-g7-yrz" customClass="AhitatButton" customModule="Ahitat" customModuleProvider="target">
                             <rect key="frame" x="9" y="19" width="66" height="22"/>
                             <state key="normal" title="Button" image="iconBackChevron">
                                 <color key="titleColor" red="0.27951519870000002" green="1" blue="0.29533006379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djA-sx-44L">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djA-sx-44L" customClass="AhitatButton" customModule="Ahitat" customModuleProvider="target">
                             <rect key="frame" x="304" y="19" width="67" height="22"/>
                             <state key="normal" title="Button" image="iconForwardChevron">
                                 <color key="titleColor" red="0.27951519870000002" green="1" blue="0.29533006379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

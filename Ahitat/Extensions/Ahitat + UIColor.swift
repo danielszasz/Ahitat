@@ -21,4 +21,16 @@ extension UIColor {
     @nonobjc class var peach: UIColor {
         return UIColor(red: 238.0 / 255.0, green: 103.0 / 255.0, blue: 35.0 / 255.0, alpha: 1.0)
     }
+
+    @nonobjc class var slate: UIColor {
+        return UIColor(red: 92.0 / 255.0, green: 109.0 / 255.0, blue: 126.0 / 255.0, alpha: 1.0)
+    }
+
+    @nonobjc class var slateTwo: UIColor {
+        return UIColor(red: 63.0 / 255.0, green: 81.0 / 255.0, blue: 93.0 / 255.0, alpha: 1.0)
+    }
+
+    @nonobjc class var black16: UIColor {
+        return UIColor(white: 0.0, alpha: 0.16)
+    }
 }

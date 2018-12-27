@@ -9,7 +9,11 @@
 import UIKit
 
 extension UIFont {
-    class var textStyle: UIFont {
+    class var systemFont: UIFont {
         return UIFont.systemFont(ofSize: 17.0, weight: .regular)
+    }
+
+    class var georgiaItalic: UIFont {
+        return UIFont(name: "Georgia-Italic", size: 16.0)!
     }
 }

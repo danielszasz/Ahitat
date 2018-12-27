@@ -15,6 +15,8 @@
 		0F057E5421D3A239002559F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F057E5621D3A239002559F2 /* Localizable.strings */; };
 		0F057E5821D3A498002559F2 /* Ahitat + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F057E5721D3A498002559F2 /* Ahitat + UIColor.swift */; };
 		0F057E5A21D3A4CC002559F2 /* Ahitat + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F057E5921D3A4CC002559F2 /* Ahitat + UIFont.swift */; };
+		0F057E5C21D4A93C002559F2 /* AhitatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F057E5B21D4A93C002559F2 /* AhitatButton.swift */; };
+		0F3214B321D4C40700ED72DF /* Ahitat + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3214B221D4C40700ED72DF /* Ahitat + Date.swift */; };
 		0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5D9C214C435500B93F54 /* AppDelegate.swift */; };
 		0F3B5DA4214C435600B93F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B5DA3214C435600B93F54 /* Assets.xcassets */; };
 		0F3B5DA7214C435600B93F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B5DA5214C435600B93F54 /* LaunchScreen.storyboard */; };
@@ -60,6 +62,8 @@
 		0F057E5521D3A239002559F2 /* hu-HU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "hu-HU"; path = "hu-HU.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0F057E5721D3A498002559F2 /* Ahitat + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UIColor.swift"; sourceTree = "<group>"; };
 		0F057E5921D3A4CC002559F2 /* Ahitat + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UIFont.swift"; sourceTree = "<group>"; };
+		0F057E5B21D4A93C002559F2 /* AhitatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhitatButton.swift; sourceTree = "<group>"; };
+		0F3214B221D4C40700ED72DF /* Ahitat + Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + Date.swift"; sourceTree = "<group>"; };
 		0F3B5D99214C435500B93F54 /* Ahitat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ahitat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3B5D9C214C435500B93F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3B5DA3214C435600B93F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,10 +127,18 @@
 			children = (
 				0F057E4F21D39BB2002559F2 /* Box.swift */,
 				0F057E4821D39ACF002559F2 /* CustomView.swift */,
+				0F057E5B21D4A93C002559F2 /* AhitatButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0F3214B121D4C3EA00ED72DF /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
 				0F057E4B21D39B11002559F2 /* CalendarView.swift */,
 				0F057E4D21D39B29002559F2 /* CalendarView.xib */,
 			);
-			path = Components;
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		0F3B5D90214C435500B93F54 = {
@@ -165,6 +177,7 @@
 				0F3B5DA8214C435600B93F54 /* Info.plist */,
 				0F3B5DD0214C521E00B93F54 /* MenuViewController.swift */,
 				0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */,
+				0F3214B121D4C3EA00ED72DF /* Calendar */,
 				0F3B5DD8214D0C2200B93F54 /* Extensions */,
 				0F3B5DDC214D0C8B00B93F54 /* Models */,
 			);
@@ -193,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				0F3B5DD4214CFD7000B93F54 /* Ahitat + UINavigationController.swift */,
+				0F3214B221D4C40700ED72DF /* Ahitat + Date.swift */,
 				0F057E5721D3A498002559F2 /* Ahitat + UIColor.swift */,
 				0F057E5921D3A4CC002559F2 /* Ahitat + UIFont.swift */,
 			);
@@ -463,7 +477,9 @@
 				0F057E4921D39ACF002559F2 /* CustomView.swift in Sources */,
 				0F3B5DD5214CFD7000B93F54 /* Ahitat + UINavigationController.swift in Sources */,
 				0F057E5A21D3A4CC002559F2 /* Ahitat + UIFont.swift in Sources */,
+				0F057E5C21D4A93C002559F2 /* AhitatButton.swift in Sources */,
 				0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */,
+				0F3214B321D4C40700ED72DF /* Ahitat + Date.swift in Sources */,
 				0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */,
 				0F057E4C21D39B11002559F2 /* CalendarView.swift in Sources */,
 				0F3B5DE0214E890E00B93F54 /* DailyMeditation.swift in Sources */,

@@ -35,7 +35,7 @@ class MainViewController: UIViewController {
 
         meditations = DatabaseHandler().getMeditations()
         calendarView.configure(dates: meditations.map({$0.date}), delegate: self)
-        calendarView.select(date: Date())
+        didSelect(date: Date())
     }
 
     private func configureSideMenu() {
@@ -79,6 +79,7 @@ class MainViewController: UIViewController {
 
 extension MainViewController: CalendarViewDelegate {
     func didSelect(date: Date) {
+        print(#function)
         currentMeditaion = meditations.filter({$0.date.isSameDay(with: date)}).first
     }
 }

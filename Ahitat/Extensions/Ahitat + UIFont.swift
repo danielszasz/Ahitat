@@ -9,8 +9,12 @@
 import UIKit
 
 extension UIFont {
-    class var systemFont: UIFont {
-        return UIFont.systemFont(ofSize: 17.0, weight: .regular)
+    class var systemFontLight: UIFont {
+        return UIFont.systemFont(ofSize: 17.0, weight: .light)
+    }
+
+    class var systemFontSemibold: UIFont {
+        return UIFont.systemFont(ofSize: 17.0, weight: .semibold)
     }
 
     class var dayNumber: UIFont {

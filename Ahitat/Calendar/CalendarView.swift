@@ -16,12 +16,15 @@ class CalendarView: CustomView {
 
     @IBOutlet private weak var leftButton: AhitatButton!
     @IBOutlet private weak var rightButton: AhitatButton!
+    @IBOutlet private weak var currentMonthLabel: UILabel!
     @IBOutlet private weak var calendarCollectionView: UICollectionView!
     @IBOutlet private weak var currentDayLabel: UILabel!
+    @IBOutlet private weak var collectionViewHeightConstraint: NSLayoutConstraint!
 
     private weak var delegate: CalendarViewDelegate?
 
     private var dates: [Date] = []
+
     private var selectedDate: Date = Date() {
         didSet {
             scroll(to: selectedDate)
@@ -29,27 +32,29 @@ class CalendarView: CustomView {
         }
     }
 
-    @IBOutlet private weak var collectionViewHeightConstraint: NSLayoutConstraint!
-
     override func configureUI() {
         backgroundColor = .black16
 
         leftButton.setImage(#imageLiteral(resourceName: "iconBackChevron.png"), for: .normal)
-        leftButton.titleLabel?.font = UIFont.systemFont
+        leftButton.titleLabel?.font = UIFont.systemFontLight
         leftButton.setTitleColor(.slateTwo, for: .normal)
         leftButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
 
         rightButton.setImage(#imageLiteral(resourceName: "iconForwardChevron.png"), for: .normal)
-        rightButton.titleLabel?.font = UIFont.systemFont
+        rightButton.titleLabel?.font = UIFont.systemFontLight
         rightButton.semanticContentAttribute = .forceRightToLeft
         rightButton.setTitleColor(.slateTwo, for: .normal)
         rightButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+
+        currentMonthLabel.textColor = UIColor.slate
+        currentMonthLabel.font = UIFont.systemFontSemibold
 
         currentDayLabel.textColor = .slate
         currentDayLabel.font = UIFont.georgiaItalic
 
         calendarCollectionView.dataSource = self
         calendarCollectionView.delegate = self
+
         let nib = UINib.init(nibName: "DayCollectionViewCell", bundle: nil)
         calendarCollectionView.register(nib, forCellWithReuseIdentifier: "DayCollectionViewCell")
     }
@@ -64,15 +69,19 @@ class CalendarView: CustomView {
         let indexPath = IndexPath(item: index, section: 0)
         calendarCollectionView.performBatchUpdates({
             self.calendarCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-
-        }, completion: { _ in
-        })
+        }, completion: { _ in})
     }
 
     private func reloadView() {
-        leftButton.setTitle(selectedDate.previousMonth, for: .normal)
-        rightButton.setTitle(selectedDate.nextMonth, for: .normal)
+        reloadMonths(with: selectedDate)
         currentDayLabel.text = selectedDate.longDate
+        currentMonthLabel.text = selectedDate.currentMonth
+    }
+
+    private func reloadMonths(with date: Date) {
+        leftButton.setTitle(date.previousMonth, for: .normal)
+        rightButton.setTitle(date.nextMonth, for: .normal)
+        currentMonthLabel.text = date.currentMonth
     }
 
     func configure(dates: [Date], delegate: CalendarViewDelegate) {
@@ -109,6 +118,17 @@ extension CalendarView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.didSelect(date: dates[indexPath.item])
     }
+
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let visibleCellsIndexPath = collectionView.indexPathsForVisibleItems
+        let firstIndex = visibleCellsIndexPath.first?.item ?? 0
+        let lastIndex = visibleCellsIndexPath.last?.item ?? 0
+        let firstElement = dates[firstIndex]
+        let lastElement = dates[lastIndex]
+        if firstElement.isSameMonth(with: lastElement) {
+            reloadMonths(with: firstElement)
+        }
+    }
 }
 
 extension CalendarView: UICollectionViewDelegateFlowLayout {
@@ -116,8 +136,6 @@ extension CalendarView: UICollectionViewDelegateFlowLayout {
         let width = UIScreen.main.bounds.width/7
         let height: CGFloat = 65
         collectionViewHeightConstraint.constant = height
-//        self.setNeedsLayout()
-//        self.layoutIfNeeded()
         return CGSize(width: width, height: height)
     }
 }

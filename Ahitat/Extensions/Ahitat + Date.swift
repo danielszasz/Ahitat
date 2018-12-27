@@ -9,6 +9,15 @@
 import Foundation
 
 extension Date {
+    func isSameMonth(with date: Date) -> Bool {
+        let lhsComponents = Calendar.current.dateComponents([.month, .year], from: self)
+        let rhsComponents = Calendar.current.dateComponents([.month, .year], from: date)
+        return lhsComponents.year == rhsComponents.year &&
+            lhsComponents.month == rhsComponents.month
+    }
+
+
+
     var daySymbol: String {
         let weekDayIndex = Calendar.current.component(.weekday, from: self) - 1
         return dateFormatter.veryShortWeekdaySymbols[weekDayIndex]
@@ -40,6 +49,13 @@ extension Date {
         formatter.dateFormat = "MMMM"
         return formatter.string(from: nextMonth).capitalized
     }
+
+    var currentMonth: String {
+        let formatter = dateFormatter
+        formatter.dateFormat = "MMMM"
+        return formatter.string(from: self).capitalized
+    }
+
     var longDate: String {
         let formatter = dateFormatter
 
@@ -56,15 +72,4 @@ extension Date {
             lhsComponents.day == rhsComponents.day
     }
 }
-
-extension Date: Equatable {
-    static func == (lhs: Date, rhs: Date) -> Bool {
-        let lhsComponents = Calendar.current.dateComponents([.day, .month, .year], from: lhs)
-        let rhsComponents = Calendar.current.dateComponents([.day, .month, .year], from: rhs)
-        return lhsComponents.year == rhsComponents.year &&
-            lhsComponents.month == rhsComponents.month &&
-            lhsComponents.day == rhsComponents.day
-    }
-}
-
 

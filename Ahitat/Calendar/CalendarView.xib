@@ -15,6 +15,7 @@
                 <outlet property="calendarCollectionView" destination="0Tv-r4-EnR" id="T2c-jF-udC"/>
                 <outlet property="collectionViewHeightConstraint" destination="ZRh-Ye-Twf" id="CDT-uk-h5g"/>
                 <outlet property="currentDayLabel" destination="xkB-o6-gGG" id="zlz-8J-P31"/>
+                <outlet property="currentMonthLabel" destination="fJu-uA-lh5" id="kdP-3s-cQg"/>
                 <outlet property="leftButton" destination="oGj-g7-yrz" id="MYj-B1-u3h"/>
                 <outlet property="rightButton" destination="djA-sx-44L" id="iVS-Wz-Jyh"/>
             </connections>
@@ -39,16 +40,26 @@
                                 <color key="titleColor" red="0.27951519870000002" green="1" blue="0.29533006379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJu-uA-lh5">
+                            <rect key="frame" x="169" y="19.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="fJu-uA-lh5" firstAttribute="centerX" secondItem="Yx5-Oh-JCA" secondAttribute="centerX" id="1hW-hh-VRX"/>
                         <constraint firstItem="oGj-g7-yrz" firstAttribute="leading" secondItem="Yx5-Oh-JCA" secondAttribute="leading" constant="9" id="1ux-pQ-jQ5"/>
+                        <constraint firstItem="djA-sx-44L" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fJu-uA-lh5" secondAttribute="trailing" constant="10" id="9xv-m6-H6e"/>
                         <constraint firstAttribute="bottom" secondItem="oGj-g7-yrz" secondAttribute="bottom" constant="5" id="CeR-fg-wWL"/>
                         <constraint firstAttribute="bottom" secondItem="djA-sx-44L" secondAttribute="bottom" constant="5" id="bnF-oc-R38"/>
                         <constraint firstAttribute="trailing" secondItem="djA-sx-44L" secondAttribute="trailing" constant="9" id="jry-EB-TFu"/>
                         <constraint firstItem="djA-sx-44L" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oGj-g7-yrz" secondAttribute="trailing" constant="19" id="oSD-fe-rmw"/>
                         <constraint firstItem="djA-sx-44L" firstAttribute="top" secondItem="Yx5-Oh-JCA" secondAttribute="top" constant="19" id="x0H-V6-y3V"/>
                         <constraint firstItem="oGj-g7-yrz" firstAttribute="top" secondItem="Yx5-Oh-JCA" secondAttribute="top" constant="19" id="xSp-E8-y0z"/>
+                        <constraint firstItem="fJu-uA-lh5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oGj-g7-yrz" secondAttribute="trailing" constant="10" id="yjo-Bf-AKW"/>
+                        <constraint firstItem="fJu-uA-lh5" firstAttribute="centerY" secondItem="oGj-g7-yrz" secondAttribute="centerY" id="zQi-Px-47V"/>
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0Tv-r4-EnR">

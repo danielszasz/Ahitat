@@ -13,6 +13,18 @@ extension UIFont {
         return UIFont.systemFont(ofSize: 17.0, weight: .regular)
     }
 
+    class var dayNumber: UIFont {
+        return UIFont.systemFont(ofSize: 16.0, weight: .regular)
+    }
+
+    class var dayText: UIFont {
+        return UIFont.systemFont(ofSize: 10.0, weight: .regular)
+    }
+
+    class var systemMedium: UIFont {
+        return UIFont.systemFont(ofSize: 16.0, weight: .medium)
+    }
+
     class var georgiaItalic: UIFont {
         return UIFont(name: "Georgia-Italic", size: 16.0)!
     }

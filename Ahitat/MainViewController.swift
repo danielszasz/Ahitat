@@ -12,6 +12,13 @@ import SideMenu
 class MainViewController: UIViewController {
     @IBOutlet private weak var calendarView: CalendarView!
     @IBOutlet private weak var stackView: UIStackView!
+
+    private var meditations: [DailyMeditation] = []
+    private var currentMeditaion: DailyMeditation? {
+        didSet {
+            calendarView.select(date: currentMeditaion?.date ?? Date())
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +33,9 @@ class MainViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "bgHeader"), for: .topAttached, barMetrics: .default)
         self.navigationController?.navigationBar.tintColor = .white
 
-        let meditations = DatabaseHandler().getMeditations()
+        meditations = DatabaseHandler().getMeditations()
+        calendarView.configure(dates: meditations.map({$0.date}), delegate: self)
+        calendarView.select(date: Date())
     }
 
     private func configureSideMenu() {
@@ -65,5 +74,11 @@ class MainViewController: UIViewController {
             guard self.calendarView.isHidden  else {return}
                 self.calendarView.isHidden = false
         })
+    }
+}
+
+extension MainViewController: CalendarViewDelegate {
+    func didSelect(date: Date) {
+        currentMeditaion = meditations.filter({$0.date.isSameDay(with: date)}).first
     }
 }

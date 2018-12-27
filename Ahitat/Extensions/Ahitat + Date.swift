@@ -9,6 +9,18 @@
 import Foundation
 
 extension Date {
+    var daySymbol: String {
+        let weekDayIndex = Calendar.current.component(.weekday, from: self) - 1
+        return dateFormatter.veryShortWeekdaySymbols[weekDayIndex]
+    }
+
+    var dayNumber: String {
+        let formatter = dateFormatter
+        formatter.dateFormat = "d"
+        return formatter.string(from: self)
+    }
+
+
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "hu")
@@ -34,6 +46,24 @@ extension Date {
         formatter.dateStyle = .full
         formatter.timeStyle = .none
         return formatter.string(from: self).capitalized
+    }
+
+    func isSameDay(with date: Date) -> Bool {
+        let lhsComponents = Calendar.current.dateComponents([.day, .month, .year], from: self)
+        let rhsComponents = Calendar.current.dateComponents([.day, .month, .year], from: date)
+        return lhsComponents.year == rhsComponents.year &&
+            lhsComponents.month == rhsComponents.month &&
+            lhsComponents.day == rhsComponents.day
+    }
+}
+
+extension Date: Equatable {
+    static func == (lhs: Date, rhs: Date) -> Bool {
+        let lhsComponents = Calendar.current.dateComponents([.day, .month, .year], from: lhs)
+        let rhsComponents = Calendar.current.dateComponents([.day, .month, .year], from: rhs)
+        return lhsComponents.year == rhsComponents.year &&
+            lhsComponents.month == rhsComponents.month &&
+            lhsComponents.day == rhsComponents.day
     }
 }
 

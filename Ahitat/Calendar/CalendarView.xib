@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarView" customModule="Ahitat" customModuleProvider="target">
             <connections>
                 <outlet property="calendarCollectionView" destination="0Tv-r4-EnR" id="T2c-jF-udC"/>
+                <outlet property="collectionViewHeightConstraint" destination="ZRh-Ye-Twf" id="CDT-uk-h5g"/>
                 <outlet property="currentDayLabel" destination="xkB-o6-gGG" id="zlz-8J-P31"/>
                 <outlet property="leftButton" destination="oGj-g7-yrz" id="MYj-B1-u3h"/>
                 <outlet property="rightButton" destination="djA-sx-44L" id="iVS-Wz-Jyh"/>
@@ -53,7 +54,10 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0Tv-r4-EnR">
                     <rect key="frame" x="0.0" y="52" width="380" height="148"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="frv-Om-qLN">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="148" id="ZRh-Ye-Twf"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="frv-Om-qLN">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>

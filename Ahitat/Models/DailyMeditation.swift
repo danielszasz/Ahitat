@@ -63,3 +63,9 @@ extension DailyMeditation {
 
     }
 }
+
+extension DailyMeditation: Equatable {
+    static func ==(lhs: DailyMeditation, rhs: DailyMeditation) -> Bool {
+        return lhs.id == rhs.id
+    }
+}

@@ -14,7 +14,8 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet weak var beforeNoonMeditation: MeditationView!
     @IBOutlet weak var afternoonMeditation: MeditationView!
-    
+    @IBOutlet weak var meditationsStackView: UIStackView!
+
     private var meditations: [DailyMeditation] = []
     private var currentMeditaion: DailyMeditation? {
         didSet {
@@ -33,6 +34,7 @@ class MainViewController: UIViewController {
 
         configureSideMenu()
         addNavBarButtons()
+        addPanGestures()
 
         self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "bgHeader"), for: .topAttached, barMetrics: .default)
         self.navigationController?.navigationBar.tintColor = .white
@@ -54,9 +56,25 @@ class MainViewController: UIViewController {
     }
 
     private func setMeditationViews(with meditation: DailyMeditation) {
-        beforeNoonMeditation.configure(headerTitle: "Delelotti sorozat", date: meditation.date, meditation: meditation.beforeNoon)
-        afternoonMeditation.configure(headerTitle: "Delutani sorozat", date: meditation.date, meditation: meditation.afterNoon)
+        beforeNoonMeditation.configure(headerTitle: "Délelőtti Sorozat", date: meditation.date, meditation: meditation.beforeNoon)
+        afternoonMeditation.configure(headerTitle: "Délutáni Sorozat", date: meditation.date, meditation: meditation.afterNoon)
 
+        if meditation.bibliaora.isEmpty == false {
+            let view = BibliaoraView()
+            view.configure(with: meditation.bibliaora, boldText: "Bibliaóra")
+            meditationsStackView.addArrangedSubview(view)
+        } else {
+            meditationsStackView.arrangedSubviews.forEach { (view) in
+                guard view is BibliaoraView else {return}
+                view.removeFromSuperview()
+            }
+        }
+
+        if meditation.imaora.isEmpty == false {
+            let view = BibliaoraView()
+            view.configure(with: meditation.imaora, boldText: "Imaáhítat")
+            meditationsStackView.addArrangedSubview(view)
+        }
     }
 
     private func addNavBarButtons() {
@@ -68,9 +86,30 @@ class MainViewController: UIViewController {
         self.navigationItem.rightBarButtonItems = [calendar]
     }
 
+    private func addPanGestures() {
+        let leftPan = UISwipeGestureRecognizer(target: self, action: #selector(nextDay))
+        leftPan.direction = .left
+        meditationsStackView.addGestureRecognizer(leftPan)
+
+        let rightPan = UISwipeGestureRecognizer(target: self, action: #selector(previousDay))
+        rightPan.direction = .right
+        meditationsStackView.addGestureRecognizer(rightPan)
+    }
+
     @objc private func openSideMenu() {
         present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
-//        dismiss(animated: true, completion: nil)
+    }
+
+    @objc private func nextDay() {
+        guard meditations.last != currentMeditaion else {return}
+        let dayInSeconds: TimeInterval = 3600 * 24
+        didSelect(date: (currentMeditaion?.date ?? Date()).addingTimeInterval(dayInSeconds))
+    }
+
+    @objc private func previousDay() {
+        guard meditations.first != currentMeditaion else {return}
+        let dayInSeconds: TimeInterval = 3600 * 24
+        didSelect(date: (currentMeditaion?.date ?? Date()).addingTimeInterval(-dayInSeconds))
     }
 
     @objc private func toggleCalendar() {

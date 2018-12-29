@@ -22,6 +22,9 @@
 		0F30FE8D21D7887600FE6481 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE8B21D7887600FE6481 /* SF-Pro-Display-Semibold.otf */; };
 		0F30FE8E21D7887600FE6481 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE8C21D7887600FE6481 /* SF-Pro-Display-Regular.otf */; };
 		0F30FE9121D78CB800FE6481 /* Ahitat + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9021D78CB800FE6481 /* Ahitat + String.swift */; };
+		0F30FE9321D825D400FE6481 /* BibliaoraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9221D825D400FE6481 /* BibliaoraView.swift */; };
+		0F30FE9521D825DD00FE6481 /* BibliaoraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */; };
+		0F30FE9721D82A4400FE6481 /* devotional2017.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */; };
 		0F3214B321D4C40700ED72DF /* Ahitat + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3214B221D4C40700ED72DF /* Ahitat + Date.swift */; };
 		0F3214B621D4D82600ED72DF /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3214B421D4D82600ED72DF /* DayCollectionViewCell.swift */; };
 		0F3214B721D4D82600ED72DF /* DayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3214B521D4D82600ED72DF /* DayCollectionViewCell.xib */; };
@@ -35,7 +38,6 @@
 		0F3B5DD2214C521E00B93F54 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DD0214C521E00B93F54 /* MenuViewController.swift */; };
 		0F3B5DD3214C521E00B93F54 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */; };
 		0F3B5DD5214CFD7000B93F54 /* Ahitat + UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DD4214CFD7000B93F54 /* Ahitat + UINavigationController.swift */; };
-		0F3B5DD7214D0A5000B93F54 /* devotional2017.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B5DD6214D0A4F00B93F54 /* devotional2017.sqlite */; };
 		0F3B5DDB214D0C6700B93F54 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDA214D0C6700B93F54 /* DatabaseHandler.swift */; };
 		0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDD214D0D2F00B93F54 /* Meditation.swift */; };
 		0F3B5DE0214E890E00B93F54 /* DailyMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */; };
@@ -77,6 +79,9 @@
 		0F30FE8B21D7887600FE6481 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		0F30FE8C21D7887600FE6481 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		0F30FE9021D78CB800FE6481 /* Ahitat + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + String.swift"; sourceTree = "<group>"; };
+		0F30FE9221D825D400FE6481 /* BibliaoraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliaoraView.swift; sourceTree = "<group>"; };
+		0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliaoraView.xib; sourceTree = "<group>"; };
+		0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2017.sqlite; sourceTree = "<group>"; };
 		0F3214B221D4C40700ED72DF /* Ahitat + Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + Date.swift"; sourceTree = "<group>"; };
 		0F3214B421D4D82600ED72DF /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F3214B521D4D82600ED72DF /* DayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -96,7 +101,6 @@
 		0F3B5DD0214C521E00B93F54 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		0F3B5DD4214CFD7000B93F54 /* Ahitat + UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UINavigationController.swift"; sourceTree = "<group>"; };
-		0F3B5DD6214D0A4F00B93F54 /* devotional2017.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2017.sqlite; sourceTree = "<group>"; };
 		0F3B5DDA214D0C6700B93F54 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		0F3B5DDD214D0D2F00B93F54 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMeditation.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				0F3214B521D4D82600ED72DF /* DayCollectionViewCell.xib */,
 				0F30FE8521D64B7800FE6481 /* MeditationView.swift */,
 				0F30FE8721D64B8500FE6481 /* MeditationView.xib */,
+				0F30FE9221D825D400FE6481 /* BibliaoraView.swift */,
+				0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -237,10 +243,10 @@
 		0F3B5DD9214D0C2C00B93F54 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */,
 				0F30FE8921D7881800FE6481 /* SF-Pro-Display-SemiboldItalic.otf */,
 				0F30FE8C21D7887600FE6481 /* SF-Pro-Display-Regular.otf */,
 				0F30FE8B21D7887600FE6481 /* SF-Pro-Display-Semibold.otf */,
-				0F3B5DD6214D0A4F00B93F54 /* devotional2017.sqlite */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -392,13 +398,14 @@
 				0F057E4E21D39B29002559F2 /* CalendarView.xib in Resources */,
 				0F30FE8821D64B8500FE6481 /* MeditationView.xib in Resources */,
 				0F3B5DA7214C435600B93F54 /* LaunchScreen.storyboard in Resources */,
-				0F3B5DD7214D0A5000B93F54 /* devotional2017.sqlite in Resources */,
 				0F30FE8A21D7881800FE6481 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
 				0F057E5421D3A239002559F2 /* Localizable.strings in Resources */,
 				0F3B5DCF214C4F6C00B93F54 /* MainViewController.xib in Resources */,
 				0F3B5DA4214C435600B93F54 /* Assets.xcassets in Resources */,
 				0F3B5DD3214C521E00B93F54 /* MenuViewController.xib in Resources */,
 				0F30FE8D21D7887600FE6481 /* SF-Pro-Display-Semibold.otf in Resources */,
+				0F30FE9521D825DD00FE6481 /* BibliaoraView.xib in Resources */,
+				0F30FE9721D82A4400FE6481 /* devotional2017.sqlite in Resources */,
 				0F30FE8E21D7887600FE6481 /* SF-Pro-Display-Regular.otf in Resources */,
 				0F3214B721D4D82600ED72DF /* DayCollectionViewCell.xib in Resources */,
 			);
@@ -510,6 +517,7 @@
 				0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */,
 				0F3214B321D4C40700ED72DF /* Ahitat + Date.swift in Sources */,
 				0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */,
+				0F30FE9321D825D400FE6481 /* BibliaoraView.swift in Sources */,
 				0F30FE9121D78CB800FE6481 /* Ahitat + String.swift in Sources */,
 				0F30FE8621D64B7800FE6481 /* MeditationView.swift in Sources */,
 				0F057E4C21D39B11002559F2 /* CalendarView.swift in Sources */,

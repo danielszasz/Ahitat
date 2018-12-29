@@ -29,9 +29,13 @@ class DayCollectionViewCell: UICollectionViewCell {
         selectionBackground.isHidden = true
     }
 
-    func configure(date: Date, isSelected: Bool) {
+    func configure(date: Date, isSelected: Bool, isPastToday: Bool) {
         dayLabel.text = date.daySymbol
+        dayLabel.alpha = isPastToday ? 0.5 : 1
+
         dayNumberLabel.text = date.dayNumber
+        dayNumberLabel.alpha = isPastToday ? 0.5 : 1
+
         selectionBackground.layer.cornerRadius = selectionBackground.frame.width/2
         _ = isSelected
             ? configureForSelected()

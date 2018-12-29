@@ -32,4 +32,24 @@ extension UIFont {
     class var georgiaItalic: UIFont {
         return UIFont(name: "Georgia-Italic", size: 16.0)!
     }
+
+    class var georgiaBoldItalic: UIFont {
+        return UIFont(name: "Georgia-BoldItalic", size: 16.0)!
+    }
+
+    class var proDisplaySemiboldItalic: UIFont {
+        return UIFont(name: "SFProDisplay-SemiboldItalic", size: 16.0)!
+    }
+
+    class var proDisplaySemibold: UIFont {
+        return UIFont(name: "SFProDisplay-Semibold", size: 20.0)!
+    }
+
+    class var authorLabel: UIFont {
+        return UIFont(name: "SFProDisplay-Semibold", size: 16.0)!
+    }
+
+    class var proDisplayRegular: UIFont {
+        return UIFont(name: "SFProDisplay-Regular", size: 16.0)!
+    }
 }

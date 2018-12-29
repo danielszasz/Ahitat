@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Ahitat" customModuleProvider="target">
             <connections>
+                <outlet property="afternoonMeditation" destination="O0G-CR-C9s" id="jFd-1Q-3hV"/>
+                <outlet property="beforeNoonMeditation" destination="BBe-1i-F1h" id="H8d-0d-0wg"/>
                 <outlet property="calendarView" destination="AgY-mw-LO6" id="FOj-bZ-MEN"/>
                 <outlet property="stackView" destination="Dgs-rK-1DH" id="P2a-7Z-RI9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -23,10 +25,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dgs-rK-1DH">
-                    <rect key="frame" x="0.0" y="20" width="375" height="0.0"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="547"/>
                     <subviews>
-                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgY-mw-LO6" customClass="CalendarView" customModule="Ahitat" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgY-mw-LO6" customClass="CalendarView" customModule="Ahitat" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" priority="1" constant="50" id="OHE-eT-eJB"/>
@@ -35,11 +37,71 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBL-EQ-9zC">
+                    <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XG7-48-3Ib">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwj-zH-ljW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fpr-Np-7bn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBe-1i-F1h" customClass="MeditationView" customModule="Ahitat" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" priority="2" constant="100" id="R5T-Rg-6ri"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0G-CR-C9s" customClass="MeditationView" customModule="Ahitat" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" priority="2" constant="100" id="t9e-1f-rZG"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="fpr-Np-7bn" secondAttribute="trailing" id="Wgb-Dp-kuf"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fpr-Np-7bn" secondAttribute="bottom" id="bjp-s6-eJn"/>
+                                        <constraint firstItem="fpr-Np-7bn" firstAttribute="leading" secondItem="Uwj-zH-ljW" secondAttribute="leading" id="dJ9-Sg-erf"/>
+                                        <constraint firstItem="fpr-Np-7bn" firstAttribute="top" secondItem="Uwj-zH-ljW" secondAttribute="top" id="jB4-fy-gwo"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Uwj-zH-ljW" firstAttribute="top" secondItem="XG7-48-3Ib" secondAttribute="top" id="HTg-hF-g14"/>
+                                <constraint firstAttribute="trailing" secondItem="Uwj-zH-ljW" secondAttribute="trailing" id="LGf-XZ-yu8"/>
+                                <constraint firstItem="Uwj-zH-ljW" firstAttribute="height" secondItem="XG7-48-3Ib" secondAttribute="height" priority="1" id="SCP-Vm-a3a"/>
+                                <constraint firstItem="Uwj-zH-ljW" firstAttribute="leading" secondItem="XG7-48-3Ib" secondAttribute="leading" id="bUt-sX-mYk"/>
+                                <constraint firstAttribute="bottom" secondItem="Uwj-zH-ljW" secondAttribute="bottom" id="gec-Oj-jga"/>
+                                <constraint firstItem="Uwj-zH-ljW" firstAttribute="width" secondItem="XG7-48-3Ib" secondAttribute="width" id="vqa-zO-1l3"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="XG7-48-3Ib" firstAttribute="top" secondItem="KBL-EQ-9zC" secondAttribute="top" id="MJN-9e-XsJ"/>
+                        <constraint firstAttribute="trailing" secondItem="XG7-48-3Ib" secondAttribute="trailing" id="fRi-oY-YYf"/>
+                        <constraint firstAttribute="bottom" secondItem="XG7-48-3Ib" secondAttribute="bottom" id="wnP-qb-mkc"/>
+                        <constraint firstItem="XG7-48-3Ib" firstAttribute="leading" secondItem="KBL-EQ-9zC" secondAttribute="leading" id="yQH-d3-SDB"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" red="0.078531064090000005" green="0.76422470809999998" blue="0.6342460513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Dgs-rK-1DH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0K2-04-Thp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dgs-rK-1DH" secondAttribute="trailing" id="7eX-0l-pr9"/>
+                <constraint firstAttribute="bottom" secondItem="KBL-EQ-9zC" secondAttribute="bottom" id="ask-TD-6bp"/>
+                <constraint firstItem="KBL-EQ-9zC" firstAttribute="top" secondItem="Dgs-rK-1DH" secondAttribute="bottom" id="flA-47-dtx"/>
+                <constraint firstAttribute="trailing" secondItem="KBL-EQ-9zC" secondAttribute="trailing" id="jSg-Q8-fTn"/>
+                <constraint firstItem="KBL-EQ-9zC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rXZ-8e-otu"/>
                 <constraint firstItem="Dgs-rK-1DH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wQn-Hm-kpN"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

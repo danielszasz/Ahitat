@@ -12,11 +12,15 @@ import SideMenu
 class MainViewController: UIViewController {
     @IBOutlet private weak var calendarView: CalendarView!
     @IBOutlet private weak var stackView: UIStackView!
-
+    @IBOutlet weak var beforeNoonMeditation: MeditationView!
+    @IBOutlet weak var afternoonMeditation: MeditationView!
+    
     private var meditations: [DailyMeditation] = []
     private var currentMeditaion: DailyMeditation? {
         didSet {
-            calendarView.select(date: currentMeditaion?.date ?? Date())
+            guard let med = currentMeditaion else {return}
+            calendarView.select(date: med.date)
+            setMeditationViews(with: med)
         }
     }
     
@@ -49,6 +53,12 @@ class MainViewController: UIViewController {
         SideMenuManager.default.menuAnimationFadeStrength = 0.4
     }
 
+    private func setMeditationViews(with meditation: DailyMeditation) {
+        beforeNoonMeditation.configure(headerTitle: "Delelotti sorozat", date: meditation.date, meditation: meditation.beforeNoon)
+        afternoonMeditation.configure(headerTitle: "Delutani sorozat", date: meditation.date, meditation: meditation.afterNoon)
+
+    }
+
     private func addNavBarButtons() {
 
         let hamburger = UIBarButtonItem(image: #imageLiteral(resourceName: "iconHamburgerMenu"), style: .plain, target: self, action: #selector(openSideMenu))
@@ -66,13 +76,19 @@ class MainViewController: UIViewController {
     @objc private func toggleCalendar() {
         //when appearing we need it before animation
         if calendarView.isHidden {
-            calendarView.isHidden = false
+            self.hideCalendarViewAnimated(false)
         }
             UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlUp, animations: {
             self.stackView.alpha = self.stackView.alpha == 0 ? 1 : 0
         }, completion: { _ in
-            guard self.calendarView.isHidden  else {return}
-                self.calendarView.isHidden = false
+            guard self.stackView.alpha == 0 else {return}
+            self.hideCalendarViewAnimated(true)
+        })
+    }
+
+    private func hideCalendarViewAnimated(_ value: Bool) {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.calendarView.isHidden = value
         })
     }
 }

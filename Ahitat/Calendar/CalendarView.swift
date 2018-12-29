@@ -39,12 +39,14 @@ class CalendarView: CustomView {
         leftButton.titleLabel?.font = UIFont.systemFontLight
         leftButton.setTitleColor(.slateTwo, for: .normal)
         leftButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+        leftButton.addTarget(self, action: #selector(goToPreviousMonth), for: .touchUpInside)
 
         rightButton.setImage(#imageLiteral(resourceName: "iconForwardChevron.png"), for: .normal)
         rightButton.titleLabel?.font = UIFont.systemFontLight
         rightButton.semanticContentAttribute = .forceRightToLeft
         rightButton.setTitleColor(.slateTwo, for: .normal)
         rightButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+        rightButton.addTarget(self, action: #selector(goToNextMonth), for: .touchUpInside)
 
         currentMonthLabel.textColor = UIColor.slate
         currentMonthLabel.font = UIFont.systemFontSemibold
@@ -60,16 +62,18 @@ class CalendarView: CustomView {
     }
 
     private func scroll(to date: Date) {
-        calendarCollectionView.reloadData()
-
         guard let index = dates.firstIndex(where: { (element) -> Bool in
             return element.isSameDay(with: date)
         }) else {return}
 
+
+
         let indexPath = IndexPath(item: index, section: 0)
         calendarCollectionView.performBatchUpdates({
+            calendarCollectionView.reloadSections(IndexSet(integer: 0))
+        }, completion: { _ in
             self.calendarCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-        }, completion: { _ in})
+        })
     }
 
     private func reloadView() {
@@ -78,9 +82,22 @@ class CalendarView: CustomView {
         currentMonthLabel.text = selectedDate.currentMonth
     }
 
+    @objc private func goToPreviousMonth() {
+        delegate?.didSelect(date: selectedDate.previousMonth)
+    }
+
+    @objc private func goToNextMonth() {
+        delegate?.didSelect(date: selectedDate.nextMonth)
+    }
+
     private func reloadMonths(with date: Date) {
-        leftButton.setTitle(date.previousMonth, for: .normal)
-        rightButton.setTitle(date.nextMonth, for: .normal)
+        guard let firstDate = dates.first,
+            let lastDate = dates.last else {return}
+
+        rightButton.isHidden = lastDate.isSameMonth(with: date)
+        leftButton.isHidden = firstDate.isSameMonth(with: date)
+        leftButton.setTitle(date.previousMonthString, for: .normal)
+        rightButton.setTitle(date.nextMonthString, for: .normal)
         currentMonthLabel.text = date.currentMonth
     }
 
@@ -108,7 +125,7 @@ extension CalendarView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DayCollectionViewCell", for: indexPath) as! DayCollectionViewCell
         let model = dates[indexPath.item]
-        cell.configure(date: model, isSelected: model.isSameDay(with: selectedDate))
+        cell.configure(date: model, isSelected: model.isSameDay(with: selectedDate), isPastToday: model > Date())
 
         return cell
     }

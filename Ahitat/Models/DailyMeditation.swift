@@ -13,10 +13,14 @@ struct DailyMeditation: Decodable {
     let date: Date
     let beforeNoon: Meditation
     let afterNoon: Meditation
+    let bibliaora: String
+    let imaora: String
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decode(Int.self, forKey: .id)
+        bibliaora = try values.decode(String.self, forKey: .bibliaora)
+        imaora = try values.decode(String.self, forKey: .imaora)
 
         let stringDate = try values.decode(String.self, forKey: .datum)
         let dateFormatter = DateFormatter()
@@ -60,6 +64,8 @@ extension DailyMeditation {
         case du_szoveg
         case du_ige
         case du_szerzo
+        case bibliaora
+        case imaora
 
     }
 }

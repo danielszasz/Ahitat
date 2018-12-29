@@ -36,18 +36,24 @@ extension Date {
         return formatter
     }
     
-    var previousMonth: String {
-        let nextMonth = Calendar.current.date(byAdding: .month, value: -1, to: self) ?? Date()
+    var previousMonthString: String {
         let formatter = dateFormatter
         formatter.dateFormat = "MMMM"
-        return formatter.string(from: nextMonth).capitalized
+        return formatter.string(from: self.previousMonth).capitalized
     }
 
-    var nextMonth: String {
-        let nextMonth = Calendar.current.date(byAdding: .month, value: 1, to: self) ?? Date()
+    var previousMonth: Date {
+        return Calendar.current.date(byAdding: .month, value: -1, to: self) ?? Date()
+    }
+
+    var nextMonth: Date {
+        return Calendar.current.date(byAdding: .month, value: 1, to: self) ?? Date()
+    }
+
+    var nextMonthString: String {
         let formatter = dateFormatter
         formatter.dateFormat = "MMMM"
-        return formatter.string(from: nextMonth).capitalized
+        return formatter.string(from: self.nextMonth).capitalized
     }
 
     var currentMonth: String {

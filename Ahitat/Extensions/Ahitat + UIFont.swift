@@ -45,11 +45,19 @@ extension UIFont {
         return UIFont(name: "SFProDisplay-Semibold", size: 20.0)!
     }
 
+    class var menuTitleLabel: UIFont {
+        return UIFont(name: "SFProDisplay-Semibold", size: 26.0)!
+    }
+
     class var authorLabel: UIFont {
         return UIFont(name: "SFProDisplay-Semibold", size: 16.0)!
     }
 
     class var proDisplayRegular: UIFont {
         return UIFont(name: "SFProDisplay-Regular", size: 16.0)!
+    }
+
+    class var versionFont: UIFont {
+        return UIFont(name: "SFProDisplay-Regular", size: 12.0)!
     }
 }

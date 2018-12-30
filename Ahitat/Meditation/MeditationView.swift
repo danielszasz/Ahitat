@@ -18,6 +18,8 @@ class MeditationView: CustomView {
     @IBOutlet weak var versesLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+
+    private var share: () -> Void = {}
     
     override func configureUI() {
         headerView.backgroundColor = .iceBlue
@@ -37,15 +39,22 @@ class MeditationView: CustomView {
         
         authorLabel.textColor = .slateTwo
         authorLabel.font = UIFont.authorLabel
+
+        shareButton.addTarget(self, action: #selector(shareButtonPressed), for: .touchUpInside)
+        shareButton.isExclusiveTouch = true
     }
     
-    func configure(headerTitle: String, date: Date, meditation: Meditation) {
+    func configure(headerTitle: String, date: Date, meditation: Meditation, share: @escaping @autoclosure () -> Void) {
         headerTitleLabel.text = headerTitle
         dateLabel.text = date.longDate
         titleLabel.text = meditation.title
         versesLabel.attributedText = meditation.verse.getVersesAttributedText(boldedTexts: "Igehely", "Kulcsige")
         contentLabel.text = meditation.meditation.htmlToString
         authorLabel.text = meditation.author
+        self.share = share
     }
 
+    @objc private func shareButtonPressed() {
+        share()
+    }
 }

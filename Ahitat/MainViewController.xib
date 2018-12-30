@@ -39,10 +39,10 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBL-EQ-9zC">
-                    <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                    <rect key="frame" x="0.0" y="577" width="375" height="90"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XG7-48-3Ib">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwj-zH-ljW">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -100,7 +100,7 @@
                 <constraint firstItem="Dgs-rK-1DH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0K2-04-Thp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dgs-rK-1DH" secondAttribute="trailing" id="7eX-0l-pr9"/>
                 <constraint firstAttribute="bottom" secondItem="KBL-EQ-9zC" secondAttribute="bottom" id="ask-TD-6bp"/>
-                <constraint firstItem="KBL-EQ-9zC" firstAttribute="top" secondItem="Dgs-rK-1DH" secondAttribute="bottom" id="flA-47-dtx"/>
+                <constraint firstItem="KBL-EQ-9zC" firstAttribute="top" secondItem="Dgs-rK-1DH" secondAttribute="bottom" constant="10" id="flA-47-dtx"/>
                 <constraint firstAttribute="trailing" secondItem="KBL-EQ-9zC" secondAttribute="trailing" id="jSg-Q8-fTn"/>
                 <constraint firstItem="KBL-EQ-9zC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rXZ-8e-otu"/>
                 <constraint firstItem="Dgs-rK-1DH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wQn-Hm-kpN"/>

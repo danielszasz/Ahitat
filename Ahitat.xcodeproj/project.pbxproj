@@ -25,6 +25,8 @@
 		0F30FE9321D825D400FE6481 /* BibliaoraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9221D825D400FE6481 /* BibliaoraView.swift */; };
 		0F30FE9521D825DD00FE6481 /* BibliaoraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */; };
 		0F30FE9721D82A4400FE6481 /* devotional2017.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */; };
+		0F30FE9A21D9109200FE6481 /* AddToFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9921D9109200FE6481 /* AddToFavorites.swift */; };
+		0F30FE9C21D915B400FE6481 /* Ahitat + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */; };
 		0F3214B321D4C40700ED72DF /* Ahitat + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3214B221D4C40700ED72DF /* Ahitat + Date.swift */; };
 		0F3214B621D4D82600ED72DF /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3214B421D4D82600ED72DF /* DayCollectionViewCell.swift */; };
 		0F3214B721D4D82600ED72DF /* DayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3214B521D4D82600ED72DF /* DayCollectionViewCell.xib */; };
@@ -82,6 +84,8 @@
 		0F30FE9221D825D400FE6481 /* BibliaoraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliaoraView.swift; sourceTree = "<group>"; };
 		0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliaoraView.xib; sourceTree = "<group>"; };
 		0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2017.sqlite; sourceTree = "<group>"; };
+		0F30FE9921D9109200FE6481 /* AddToFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToFavorites.swift; sourceTree = "<group>"; };
+		0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UIView.swift"; sourceTree = "<group>"; };
 		0F3214B221D4C40700ED72DF /* Ahitat + Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + Date.swift"; sourceTree = "<group>"; };
 		0F3214B421D4D82600ED72DF /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F3214B521D4D82600ED72DF /* DayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -148,8 +152,20 @@
 				0F057E4F21D39BB2002559F2 /* Box.swift */,
 				0F057E4821D39ACF002559F2 /* CustomView.swift */,
 				0F057E5B21D4A93C002559F2 /* AhitatButton.swift */,
+				0F30FE9921D9109200FE6481 /* AddToFavorites.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		0F30FE9821D9106F00FE6481 /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				0F30FE9221D825D400FE6481 /* BibliaoraView.swift */,
+				0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */,
+				0F30FE8521D64B7800FE6481 /* MeditationView.swift */,
+				0F30FE8721D64B8500FE6481 /* MeditationView.xib */,
+			);
+			path = Meditation;
 			sourceTree = "<group>";
 		};
 		0F3214B121D4C3EA00ED72DF /* Calendar */ = {
@@ -159,10 +175,6 @@
 				0F057E4D21D39B29002559F2 /* CalendarView.xib */,
 				0F3214B421D4D82600ED72DF /* DayCollectionViewCell.swift */,
 				0F3214B521D4D82600ED72DF /* DayCollectionViewCell.xib */,
-				0F30FE8521D64B7800FE6481 /* MeditationView.swift */,
-				0F30FE8721D64B8500FE6481 /* MeditationView.xib */,
-				0F30FE9221D825D400FE6481 /* BibliaoraView.swift */,
-				0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -203,6 +215,7 @@
 				0F3B5DA8214C435600B93F54 /* Info.plist */,
 				0F3B5DD0214C521E00B93F54 /* MenuViewController.swift */,
 				0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */,
+				0F30FE9821D9106F00FE6481 /* Meditation */,
 				0F3214B121D4C3EA00ED72DF /* Calendar */,
 				0F3B5DD8214D0C2200B93F54 /* Extensions */,
 				0F3B5DDC214D0C8B00B93F54 /* Models */,
@@ -236,6 +249,7 @@
 				0F057E5721D3A498002559F2 /* Ahitat + UIColor.swift */,
 				0F30FE9021D78CB800FE6481 /* Ahitat + String.swift */,
 				0F057E5921D3A4CC002559F2 /* Ahitat + UIFont.swift */,
+				0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -515,10 +529,12 @@
 				0F057E5A21D3A4CC002559F2 /* Ahitat + UIFont.swift in Sources */,
 				0F057E5C21D4A93C002559F2 /* AhitatButton.swift in Sources */,
 				0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */,
+				0F30FE9A21D9109200FE6481 /* AddToFavorites.swift in Sources */,
 				0F3214B321D4C40700ED72DF /* Ahitat + Date.swift in Sources */,
 				0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */,
 				0F30FE9321D825D400FE6481 /* BibliaoraView.swift in Sources */,
 				0F30FE9121D78CB800FE6481 /* Ahitat + String.swift in Sources */,
+				0F30FE9C21D915B400FE6481 /* Ahitat + UIView.swift in Sources */,
 				0F30FE8621D64B7800FE6481 /* MeditationView.swift in Sources */,
 				0F057E4C21D39B11002559F2 /* CalendarView.swift in Sources */,
 				0F3B5DE0214E890E00B93F54 /* DailyMeditation.swift in Sources */,
@@ -703,8 +719,8 @@
 			baseConfigurationReference = FB0D583666858D87A4597266 /* Pods-Ahitat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WKC3H7A7ZG;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ahitat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -712,6 +728,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -722,8 +739,8 @@
 			baseConfigurationReference = 353D3B72D34834E3F82CE665 /* Pods-Ahitat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WKC3H7A7ZG;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ahitat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -731,6 +748,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

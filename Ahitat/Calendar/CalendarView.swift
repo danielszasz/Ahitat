@@ -24,11 +24,12 @@ class CalendarView: CustomView {
     private weak var delegate: CalendarViewDelegate?
 
     private var dates: [Date] = []
+    private var manuallySelectingDate: Bool = false
 
     private var selectedDate: Date = Date() {
         didSet {
-            scroll(to: selectedDate)
             reloadView()
+            scroll(to: selectedDate)
         }
     }
 
@@ -66,8 +67,6 @@ class CalendarView: CustomView {
             return element.isSameDay(with: date)
         }) else {return}
 
-
-
         let indexPath = IndexPath(item: index, section: 0)
         calendarCollectionView.performBatchUpdates({
             calendarCollectionView.reloadSections(IndexSet(integer: 0))
@@ -80,6 +79,7 @@ class CalendarView: CustomView {
         reloadMonths(with: selectedDate)
         currentDayLabel.text = selectedDate.longDate
         currentMonthLabel.text = selectedDate.currentMonth
+        manuallySelectingDate = true
     }
 
     @objc private func goToPreviousMonth() {
@@ -136,7 +136,12 @@ extension CalendarView: UICollectionViewDelegate {
         delegate?.didSelect(date: dates[indexPath.item])
     }
 
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        manuallySelectingDate = false
+    }
+
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard manuallySelectingDate == false else {return}
         let visibleCellsIndexPath = collectionView.indexPathsForVisibleItems
         let firstIndex = visibleCellsIndexPath.first?.item ?? 0
         let lastIndex = visibleCellsIndexPath.last?.item ?? 0

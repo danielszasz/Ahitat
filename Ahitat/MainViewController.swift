@@ -41,6 +41,7 @@ class MainViewController: UIViewController {
 
         meditations = DatabaseHandler().getMeditations()
         calendarView.configure(dates: meditations.map({$0.date}), delegate: self)
+        calendarView.addShadow()
         didSelect(date: Date())
     }
 
@@ -51,13 +52,13 @@ class MainViewController: UIViewController {
         SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
         SideMenuManager.default.menuFadeStatusBar = false
         SideMenuManager.default.menuPresentMode = .menuSlideIn
-        SideMenuManager.default.menuWidth = UIScreen.main.bounds.width * 0.70
+        SideMenuManager.default.menuWidth = UIScreen.main.bounds.width * 0.56
         SideMenuManager.default.menuAnimationFadeStrength = 0.4
     }
 
     private func setMeditationViews(with meditation: DailyMeditation) {
-        beforeNoonMeditation.configure(headerTitle: "Délelőtti Sorozat", date: meditation.date, meditation: meditation.beforeNoon)
-        afternoonMeditation.configure(headerTitle: "Délutáni Sorozat", date: meditation.date, meditation: meditation.afterNoon)
+        beforeNoonMeditation.configure(headerTitle: "Délelőtti Sorozat", date: meditation.date, meditation: meditation.beforeNoon, share: self.share(meditation: self.currentMeditaion?.beforeNoon))
+        afternoonMeditation.configure(headerTitle: "Délutáni Sorozat", date: meditation.date, meditation: meditation.afterNoon, share: self.share(meditation: self.currentMeditaion?.afterNoon))
 
         if meditation.bibliaora.isEmpty == false {
             let view = BibliaoraView()
@@ -129,6 +130,21 @@ class MainViewController: UIViewController {
         UIView.animate(withDuration: 0.2, animations: {
             self.calendarView.isHidden = value
         })
+    }
+
+    private func share(meditation: Meditation?) {
+        guard let meditation = meditation else {return}
+        let appActivities = [AddToFavorites()]
+        let controller = UIActivityViewController(activityItems: [meditation.meditation], applicationActivities: appActivities)
+        controller.completionWithItemsHandler = { [weak self] type, completed, _, error in
+            guard type?.rawValue == "addToFavorites" else {return}
+            self?.addToFavorites()
+        }
+        self.navigationController?.present(controller, animated: true, completion: nil)
+    }
+
+    private func addToFavorites() {
+
     }
 }
 

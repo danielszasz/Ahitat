@@ -10,15 +10,20 @@ import UIKit
 
 class FavoritesTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        titleLabel.font = UIFont.authorLabel
+        titleLabel.textColor = .slateTwo
 
+        dateLabel.font = UIFont.georgiaItalic
+        dateLabel.textColor = .slateTwo
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configure(model: FavoriteModel) {
+        titleLabel.text = model.title
+        dateLabel.text = model.date.longDate
     }
-    
 }

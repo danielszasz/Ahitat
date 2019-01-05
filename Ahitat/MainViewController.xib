@@ -16,6 +16,7 @@
                 <outlet property="beforeNoonMeditation" destination="BBe-1i-F1h" id="H8d-0d-0wg"/>
                 <outlet property="calendarView" destination="AgY-mw-LO6" id="FOj-bZ-MEN"/>
                 <outlet property="meditationsStackView" destination="fpr-Np-7bn" id="dBS-eR-4pK"/>
+                <outlet property="scrollView" destination="XG7-48-3Ib" id="f4z-sV-KNl"/>
                 <outlet property="stackView" destination="Dgs-rK-1DH" id="P2a-7Z-RI9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

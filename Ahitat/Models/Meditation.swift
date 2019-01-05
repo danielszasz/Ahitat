@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Meditation {
+struct Meditation: Equatable {
     let title: String
     let verse: String
     let meditation: String

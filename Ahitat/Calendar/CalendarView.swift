@@ -19,7 +19,10 @@ class CalendarView: CustomView {
     @IBOutlet private weak var currentMonthLabel: UILabel!
     @IBOutlet private weak var calendarCollectionView: UICollectionView!
     @IBOutlet private weak var currentDayLabel: UILabel!
+    @IBOutlet private weak var currentDayContainerView: UIView!
     @IBOutlet private weak var collectionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var todayLabel: UILabel!
+    @IBOutlet private weak var todayContainerView: UIView!
 
     private weak var delegate: CalendarViewDelegate?
 
@@ -54,12 +57,28 @@ class CalendarView: CustomView {
 
         currentDayLabel.textColor = .slate
         currentDayLabel.font = UIFont.georgiaItalic
+        currentDayContainerView.backgroundColor = .iceBlue
+
+        configureToday()
 
         calendarCollectionView.dataSource = self
         calendarCollectionView.delegate = self
 
         let nib = UINib.init(nibName: "DayCollectionViewCell", bundle: nil)
         calendarCollectionView.register(nib, forCellWithReuseIdentifier: "DayCollectionViewCell")
+    }
+
+    private func configureToday() {
+        todayLabel.textColor = .slate
+        todayLabel.font = UIFont.systemFontSemibold.withSize(12)
+        todayLabel.text = "Mai Áhitat"
+        todayContainerView.backgroundColor = .greyblue50
+        let tap = UITapGestureRecognizer(target: self, action: #selector(returnToToday))
+        todayContainerView.addGestureRecognizer(tap)
+    }
+
+    @objc private func returnToToday() {
+        delegate?.didSelect(date: Date())
     }
 
     private func scroll(to date: Date) {

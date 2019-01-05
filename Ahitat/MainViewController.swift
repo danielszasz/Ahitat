@@ -9,12 +9,17 @@
 import UIKit
 import SideMenu
 
+protocol MainDelegate: class {
+    func openMeditation(with date: Date, isAfterNoon: Bool)
+}
+
 class MainViewController: UIViewController {
     @IBOutlet private weak var calendarView: CalendarView!
     @IBOutlet private weak var stackView: UIStackView!
-    @IBOutlet weak var beforeNoonMeditation: MeditationView!
-    @IBOutlet weak var afternoonMeditation: MeditationView!
-    @IBOutlet weak var meditationsStackView: UIStackView!
+    @IBOutlet private weak var beforeNoonMeditation: MeditationView!
+    @IBOutlet private weak var afternoonMeditation: MeditationView!
+    @IBOutlet private weak var meditationsStackView: UIStackView!
+    @IBOutlet private weak var scrollView: UIScrollView!
 
     private var meditations: [DailyMeditation] = []
     private var currentMeditaion: DailyMeditation? {
@@ -24,7 +29,7 @@ class MainViewController: UIViewController {
             setMeditationViews(with: med)
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,9 +40,7 @@ class MainViewController: UIViewController {
         configureSideMenu()
         addNavBarButtons()
         addPanGestures()
-
-        self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "bgHeader"), for: .topAttached, barMetrics: .default)
-        self.navigationController?.navigationBar.tintColor = .white
+        configureNavigationBar()
 
         meditations = DatabaseHandler().getMeditations()
         calendarView.configure(dates: meditations.map({$0.date}), delegate: self)
@@ -47,13 +50,21 @@ class MainViewController: UIViewController {
 
     private func configureSideMenu() {
         // Define the menus
-        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: MenuViewController())
+        let vc = MenuViewController(delegate: self)
+        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: vc)
 
         SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
         SideMenuManager.default.menuFadeStatusBar = false
         SideMenuManager.default.menuPresentMode = .menuSlideIn
         SideMenuManager.default.menuWidth = UIScreen.main.bounds.width * 0.56
         SideMenuManager.default.menuAnimationFadeStrength = 0.4
+    }
+
+    private func configureNavigationBar() {
+        self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "bgHeader"), for: .topAttached, barMetrics: .default)
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        self.navigationItem.title = "Napi Áhitatok"
     }
 
     private func setMeditationViews(with meditation: DailyMeditation) {
@@ -63,7 +74,7 @@ class MainViewController: UIViewController {
         if meditation.bibliaora.isEmpty == false {
             let view = BibliaoraView()
             view.configure(with: meditation.bibliaora, boldText: "Bibliaóra")
-            meditationsStackView.addArrangedSubview(view)
+            meditationsStackView.insertArrangedSubview(view, at: 1)
         } else {
             meditationsStackView.arrangedSubviews.forEach { (view) in
                 guard view is BibliaoraView else {return}
@@ -74,7 +85,7 @@ class MainViewController: UIViewController {
         if meditation.imaora.isEmpty == false {
             let view = BibliaoraView()
             view.configure(with: meditation.imaora, boldText: "Imaáhítat")
-            meditationsStackView.addArrangedSubview(view)
+            meditationsStackView.insertArrangedSubview(view, at: 2)
         }
     }
 
@@ -138,13 +149,15 @@ class MainViewController: UIViewController {
         let controller = UIActivityViewController(activityItems: [meditation.meditation], applicationActivities: appActivities)
         controller.completionWithItemsHandler = { [weak self] type, completed, _, error in
             guard type?.rawValue == "addToFavorites" else {return}
-            self?.addToFavorites()
+            self?.addToFavorites(meditation)
         }
         self.navigationController?.present(controller, animated: true, completion: nil)
     }
 
-    private func addToFavorites() {
-
+    private func addToFavorites(_ meditation: Meditation) {
+        guard let currentMeditation = currentMeditaion else {return}
+        let model = FavoriteModel.init(author: meditation.author, date: currentMeditation.date, title: meditation.title, isAfternoon: meditation == currentMeditation.afterNoon)
+        AhitatUserDefaults().add(model: model)
     }
 }
 
@@ -152,5 +165,14 @@ extension MainViewController: CalendarViewDelegate {
     func didSelect(date: Date) {
         print(#function)
         currentMeditaion = meditations.filter({$0.date.isSameDay(with: date)}).first
+    }
+}
+
+extension MainViewController: MainDelegate {
+    func openMeditation(with date: Date, isAfterNoon: Bool) {
+        didSelect(date: date)
+        let rect = isAfterNoon ? afternoonMeditation.frame : beforeNoonMeditation.frame
+
+        scrollView.scrollRectToVisible(rect, animated: true)
     }
 }

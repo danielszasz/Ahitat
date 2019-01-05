@@ -15,8 +15,19 @@ class MenuViewController: UIViewController {
     @IBOutlet private weak var separatorView: UIView!
     @IBOutlet private weak var tableView: UITableView!
 
+    private weak var delegate: MainDelegate?
+
     private var models: [MenuTableViewCell.ViewModel] = []
 
+    init(delegate: MainDelegate) {
+        self.delegate = delegate
+        super.init(nibName: "MenuViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -63,11 +74,16 @@ extension MenuViewController: UITableViewDelegate {
     }
 
     private func openBibleLink() {
-
+        let uri = "http://www.abibliamindenkie.hu"
+        guard let url = URL(string: uri),
+            UIApplication.shared.canOpenURL(url) else {return}
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 
     private func openFavorites() {
-
+        guard let delegate = delegate else {return}
+        let vc = FavoritesTableViewController(delegate: delegate)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

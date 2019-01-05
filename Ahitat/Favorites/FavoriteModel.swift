@@ -8,8 +8,13 @@
 
 import Foundation
 
-struct FavoriteModel: Codable {
+struct FavoriteModel: Equatable {
     let author: String
     let date: Date
     let title: String
+    let isAfternoon: Bool
+}
+
+extension FavoriteModel: Codable {
+
 }

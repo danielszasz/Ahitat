@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="Ahitat" customModuleProvider="target">
             <connections>
                 <outlet property="separatorView" destination="4QI-Zm-cTt" id="lH1-en-vVj"/>
+                <outlet property="tableView" destination="HLn-Gq-lkv" id="IxY-PC-cyq"/>
                 <outlet property="titleLabel" destination="lfH-pK-rgx" id="3XM-Lx-LdG"/>
                 <outlet property="versionLabel" destination="sap-3v-FvH" id="5UH-j5-JUu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -42,14 +43,22 @@
                         <constraint firstAttribute="height" constant="1" id="hOa-eV-BGo"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HLn-Gq-lkv">
+                    <rect key="frame" x="0.0" y="99" width="375" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="4QI-Zm-cTt" firstAttribute="top" secondItem="lfH-pK-rgx" secondAttribute="bottom" constant="9" id="2fv-Di-iP4"/>
                 <constraint firstItem="4QI-Zm-cTt" firstAttribute="leading" secondItem="lfH-pK-rgx" secondAttribute="leading" id="5au-ee-cUF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HLn-Gq-lkv" secondAttribute="bottom" id="MJ3-Go-1hP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sap-3v-FvH" secondAttribute="trailing" constant="14" id="Q0F-aN-OLg"/>
                 <constraint firstItem="4QI-Zm-cTt" firstAttribute="trailing" secondItem="sap-3v-FvH" secondAttribute="trailing" id="RhW-bI-Bbd"/>
+                <constraint firstItem="HLn-Gq-lkv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Smg-33-Hfe"/>
                 <constraint firstItem="sap-3v-FvH" firstAttribute="bottom" secondItem="lfH-pK-rgx" secondAttribute="bottom" id="TK6-ei-Rf2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HLn-Gq-lkv" secondAttribute="trailing" id="gsR-kA-FCg"/>
+                <constraint firstItem="HLn-Gq-lkv" firstAttribute="top" secondItem="4QI-Zm-cTt" secondAttribute="bottom" constant="10" id="hP4-G0-zQN"/>
                 <constraint firstItem="lfH-pK-rgx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="hcQ-qk-7Bx"/>
                 <constraint firstItem="sap-3v-FvH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lfH-pK-rgx" secondAttribute="trailing" constant="10" id="ni5-eK-WbY"/>
                 <constraint firstItem="lfH-pK-rgx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="38" id="tYC-7g-x4A"/>

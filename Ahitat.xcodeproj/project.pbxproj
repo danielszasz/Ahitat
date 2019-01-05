@@ -27,6 +27,8 @@
 		0F30FE9721D82A4400FE6481 /* devotional2017.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */; };
 		0F30FE9A21D9109200FE6481 /* AddToFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9921D9109200FE6481 /* AddToFavorites.swift */; };
 		0F30FE9C21D915B400FE6481 /* Ahitat + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */; };
+		0F30FEA021D97BD200FE6481 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9E21D97BD200FE6481 /* MenuTableViewCell.swift */; };
+		0F30FEA121D97BD200FE6481 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE9F21D97BD200FE6481 /* MenuTableViewCell.xib */; };
 		0F3214B321D4C40700ED72DF /* Ahitat + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3214B221D4C40700ED72DF /* Ahitat + Date.swift */; };
 		0F3214B621D4D82600ED72DF /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3214B421D4D82600ED72DF /* DayCollectionViewCell.swift */; };
 		0F3214B721D4D82600ED72DF /* DayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3214B521D4D82600ED72DF /* DayCollectionViewCell.xib */; };
@@ -43,6 +45,12 @@
 		0F3B5DDB214D0C6700B93F54 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDA214D0C6700B93F54 /* DatabaseHandler.swift */; };
 		0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDD214D0D2F00B93F54 /* Meditation.swift */; };
 		0F3B5DE0214E890E00B93F54 /* DailyMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */; };
+		0F98684421DFBD8600BBB03F /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684321DFBD8600BBB03F /* FavoritesTableViewController.swift */; };
+		0F98684721DFBD9A00BBB03F /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684521DFBD9A00BBB03F /* FavoritesTableViewCell.swift */; };
+		0F98684821DFBD9A00BBB03F /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F98684621DFBD9A00BBB03F /* FavoritesTableViewCell.xib */; };
+		0F98684B21DFBDF600BBB03F /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684A21DFBDF600BBB03F /* FavoriteModel.swift */; };
+		0F98684D21E0BC3D00BBB03F /* AhitatUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684C21E0BC3D00BBB03F /* AhitatUserDefaults.swift */; };
+		0F98684F21E0BEAE00BBB03F /* Ahitat + Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684E21E0BEAE00BBB03F /* Ahitat + Encodable.swift */; };
 		1F0AA631C783D9F193475A34 /* Pods_Ahitat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D5B0DE9FCA05A02B352B7E /* Pods_Ahitat.framework */; };
 		1F99FB93D3D1A62090364ED4 /* Pods_AhitatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5D43F57293EFCB77FE1260 /* Pods_AhitatTests.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +94,8 @@
 		0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2017.sqlite; sourceTree = "<group>"; };
 		0F30FE9921D9109200FE6481 /* AddToFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToFavorites.swift; sourceTree = "<group>"; };
 		0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UIView.swift"; sourceTree = "<group>"; };
+		0F30FE9E21D97BD200FE6481 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		0F30FE9F21D97BD200FE6481 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		0F3214B221D4C40700ED72DF /* Ahitat + Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + Date.swift"; sourceTree = "<group>"; };
 		0F3214B421D4D82600ED72DF /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F3214B521D4D82600ED72DF /* DayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -108,6 +118,12 @@
 		0F3B5DDA214D0C6700B93F54 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		0F3B5DDD214D0D2F00B93F54 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMeditation.swift; sourceTree = "<group>"; };
+		0F98684321DFBD8600BBB03F /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		0F98684521DFBD9A00BBB03F /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		0F98684621DFBD9A00BBB03F /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
+		0F98684A21DFBDF600BBB03F /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		0F98684C21E0BC3D00BBB03F /* AhitatUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhitatUserDefaults.swift; sourceTree = "<group>"; };
+		0F98684E21E0BEAE00BBB03F /* Ahitat + Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + Encodable.swift"; sourceTree = "<group>"; };
 		2F5D43F57293EFCB77FE1260 /* Pods_AhitatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhitatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D5302D79E059E9A99A295E /* Pods-AhitatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhitatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		353D3B72D34834E3F82CE665 /* Pods-Ahitat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ahitat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ahitat/Pods-Ahitat.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +169,7 @@
 				0F057E4821D39ACF002559F2 /* CustomView.swift */,
 				0F057E5B21D4A93C002559F2 /* AhitatButton.swift */,
 				0F30FE9921D9109200FE6481 /* AddToFavorites.swift */,
+				0F98684C21E0BC3D00BBB03F /* AhitatUserDefaults.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -166,6 +183,17 @@
 				0F30FE8721D64B8500FE6481 /* MeditationView.xib */,
 			);
 			path = Meditation;
+			sourceTree = "<group>";
+		};
+		0F30FE9D21D97BB400FE6481 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0F3B5DD0214C521E00B93F54 /* MenuViewController.swift */,
+				0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */,
+				0F30FE9E21D97BD200FE6481 /* MenuTableViewCell.swift */,
+				0F30FE9F21D97BD200FE6481 /* MenuTableViewCell.xib */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		0F3214B121D4C3EA00ED72DF /* Calendar */ = {
@@ -213,12 +241,12 @@
 				0F3B5DA5214C435600B93F54 /* LaunchScreen.storyboard */,
 				0F057E4A21D39AD2002559F2 /* Components */,
 				0F3B5DA8214C435600B93F54 /* Info.plist */,
-				0F3B5DD0214C521E00B93F54 /* MenuViewController.swift */,
-				0F3B5DD1214C521E00B93F54 /* MenuViewController.xib */,
+				0F30FE9D21D97BB400FE6481 /* Menu */,
 				0F30FE9821D9106F00FE6481 /* Meditation */,
 				0F3214B121D4C3EA00ED72DF /* Calendar */,
 				0F3B5DD8214D0C2200B93F54 /* Extensions */,
 				0F3B5DDC214D0C8B00B93F54 /* Models */,
+				0F98684921DFBDE400BBB03F /* Favorites */,
 			);
 			path = Ahitat;
 			sourceTree = "<group>";
@@ -250,6 +278,7 @@
 				0F30FE9021D78CB800FE6481 /* Ahitat + String.swift */,
 				0F057E5921D3A4CC002559F2 /* Ahitat + UIFont.swift */,
 				0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */,
+				0F98684E21E0BEAE00BBB03F /* Ahitat + Encodable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -273,6 +302,17 @@
 				0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0F98684921DFBDE400BBB03F /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				0F98684321DFBD8600BBB03F /* FavoritesTableViewController.swift */,
+				0F98684521DFBD9A00BBB03F /* FavoritesTableViewCell.swift */,
+				0F98684621DFBD9A00BBB03F /* FavoritesTableViewCell.xib */,
+				0F98684A21DFBDF600BBB03F /* FavoriteModel.swift */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		235DECA7FBAEB369464C27A3 /* Frameworks */ = {
@@ -417,10 +457,12 @@
 				0F3B5DCF214C4F6C00B93F54 /* MainViewController.xib in Resources */,
 				0F3B5DA4214C435600B93F54 /* Assets.xcassets in Resources */,
 				0F3B5DD3214C521E00B93F54 /* MenuViewController.xib in Resources */,
+				0F30FEA121D97BD200FE6481 /* MenuTableViewCell.xib in Resources */,
 				0F30FE8D21D7887600FE6481 /* SF-Pro-Display-Semibold.otf in Resources */,
 				0F30FE9521D825DD00FE6481 /* BibliaoraView.xib in Resources */,
 				0F30FE9721D82A4400FE6481 /* devotional2017.sqlite in Resources */,
 				0F30FE8E21D7887600FE6481 /* SF-Pro-Display-Regular.otf in Resources */,
+				0F98684821DFBD9A00BBB03F /* FavoritesTableViewCell.xib in Resources */,
 				0F3214B721D4D82600ED72DF /* DayCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,16 +567,22 @@
 			files = (
 				0F3B5DDB214D0C6700B93F54 /* DatabaseHandler.swift in Sources */,
 				0F057E4921D39ACF002559F2 /* CustomView.swift in Sources */,
+				0F30FEA021D97BD200FE6481 /* MenuTableViewCell.swift in Sources */,
 				0F3B5DD5214CFD7000B93F54 /* Ahitat + UINavigationController.swift in Sources */,
+				0F98684721DFBD9A00BBB03F /* FavoritesTableViewCell.swift in Sources */,
 				0F057E5A21D3A4CC002559F2 /* Ahitat + UIFont.swift in Sources */,
+				0F98684421DFBD8600BBB03F /* FavoritesTableViewController.swift in Sources */,
 				0F057E5C21D4A93C002559F2 /* AhitatButton.swift in Sources */,
 				0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */,
 				0F30FE9A21D9109200FE6481 /* AddToFavorites.swift in Sources */,
+				0F98684F21E0BEAE00BBB03F /* Ahitat + Encodable.swift in Sources */,
 				0F3214B321D4C40700ED72DF /* Ahitat + Date.swift in Sources */,
+				0F98684D21E0BC3D00BBB03F /* AhitatUserDefaults.swift in Sources */,
 				0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */,
 				0F30FE9321D825D400FE6481 /* BibliaoraView.swift in Sources */,
 				0F30FE9121D78CB800FE6481 /* Ahitat + String.swift in Sources */,
 				0F30FE9C21D915B400FE6481 /* Ahitat + UIView.swift in Sources */,
+				0F98684B21DFBDF600BBB03F /* FavoriteModel.swift in Sources */,
 				0F30FE8621D64B7800FE6481 /* MeditationView.swift in Sources */,
 				0F057E4C21D39B11002559F2 /* CalendarView.swift in Sources */,
 				0F3B5DE0214E890E00B93F54 /* DailyMeditation.swift in Sources */,

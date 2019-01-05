@@ -22,7 +22,7 @@ class AddToFavorites: UIActivity {
     }
 
     override var activityImage: UIImage? {
-        return #imageLiteral(resourceName: "iconBookmarks.png")
+        return #imageLiteral(resourceName: "icon-bookmark-filled.png")
     }
 
     override func canPerform(withActivityItems activityItems: [Any]) -> Bool {

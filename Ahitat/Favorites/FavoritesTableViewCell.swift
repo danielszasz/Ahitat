@@ -15,10 +15,10 @@ class FavoritesTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleLabel.font = UIFont.authorLabel
+        titleLabel.font = UIFont.authorLabel.changeSizeIfIpad
         titleLabel.textColor = .slateTwo
 
-        dateLabel.font = UIFont.georgiaItalic
+        dateLabel.font = UIFont.georgiaItalic.changeSizeIfIpad
         dateLabel.textColor = .slateTwo
     }
 

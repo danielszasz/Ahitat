@@ -147,6 +147,9 @@ class MainViewController: UIViewController {
         guard let meditation = meditation else {return}
         let appActivities = [AddToFavorites()]
         let controller = UIActivityViewController(activityItems: [meditation.meditation], applicationActivities: appActivities)
+        controller.popoverPresentationController?.sourceView = self.view
+        controller.popoverPresentationController?.sourceRect = self.view.frame
+
         controller.completionWithItemsHandler = { [weak self] type, completed, _, error in
             guard type?.rawValue == "addToFavorites" else {return}
             self?.addToFavorites(meditation)
@@ -171,8 +174,8 @@ extension MainViewController: CalendarViewDelegate {
 extension MainViewController: MainDelegate {
     func openMeditation(with date: Date, isAfterNoon: Bool) {
         didSelect(date: date)
-        let rect = isAfterNoon ? afternoonMeditation.frame : beforeNoonMeditation.frame
+        guard let viewToSrollTo = isAfterNoon ? afternoonMeditation : beforeNoonMeditation else {return}
 
-        scrollView.scrollRectToVisible(rect, animated: true)
+        scrollView.scrollToView(view: viewToSrollTo, animated: true)
     }
 }

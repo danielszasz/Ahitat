@@ -26,19 +26,19 @@ class MeditationView: CustomView {
         headerView.layer.cornerRadius = 6
         
         headerTitleLabel.textColor = .slateTwo
-        headerTitleLabel.font = UIFont.georgiaBoldItalic
+        headerTitleLabel.font = UIFont.georgiaBoldItalic.changeSizeIfIpad
         
         dateLabel.textColor = .slateTwo
-        dateLabel.font = UIFont.georgiaItalic
+        dateLabel.font = UIFont.georgiaItalic.changeSizeIfIpad
         
         titleLabel.textColor = .slateTwo
-        titleLabel.font = UIFont.proDisplaySemibold
+        titleLabel.font = UIFont.proDisplaySemibold.changeSizeIfIpad
         
         contentLabel.textColor = .slateTwo
-        contentLabel.font = UIFont.proDisplayRegular
+        contentLabel.font = UIFont.proDisplayRegular.changeSizeIfIpad
         
         authorLabel.textColor = .slateTwo
-        authorLabel.font = UIFont.authorLabel
+        authorLabel.font = UIFont.authorLabel.changeSizeIfIpad
 
         shareButton.addTarget(self, action: #selector(shareButtonPressed), for: .touchUpInside)
         shareButton.isExclusiveTouch = true

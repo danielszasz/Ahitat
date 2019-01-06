@@ -60,4 +60,10 @@ extension UIFont {
     class var versionFont: UIFont {
         return UIFont(name: "SFProDisplay-Regular", size: 12.0)!
     }
+
+    var changeSizeIfIpad: UIFont {
+        let size = self.pointSize
+        let finalSize = UIDevice.current.userInterfaceIdiom == .pad ? size + 6 : size
+        return self.withSize(finalSize)
+    }
 }

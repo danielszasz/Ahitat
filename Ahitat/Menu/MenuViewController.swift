@@ -35,11 +35,11 @@ class MenuViewController: UIViewController {
         separatorView.backgroundColor = .iceBlue
 
         titleLabel.textColor = .slateTwo
-        titleLabel.font = UIFont.menuTitleLabel
+        titleLabel.font = UIFont.menuTitleLabel.changeSizeIfIpad
         titleLabel.text = "Áhitat"
 
         versionLabel.textColor = .slateTwo
-        versionLabel.font = UIFont.versionFont
+        versionLabel.font = UIFont.versionFont.changeSizeIfIpad
         versionLabel.text = "v1.0.0"
 
         let nib = UINib(nibName: "MenuTableViewCell", bundle: nil)

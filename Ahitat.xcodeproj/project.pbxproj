@@ -51,6 +51,7 @@
 		0F98684B21DFBDF600BBB03F /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684A21DFBDF600BBB03F /* FavoriteModel.swift */; };
 		0F98684D21E0BC3D00BBB03F /* AhitatUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684C21E0BC3D00BBB03F /* AhitatUserDefaults.swift */; };
 		0F98684F21E0BEAE00BBB03F /* Ahitat + Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684E21E0BEAE00BBB03F /* Ahitat + Encodable.swift */; };
+		0F98685121E212B100BBB03F /* Ahitat + UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98685021E212B100BBB03F /* Ahitat + UIScrollView.swift */; };
 		1F0AA631C783D9F193475A34 /* Pods_Ahitat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D5B0DE9FCA05A02B352B7E /* Pods_Ahitat.framework */; };
 		1F99FB93D3D1A62090364ED4 /* Pods_AhitatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5D43F57293EFCB77FE1260 /* Pods_AhitatTests.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +125,7 @@
 		0F98684A21DFBDF600BBB03F /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		0F98684C21E0BC3D00BBB03F /* AhitatUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AhitatUserDefaults.swift; sourceTree = "<group>"; };
 		0F98684E21E0BEAE00BBB03F /* Ahitat + Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + Encodable.swift"; sourceTree = "<group>"; };
+		0F98685021E212B100BBB03F /* Ahitat + UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UIScrollView.swift"; sourceTree = "<group>"; };
 		2F5D43F57293EFCB77FE1260 /* Pods_AhitatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhitatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D5302D79E059E9A99A295E /* Pods-AhitatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhitatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		353D3B72D34834E3F82CE665 /* Pods-Ahitat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ahitat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ahitat/Pods-Ahitat.release.xcconfig"; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				0F057E5921D3A4CC002559F2 /* Ahitat + UIFont.swift */,
 				0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */,
 				0F98684E21E0BEAE00BBB03F /* Ahitat + Encodable.swift */,
+				0F98685021E212B100BBB03F /* Ahitat + UIScrollView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				0F3B5DCE214C4F6C00B93F54 /* MainViewController.swift in Sources */,
 				0F057E5021D39BB2002559F2 /* Box.swift in Sources */,
 				0F3214B621D4D82600ED72DF /* DayCollectionViewCell.swift in Sources */,
+				0F98685121E212B100BBB03F /* Ahitat + UIScrollView.swift in Sources */,
 				0F057E5821D3A498002559F2 /* Ahitat + UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,11 +16,14 @@ extension Date {
             lhsComponents.month == rhsComponents.month
     }
 
-
-
     var daySymbol: String {
         let weekDayIndex = Calendar.current.component(.weekday, from: self) - 1
         return dateFormatter.veryShortWeekdaySymbols[weekDayIndex]
+    }
+
+    var isSunday: Bool {
+        let weekDayIndex = Calendar.current.component(.weekday, from: self)
+        return weekDayIndex == 1
     }
 
     var dayNumber: String {
@@ -38,7 +41,7 @@ extension Date {
     
     var previousMonthString: String {
         let formatter = dateFormatter
-        formatter.dateFormat = "MMMM"
+        formatter.dateFormat = "MMM"
         return formatter.string(from: self.previousMonth).capitalized
     }
 
@@ -52,7 +55,7 @@ extension Date {
 
     var nextMonthString: String {
         let formatter = dateFormatter
-        formatter.dateFormat = "MMMM"
+        formatter.dateFormat = "MMM"
         return formatter.string(from: self.nextMonth).capitalized
     }
 

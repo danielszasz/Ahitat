@@ -16,7 +16,7 @@ class MenuTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         titleLabel.textColor = .slateTwo
-        titleLabel.font = .proDisplayRegular
+        titleLabel.font = UIFont.proDisplayRegular.changeSizeIfIpad
     }
 
     func configure(with model: ViewModel) {

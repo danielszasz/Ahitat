@@ -25,12 +25,12 @@ extension String {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 1.5
         let attributed = NSMutableAttributedString(string: self, attributes: [.foregroundColor: UIColor.slateTwo,
-                                                                              .font: UIFont.georgiaItalic,
+                                                                              .font: UIFont.georgiaItalic.changeSizeIfIpad,
                                                                               NSAttributedString.Key.paragraphStyle: paragraphStyle])
 
         boldedTexts.forEach { (textToBold) in
             let range = (self as NSString).range(of: textToBold)
-            attributed.addAttributes([.font: UIFont.proDisplaySemiboldItalic], range: range)
+            attributed.addAttributes([.font: UIFont.proDisplaySemiboldItalic.changeSizeIfIpad], range: range)
         }
 
         return attributed

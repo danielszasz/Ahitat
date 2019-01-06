@@ -32,6 +32,7 @@ class DayCollectionViewCell: UICollectionViewCell {
     func configure(date: Date, isSelected: Bool, isPastToday: Bool) {
         dayLabel.text = date.daySymbol
         dayLabel.alpha = isPastToday ? 0.5 : 1
+        dayLabel.textColor = date.isSunday ? .greenBlue : .slate
 
         dayNumberLabel.text = date.dayNumber
         dayNumberLabel.alpha = isPastToday ? 0.5 : 1
@@ -39,7 +40,7 @@ class DayCollectionViewCell: UICollectionViewCell {
         selectionBackground.layer.cornerRadius = selectionBackground.frame.width/2
         _ = isSelected
             ? configureForSelected()
-            : configureForDeselected()
+            : configureForDeselected(isSunday: date.isSunday)
     }
 
     private func configureForSelected() {
@@ -48,8 +49,8 @@ class DayCollectionViewCell: UICollectionViewCell {
         selectionBackground.isHidden = false
     }
 
-    private func configureForDeselected() {
-        dayNumberLabel.textColor = .slate
+    private func configureForDeselected(isSunday: Bool) {
+        dayNumberLabel.textColor = isSunday ? .greenBlue : .slate
         dayNumberLabel.font = UIFont.dayNumber
         selectionBackground.isHidden = true
     }

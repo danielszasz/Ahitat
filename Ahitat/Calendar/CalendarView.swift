@@ -174,7 +174,8 @@ extension CalendarView: UICollectionViewDelegate {
 
 extension CalendarView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width/7
+        let daysInARow: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 14 : 7
+        let width = UIScreen.main.bounds.width/daysInARow
         let height: CGFloat = 65
         collectionViewHeightConstraint.constant = height
         return CGSize(width: width, height: height)

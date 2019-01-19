@@ -28,6 +28,12 @@ class AhitatUserDefaults {
         save(favorites: favorites)
     }
 
+    func isFavorite(with id: Int, isAfterNoon: Bool) -> Bool {
+        let favorites = getFavorites()
+        let isFavorite = favorites.contains(where: {$0.id == id && $0.isAfternoon == isAfterNoon})
+        return isFavorite
+    }
+
     private func save(favorites: [FavoriteModel]) {
         guard let encoded = try? JSONEncoder().encode(favorites) else {return}
         userDefaults.set(encoded, forKey: "favorites")

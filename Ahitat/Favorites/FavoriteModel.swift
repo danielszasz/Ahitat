@@ -9,6 +9,7 @@
 import Foundation
 
 struct FavoriteModel: Equatable {
+    let id: Int
     let author: String
     let date: Date
     let title: String

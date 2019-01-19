@@ -14,12 +14,14 @@ class MeditationView: CustomView {
     @IBOutlet weak var headerTitleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var shareButton: UIButton!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var versesLabel: UILabel!
-    @IBOutlet weak var contentLabel: UILabel!
-    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var titleTextView: UITextView!
+    @IBOutlet weak var versesTextView: UITextView!
+    @IBOutlet weak var contentTextView: UITextView!
+    @IBOutlet weak var authorTextView: UITextView!
 
     private var share: () -> Void = {}
+    private var addToFavorites: (Bool) -> Void = {_ in}
     
     override func configureUI() {
         headerView.backgroundColor = .iceBlue
@@ -31,30 +33,47 @@ class MeditationView: CustomView {
         dateLabel.textColor = .slateTwo
         dateLabel.font = UIFont.georgiaItalic.changeSizeIfIpad
         
-        titleLabel.textColor = .slateTwo
-        titleLabel.font = UIFont.proDisplaySemibold.changeSizeIfIpad
+        titleTextView.textColor = .slateTwo
+        titleTextView.font = UIFont.proDisplaySemibold.changeSizeIfIpad
+        titleTextView.textContainerInset = .zero
         
-        contentLabel.textColor = .slateTwo
-        contentLabel.font = UIFont.proDisplayRegular.changeSizeIfIpad
+        contentTextView.textColor = .slateTwo
+        contentTextView.font = UIFont.proDisplayRegular.changeSizeIfIpad
+        contentTextView.textContainerInset = .zero
         
-        authorLabel.textColor = .slateTwo
-        authorLabel.font = UIFont.authorLabel.changeSizeIfIpad
+        authorTextView.textColor = .slateTwo
+        authorTextView.font = UIFont.authorLabel.changeSizeIfIpad
+        authorTextView.textContainerInset = .zero
+
+        versesTextView.textContainerInset = .zero
+
+        favoriteButton.setImage(UIImage(named: "iconFavorites0"), for: .normal)
+        favoriteButton.setImage(UIImage(named: "iconFavorites1"), for: .selected)
 
         shareButton.addTarget(self, action: #selector(shareButtonPressed), for: .touchUpInside)
         shareButton.isExclusiveTouch = true
     }
     
-    func configure(headerTitle: String, date: Date, meditation: Meditation, share: @escaping @autoclosure () -> Void) {
+    func configure(headerTitle: String, date: Date, meditation: Meditation, isFavorite: Bool, share: @escaping @autoclosure () -> Void, addToFavorites: @escaping (Bool) -> Void) {
+
         headerTitleLabel.text = headerTitle
         dateLabel.text = date.longDate
-        titleLabel.text = meditation.title
-        versesLabel.attributedText = meditation.verse.getVersesAttributedText(boldedTexts: "Igehely", "Kulcsige")
-        contentLabel.text = meditation.meditation.htmlToString
-        authorLabel.text = meditation.author
+        titleTextView.text = meditation.title
+        versesTextView.attributedText = meditation.verse.getVersesAttributedText(boldedTexts: "Igehely", "Kulcsige")
+        contentTextView.text = meditation.meditation.htmlToString
+        authorTextView.text = meditation.author
+        favoriteButton.isSelected = isFavorite
+
         self.share = share
+        self.addToFavorites = addToFavorites
     }
 
     @objc private func shareButtonPressed() {
         share()
+    }
+
+    @IBAction func favoritePressed(_ sender: UIButton) {
+        sender.isSelected.toggle()
+        addToFavorites(sender.isSelected)
     }
 }

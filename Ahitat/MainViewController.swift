@@ -22,11 +22,12 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView!
 
     private var meditations: [DailyMeditation] = []
-    private var currentMeditaion: DailyMeditation? {
+    private var currentMeditation: DailyMeditation? {
         didSet {
-            guard let med = currentMeditaion else {return}
+            guard let med = currentMeditation else {return}
             calendarView.select(date: med.date)
             setMeditationViews(with: med)
+            scrollView.scrollsToTop
         }
     }
 
@@ -68,8 +69,17 @@ class MainViewController: UIViewController {
     }
 
     private func setMeditationViews(with meditation: DailyMeditation) {
-        beforeNoonMeditation.configure(headerTitle: "Délelőtti Sorozat", date: meditation.date, meditation: meditation.beforeNoon, share: self.share(meditation: self.currentMeditaion?.beforeNoon))
-        afternoonMeditation.configure(headerTitle: "Délutáni Sorozat", date: meditation.date, meditation: meditation.afterNoon, share: self.share(meditation: self.currentMeditaion?.afterNoon))
+        guard let meditation = currentMeditation else {return}
+        let isBeforeFavorite = AhitatUserDefaults().isFavorite(with: meditation.id, isAfterNoon: false)
+
+        beforeNoonMeditation.configure(headerTitle: "Délelőtti Sorozat", date: meditation.date,
+                                       meditation: meditation.beforeNoon, isFavorite: isBeforeFavorite,
+                                       share: self.share(meditation: self.currentMeditation?.beforeNoon),
+                                       addToFavorites: favoritePressed(meditation: meditation.beforeNoon))
+
+        let isAfterFavorite = AhitatUserDefaults().isFavorite(with: meditation.id, isAfterNoon: true)
+
+        afternoonMeditation.configure(headerTitle: "Délutáni Sorozat", date: meditation.date, meditation: meditation.afterNoon, isFavorite: isAfterFavorite, share: self.share(meditation: self.currentMeditation?.afterNoon), addToFavorites: favoritePressed(meditation: meditation.afterNoon))
 
         if meditation.bibliaora.isEmpty == false {
             let view = BibliaoraView()
@@ -113,15 +123,15 @@ class MainViewController: UIViewController {
     }
 
     @objc private func nextDay() {
-        guard meditations.last != currentMeditaion else {return}
+        guard meditations.last != currentMeditation else {return}
         let dayInSeconds: TimeInterval = 3600 * 24
-        didSelect(date: (currentMeditaion?.date ?? Date()).addingTimeInterval(dayInSeconds))
+        didSelect(date: (currentMeditation?.date ?? Date()).addingTimeInterval(dayInSeconds))
     }
 
     @objc private func previousDay() {
-        guard meditations.first != currentMeditaion else {return}
+        guard meditations.first != currentMeditation else {return}
         let dayInSeconds: TimeInterval = 3600 * 24
-        didSelect(date: (currentMeditaion?.date ?? Date()).addingTimeInterval(-dayInSeconds))
+        didSelect(date: (currentMeditation?.date ?? Date()).addingTimeInterval(-dayInSeconds))
     }
 
     @objc private func toggleCalendar() {
@@ -129,7 +139,7 @@ class MainViewController: UIViewController {
         if calendarView.isHidden {
             self.hideCalendarViewAnimated(false)
         }
-            UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlUp, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlUp, animations: {
             self.stackView.alpha = self.stackView.alpha == 0 ? 1 : 0
         }, completion: { _ in
             guard self.stackView.alpha == 0 else {return}
@@ -145,29 +155,32 @@ class MainViewController: UIViewController {
 
     private func share(meditation: Meditation?) {
         guard let meditation = meditation else {return}
-        let appActivities = [AddToFavorites()]
-        let controller = UIActivityViewController(activityItems: [meditation.meditation], applicationActivities: appActivities)
+        let fullText = [meditation.title, meditation.verse, meditation.meditation, meditation.author].joined(separator: "\n\n")
+        let controller = UIActivityViewController(activityItems: [fullText], applicationActivities: nil)
         controller.popoverPresentationController?.sourceView = self.view
         controller.popoverPresentationController?.sourceRect = self.view.frame
 
-        controller.completionWithItemsHandler = { [weak self] type, completed, _, error in
-            guard type?.rawValue == "addToFavorites" else {return}
-            self?.addToFavorites(meditation)
-        }
         self.navigationController?.present(controller, animated: true, completion: nil)
     }
 
-    private func addToFavorites(_ meditation: Meditation) {
-        guard let currentMeditation = currentMeditaion else {return}
-        let model = FavoriteModel.init(author: meditation.author, date: currentMeditation.date, title: meditation.title, isAfternoon: meditation == currentMeditation.afterNoon)
-        AhitatUserDefaults().add(model: model)
+    private func favoritePressed(meditation: Meditation) -> (Bool) -> Void {
+        return { [weak self] add in
+
+            guard let currentMeditation = self?.currentMeditation else {return}
+            
+            let model = FavoriteModel.init(id: currentMeditation.id, author: meditation.author, date: currentMeditation.date, title: meditation.title, isAfternoon: meditation == currentMeditation.afterNoon)
+
+            _ = add
+                ? AhitatUserDefaults().add(model: model)
+                : AhitatUserDefaults().delete(model: model)
+        }
     }
 }
 
 extension MainViewController: CalendarViewDelegate {
     func didSelect(date: Date) {
         print(#function)
-        currentMeditaion = meditations.filter({$0.date.isSameDay(with: date)}).first
+        currentMeditation = meditations.filter({$0.date.isSameDay(with: date)}).first
     }
 }
 

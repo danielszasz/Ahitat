@@ -71,6 +71,8 @@ extension MenuViewController: UITableViewDelegate {
         default:
             break
         }
+
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 
     private func openBibleLink() {

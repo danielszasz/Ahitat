@@ -27,7 +27,6 @@ class MainViewController: UIViewController {
             guard let med = currentMeditation else {return}
             calendarView.select(date: med.date)
             setMeditationViews(with: med)
-            scrollView.scrollsToTop
         }
     }
 

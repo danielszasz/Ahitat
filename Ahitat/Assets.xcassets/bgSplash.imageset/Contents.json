@@ -2,16 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "bgSplash.png",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "bgSplash.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "bgSplash@2x.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "bgSplash@3x.png"
     }
   ],
   "info" : {

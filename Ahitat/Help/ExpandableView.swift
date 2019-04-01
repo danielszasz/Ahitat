@@ -16,6 +16,30 @@ class ExpandableView: CustomView {
 
     override func configureUI() {
         super.configureUI()
+        titleLable.font = UIFont.authorLabel
+        titleLable.textColor = .slateTwo
+        separatorView.backgroundColor = .paleBlue
 
+        expandableIndicator.textColor = .slateTwo
+        expandableIndicator.font = .authorLabel
+        expandableIndicator.text = "+"
+        attachmentView.isHidden = true
+        addTap()
+    }
+
+    func configue(title: String, elements: [NSAttributable]) {
+        titleLable.text = title
+        attachmentView.configure(elements: elements)
+    }
+
+    private func addTap() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(toggle))
+        tap.numberOfTapsRequired = 1
+        self.addGestureRecognizer(tap)
+    }
+
+    @IBAction private func toggle() {
+        attachmentView.isHidden.toggle()
+        expandableIndicator.text = attachmentView.isHidden ? "+" : "-"
     }
 }

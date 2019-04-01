@@ -45,6 +45,9 @@
 		0F3B5DDB214D0C6700B93F54 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDA214D0C6700B93F54 /* DatabaseHandler.swift */; };
 		0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDD214D0D2F00B93F54 /* Meditation.swift */; };
 		0F3B5DE0214E890E00B93F54 /* DailyMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */; };
+		0F702BA12252A2F200413964 /* HelpScreenTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F702BA02252A2F200413964 /* HelpScreenTexts.swift */; };
+		0F702BA32252A3F400413964 /* Ahitat + Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F702BA22252A3F400413964 /* Ahitat + Bundle.swift */; };
+		0F702BA52252A6CD00413964 /* ChoosingMeditationTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F702BA42252A6CD00413964 /* ChoosingMeditationTexts.swift */; };
 		0F98684421DFBD8600BBB03F /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684321DFBD8600BBB03F /* FavoritesTableViewController.swift */; };
 		0F98684721DFBD9A00BBB03F /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684521DFBD9A00BBB03F /* FavoritesTableViewCell.swift */; };
 		0F98684821DFBD9A00BBB03F /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F98684621DFBD9A00BBB03F /* FavoritesTableViewCell.xib */; };
@@ -126,6 +129,9 @@
 		0F3B5DDA214D0C6700B93F54 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		0F3B5DDD214D0D2F00B93F54 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		0F3B5DDF214E890E00B93F54 /* DailyMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMeditation.swift; sourceTree = "<group>"; };
+		0F702BA02252A2F200413964 /* HelpScreenTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenTexts.swift; sourceTree = "<group>"; };
+		0F702BA22252A3F400413964 /* Ahitat + Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + Bundle.swift"; sourceTree = "<group>"; };
+		0F702BA42252A6CD00413964 /* ChoosingMeditationTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosingMeditationTexts.swift; sourceTree = "<group>"; };
 		0F98684321DFBD8600BBB03F /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		0F98684521DFBD9A00BBB03F /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		0F98684621DFBD9A00BBB03F /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
@@ -297,6 +303,7 @@
 				0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */,
 				0F98684E21E0BEAE00BBB03F /* Ahitat + Encodable.swift */,
 				0F98685021E212B100BBB03F /* Ahitat + UIScrollView.swift */,
+				0F702BA22252A3F400413964 /* Ahitat + Bundle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -337,6 +344,8 @@
 			isa = PBXGroup;
 			children = (
 				0F9F94472246CE02003F6E4C /* HelpViewController.swift */,
+				0F702BA02252A2F200413964 /* HelpScreenTexts.swift */,
+				0F702BA42252A6CD00413964 /* ChoosingMeditationTexts.swift */,
 				0F9F94482246CE02003F6E4C /* HelpViewController.xib */,
 				0F9F944C2246CE32003F6E4C /* ExpandableView.xib */,
 				0F9F944E2246D5BF003F6E4C /* ExpandableView.swift */,
@@ -463,6 +472,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"hu-HU",
 			);
 			mainGroup = 0F3B5D90214C435500B93F54;
 			productRefGroup = 0F3B5D9A214C435500B93F54 /* Products */;
@@ -604,12 +614,14 @@
 				0F057E4921D39ACF002559F2 /* CustomView.swift in Sources */,
 				0F30FEA021D97BD200FE6481 /* MenuTableViewCell.swift in Sources */,
 				0F3B5DD5214CFD7000B93F54 /* Ahitat + UINavigationController.swift in Sources */,
+				0F702BA52252A6CD00413964 /* ChoosingMeditationTexts.swift in Sources */,
 				0F9F94512247CE24003F6E4C /* TextWithAttachmentView.swift in Sources */,
 				0F98684721DFBD9A00BBB03F /* FavoritesTableViewCell.swift in Sources */,
 				0F057E5A21D3A4CC002559F2 /* Ahitat + UIFont.swift in Sources */,
 				0F98684421DFBD8600BBB03F /* FavoritesTableViewController.swift in Sources */,
 				0F9F94492246CE02003F6E4C /* HelpViewController.swift in Sources */,
 				0F057E5C21D4A93C002559F2 /* AhitatButton.swift in Sources */,
+				0F702BA32252A3F400413964 /* Ahitat + Bundle.swift in Sources */,
 				0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */,
 				0F30FE9A21D9109200FE6481 /* AddToFavorites.swift in Sources */,
 				0F98684F21E0BEAE00BBB03F /* Ahitat + Encodable.swift in Sources */,
@@ -617,6 +629,7 @@
 				0F98684D21E0BC3D00BBB03F /* AhitatUserDefaults.swift in Sources */,
 				0F3B5DDE214D0D2F00B93F54 /* Meditation.swift in Sources */,
 				0F30FE9321D825D400FE6481 /* BibliaoraView.swift in Sources */,
+				0F702BA12252A2F200413964 /* HelpScreenTexts.swift in Sources */,
 				0F30FE9121D78CB800FE6481 /* Ahitat + String.swift in Sources */,
 				0F9F944F2246D5BF003F6E4C /* ExpandableView.swift in Sources */,
 				0F30FE9C21D915B400FE6481 /* Ahitat + UIView.swift in Sources */,

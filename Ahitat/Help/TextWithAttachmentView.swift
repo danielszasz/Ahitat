@@ -31,16 +31,28 @@ class TextWithAttachmentView: CustomView {
     }
 
     private func getTextAsAttributed(text: String) -> NSAttributedString {
-        return NSMutableAttributedString(string: text, attributes: [.font: UIFont.authorLabel,
-                                                                            .foregroundColor: UIColor.slateTwo])
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.minimumLineHeight = 20
+        return NSMutableAttributedString(string: text, attributes: [.font: UIFont.proDisplayRegular,
+                                                                            .foregroundColor: UIColor.slateTwo,
+                                                                            .paragraphStyle: paragraphStyle])
 
     }
 
     private func getImageAsAttributed(image: String) -> NSAttributedString {
         let image1Attachment = NSTextAttachment()
-        image1Attachment.image = UIImage(named: image)
+        let image = UIImage(named: image)?.withRenderingMode(.alwaysTemplate) ?? UIImage()
+        image1Attachment.image = image
+        image1Attachment.bounds = CGRect(x: 0, y: -image.size.height/4, width: image.size.width, height: image.size.height)
+        let attributed = NSAttributedString(attachment: image1Attachment)
 
-        return NSAttributedString(attachment: image1Attachment)
+        let mutable = NSMutableAttributedString(string: " ")
+        mutable.append(attributed)
+
+        mutable.addAttributes([.foregroundColor: UIColor.greyblue50,
+                               .font: UIFont.proDisplayRegular],
+                              range: NSRange(location: 0, length: mutable.length))
+        return mutable
     }
  }
 

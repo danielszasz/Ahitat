@@ -40,7 +40,7 @@ class MenuViewController: UIViewController {
 
         versionLabel.textColor = .slateTwo
         versionLabel.font = UIFont.versionFont.changeSizeIfIpad
-        versionLabel.text = "v1.0.0"
+        versionLabel.text = Bundle.main.getVersionString()
 
         let nib = UINib(nibName: "MenuTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "MenuTableViewCell")
@@ -68,11 +68,18 @@ extension MenuViewController: UITableViewDelegate {
             openBibleLink()
         case 1:
             openFavorites()
+        case 2:
+            openHelp()
         default:
             break
         }
 
         tableView.deselectRow(at: indexPath, animated: false)
+    }
+
+    private func openHelp() {
+        let vc = HelpViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     private func openBibleLink() {

@@ -57,7 +57,15 @@ extension UIFont {
         return UIFont(name: "SFProDisplay-Regular", size: 16.0)!
     }
 
+    class var sponsorFont: UIFont {
+        return UIFont(name: "SFProDisplay-Regular", size: 14.0)!
+    }
+
     class var versionFont: UIFont {
+        return UIFont(name: "SFProDisplay-Regular", size: 12.0)!
+    }
+
+    class var versionFontTwo: UIFont {
         return UIFont(name: "SFProDisplay-Regular", size: 12.0)!
     }
 

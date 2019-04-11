@@ -70,6 +70,8 @@ extension MenuViewController: UITableViewDelegate {
             openFavorites()
         case 2:
             openHelp()
+        case 3:
+            openAbout()
         default:
             break
         }
@@ -78,7 +80,12 @@ extension MenuViewController: UITableViewDelegate {
     }
 
     private func openHelp() {
-        let vc = HelpViewController()
+        let vc = HelpViewController(viewModel: HelpScreenTexts())
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    private func openAbout() {
+        let vc = HelpViewController(viewModel: AboutScreenTexts())
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

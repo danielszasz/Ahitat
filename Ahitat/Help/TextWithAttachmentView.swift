@@ -43,7 +43,8 @@ class TextWithAttachmentView: CustomView {
         let image1Attachment = NSTextAttachment()
         let image = UIImage(named: image)?.withRenderingMode(.alwaysTemplate) ?? UIImage()
         image1Attachment.image = image
-        image1Attachment.bounds = CGRect(x: 0, y: -image.size.height/4, width: image.size.width, height: image.size.height)
+        let ratio = image.size.width / image.size.height
+        image1Attachment.bounds = CGRect(x: 0, y: -25/4, width: 25 * ratio, height: 25)
         let attributed = NSAttributedString(attachment: image1Attachment)
 
         let mutable = NSMutableAttributedString(string: " ")

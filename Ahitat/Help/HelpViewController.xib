@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="copyrightLabel" destination="UPv-zN-Gwe" id="Gjo-Sh-X1U"/>
                 <outlet property="descriptionLabel" destination="iZB-zZ-jHo" id="jFc-UP-C18"/>
+                <outlet property="iconImageView" destination="HWo-TW-mDu" id="eua-ZF-gPa"/>
                 <outlet property="sponsorLabel" destination="yBX-Hn-33m" id="JWi-We-KHf"/>
                 <outlet property="stackView" destination="5rx-cJ-MGd" id="IEB-Ep-E0g"/>
                 <outlet property="titleLabel" destination="bvv-df-aq1" id="oZ5-WF-kWh"/>

@@ -22,6 +22,6 @@ struct AboutScreenTexts: InfoScreenViewModel {
     }
 
     var views: [UIView] {
-        return []
+        return [WeMadeThisView()]
     }
 }

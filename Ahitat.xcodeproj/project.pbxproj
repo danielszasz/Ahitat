@@ -53,6 +53,11 @@
 		0F702BA12252A2F200413964 /* HelpScreenTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F702BA02252A2F200413964 /* HelpScreenTexts.swift */; };
 		0F702BA32252A3F400413964 /* Ahitat + Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F702BA22252A3F400413964 /* Ahitat + Bundle.swift */; };
 		0F702BA52252A6CD00413964 /* ChoosingMeditationTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F702BA42252A6CD00413964 /* ChoosingMeditationTexts.swift */; };
+		0F8BC5D42260F066007C54AE /* WeMadeThisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8BC5D32260F066007C54AE /* WeMadeThisView.swift */; };
+		0F8BC5D62261D076007C54AE /* WeMadeThisView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8BC5D52261D076007C54AE /* WeMadeThisView.xib */; };
+		0F97EEFA2263C38A002FE8EF /* VerseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F97EEF92263C38A002FE8EF /* VerseDecoder.swift */; };
+		0F97EEFC2263C3A1002FE8EF /* BibleBookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F97EEFB2263C3A1002FE8EF /* BibleBookManager.swift */; };
+		0F97EF0022650E20002FE8EF /* LinkConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F97EEFF22650E20002FE8EF /* LinkConstructor.swift */; };
 		0F98684421DFBD8600BBB03F /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684321DFBD8600BBB03F /* FavoritesTableViewController.swift */; };
 		0F98684721DFBD9A00BBB03F /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684521DFBD9A00BBB03F /* FavoritesTableViewCell.swift */; };
 		0F98684821DFBD9A00BBB03F /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F98684621DFBD9A00BBB03F /* FavoritesTableViewCell.xib */; };
@@ -142,6 +147,11 @@
 		0F702BA02252A2F200413964 /* HelpScreenTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenTexts.swift; sourceTree = "<group>"; };
 		0F702BA22252A3F400413964 /* Ahitat + Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + Bundle.swift"; sourceTree = "<group>"; };
 		0F702BA42252A6CD00413964 /* ChoosingMeditationTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosingMeditationTexts.swift; sourceTree = "<group>"; };
+		0F8BC5D32260F066007C54AE /* WeMadeThisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeMadeThisView.swift; sourceTree = "<group>"; };
+		0F8BC5D52261D076007C54AE /* WeMadeThisView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeMadeThisView.xib; sourceTree = "<group>"; };
+		0F97EEF92263C38A002FE8EF /* VerseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseDecoder.swift; sourceTree = "<group>"; };
+		0F97EEFB2263C3A1002FE8EF /* BibleBookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleBookManager.swift; sourceTree = "<group>"; };
+		0F97EEFF22650E20002FE8EF /* LinkConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkConstructor.swift; sourceTree = "<group>"; };
 		0F98684321DFBD8600BBB03F /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		0F98684521DFBD9A00BBB03F /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		0F98684621DFBD9A00BBB03F /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
@@ -201,7 +211,10 @@
 				0F057E4821D39ACF002559F2 /* CustomView.swift */,
 				0F057E5B21D4A93C002559F2 /* AhitatButton.swift */,
 				0F30FE9921D9109200FE6481 /* AddToFavorites.swift */,
+				0F97EEFF22650E20002FE8EF /* LinkConstructor.swift */,
 				0F98684C21E0BC3D00BBB03F /* AhitatUserDefaults.swift */,
+				0F97EEF92263C38A002FE8EF /* VerseDecoder.swift */,
+				0F97EEFB2263C3A1002FE8EF /* BibleBookManager.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -343,6 +356,8 @@
 			isa = PBXGroup;
 			children = (
 				0F702BA02252A2F200413964 /* HelpScreenTexts.swift */,
+				0F8BC5D32260F066007C54AE /* WeMadeThisView.swift */,
+				0F8BC5D52261D076007C54AE /* WeMadeThisView.xib */,
 				0F5F81E3226001C800D9512D /* AboutScreenTexts.swift */,
 				0F702BA42252A6CD00413964 /* ChoosingMeditationTexts.swift */,
 				0F5F81D5225FF4B900D9512D /* OpeningTheBibleTexts.swift */,
@@ -522,6 +537,7 @@
 				0F057E5421D3A239002559F2 /* Localizable.strings in Resources */,
 				0F3B5DCF214C4F6C00B93F54 /* MainViewController.xib in Resources */,
 				0F3B5DA4214C435600B93F54 /* Assets.xcassets in Resources */,
+				0F8BC5D62261D076007C54AE /* WeMadeThisView.xib in Resources */,
 				0F3B5DD3214C521E00B93F54 /* MenuViewController.xib in Resources */,
 				0F30FEA121D97BD200FE6481 /* MenuTableViewCell.xib in Resources */,
 				0F30FE8D21D7887600FE6481 /* SF-Pro-Display-Semibold.otf in Resources */,
@@ -638,6 +654,7 @@
 				0F30FEA021D97BD200FE6481 /* MenuTableViewCell.swift in Sources */,
 				0F5F81E4226001C800D9512D /* AboutScreenTexts.swift in Sources */,
 				0F3B5DD5214CFD7000B93F54 /* Ahitat + UINavigationController.swift in Sources */,
+				0F97EEFA2263C38A002FE8EF /* VerseDecoder.swift in Sources */,
 				0F702BA52252A6CD00413964 /* ChoosingMeditationTexts.swift in Sources */,
 				0F9F94512247CE24003F6E4C /* TextWithAttachmentView.swift in Sources */,
 				0F98684721DFBD9A00BBB03F /* FavoritesTableViewCell.swift in Sources */,
@@ -646,8 +663,10 @@
 				0F9F94492246CE02003F6E4C /* HelpViewController.swift in Sources */,
 				0F5F81D6225FF4B900D9512D /* OpeningTheBibleTexts.swift in Sources */,
 				0F057E5C21D4A93C002559F2 /* AhitatButton.swift in Sources */,
+				0F8BC5D42260F066007C54AE /* WeMadeThisView.swift in Sources */,
 				0F702BA32252A3F400413964 /* Ahitat + Bundle.swift in Sources */,
 				0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */,
+				0F97EEFC2263C3A1002FE8EF /* BibleBookManager.swift in Sources */,
 				0F30FE9A21D9109200FE6481 /* AddToFavorites.swift in Sources */,
 				0F98684F21E0BEAE00BBB03F /* Ahitat + Encodable.swift in Sources */,
 				0F5F81D8225FF9E800D9512D /* HandelingFavorites.swift in Sources */,
@@ -669,6 +688,7 @@
 				0F3B5DCE214C4F6C00B93F54 /* MainViewController.swift in Sources */,
 				0F5F81DA225FFD5E00D9512D /* ShareMeditationTexts.swift in Sources */,
 				0F057E5021D39BB2002559F2 /* Box.swift in Sources */,
+				0F97EF0022650E20002FE8EF /* LinkConstructor.swift in Sources */,
 				0F3214B621D4D82600ED72DF /* DayCollectionViewCell.swift in Sources */,
 				0F98685121E212B100BBB03F /* Ahitat + UIScrollView.swift in Sources */,
 				0F057E5821D3A498002559F2 /* Ahitat + UIColor.swift in Sources */,

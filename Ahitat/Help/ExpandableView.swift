@@ -13,6 +13,7 @@ class ExpandableView: CustomView {
     @IBOutlet private weak var separatorView: UIView!
     @IBOutlet private weak var attachmentView: TextWithAttachmentView!
     @IBOutlet private weak var expandableIndicator: UILabel!
+    private var viewPressed: (UIView) -> Void = {_ in}
 
     override func configureUI() {
         super.configureUI()
@@ -27,9 +28,13 @@ class ExpandableView: CustomView {
         addTap()
     }
 
-    func configue(title: String, elements: [NSAttributable]) {
+    func configue(title: String, elements: [NSAttributable], isExpanded: Bool, viewPressed: @escaping (UIView) -> Void) {
         titleLable.text = title
         attachmentView.configure(elements: elements)
+        self.viewPressed = viewPressed
+        if isExpanded {
+            open()
+        }
     }
 
     private func addTap() {
@@ -39,7 +44,17 @@ class ExpandableView: CustomView {
     }
 
     @IBAction private func toggle() {
-        attachmentView.isHidden.toggle()
-        expandableIndicator.text = attachmentView.isHidden ? "+" : "-"
+        attachmentView.isHidden ? open() : close()
+        viewPressed(self)
+    }
+
+    func close() {
+        attachmentView.isHidden = true
+        expandableIndicator.text = "+"
+    }
+
+    func open() {
+        attachmentView.isHidden = false
+        expandableIndicator.text = "_"
     }
 }

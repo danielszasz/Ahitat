@@ -9,6 +9,18 @@
 import UIKit
 
 struct AboutScreenTexts: InfoScreenViewModel {
+    var screenTitle: String {
+        return "Az Áhitat App-ról"
+    }
+
+    var sponsor: String {
+        return """
+        Az iOS Áhitat Applikáció a Romániai Magyar Baptista Szövetség által kiadott napi elmélkedéseket tartalmazza.
+        
+        A Napi Áhitatok szerzői erdélyi, részben magyarországi, valamint amerikai baptista lelkipásztorok és lelki munkások.
+        """
+    }
+
     var title: String {
         return "Miért és kinek?!"
     }
@@ -18,7 +30,7 @@ struct AboutScreenTexts: InfoScreenViewModel {
     }
 
     var description: String {
-        return "A napi áhitatok fontosak a lelki emberek számára. Kikre gondolunk itt? Azokra a személyekre akiknek már volt találkozásuk a Krisztussal, vagy szeretnék Őt megismerni.\n\n Korunkban a digitális média fontos szerepet tölt be az emberek életében mivel sokszor kényelmesebb a használata mint a könyvek lapozása. Egy hatalmas előnye a nyomtatványokkal szemben, hogy mindig kéznél van és nem utolsó sorban, természetbarát, egy fát sem kellett kivágjanak a kiadványok létrehozásához. \n\n Pontosítva a célközönséget, ez az applikáció azok számára készült, akik szívesen használnak mobil eszközöket Biblia olvasásra, vagy lelki táplálékok keresésére. A keresztény Biblia értékeit hivatott továbbítani az emberiség számára, ami 'Istentől ihletett, és hasznos a tanításra, a feddésre, a megjobbításra, az igazságban való nevelésre; hogy tökéletes legyen az Isten embere, minden jó cselekedetre felkészített.' (2 Timóteus 3:16-17)"
+        return "A napi áhitatok fontosak a lelki emberek számára. Kikre gondolunk itt? Azokra a személyekre akiknek már volt találkozásuk a Krisztussal, vagy szeretnék Őt megismerni.\n\nPontosítva a célközönséget, ez az applikáció azok számára készült, akik szívesen használnak mobil eszközöket Biblia olvasásra, vagy lelki táplálékok keresésére. A keresztény Biblia értékeit hivatott továbbítani az emberiség számára, ami 'Istentől ihletett, és hasznos a tanításra, a feddésre, a megjobbításra, az igazságban való nevelésre; hogy tökéletes legyen az Isten embere, minden jó cselekedetre felkészített.' (2 Timóteus 3:16-17)"
     }
 
     var views: [UIView] {

@@ -55,7 +55,7 @@
                                     </constraints>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBX-Hn-33m">
-                                    <rect key="frame" x="17" y="729.5" width="42" height="20.5"/>
+                                    <rect key="frame" x="17" y="729.5" width="377" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -80,6 +80,7 @@
                                 <constraint firstItem="bvv-df-aq1" firstAttribute="centerY" secondItem="HWo-TW-mDu" secondAttribute="centerY" id="IdZ-aX-V1f"/>
                                 <constraint firstItem="bvv-df-aq1" firstAttribute="leading" secondItem="HWo-TW-mDu" secondAttribute="trailing" constant="10" id="JLf-0O-f4N"/>
                                 <constraint firstItem="yBX-Hn-33m" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5rx-cJ-MGd" secondAttribute="bottom" constant="20" id="LPG-Ni-2kJ"/>
+                                <constraint firstAttribute="trailing" secondItem="yBX-Hn-33m" secondAttribute="trailing" constant="20" id="OP6-5s-J3Y"/>
                                 <constraint firstItem="HWo-TW-mDu" firstAttribute="leading" secondItem="CLe-gr-pUu" secondAttribute="leading" constant="17" id="PjD-MU-3p6"/>
                                 <constraint firstItem="iZB-zZ-jHo" firstAttribute="top" secondItem="bvv-df-aq1" secondAttribute="bottom" constant="15" id="SyX-zc-gc7"/>
                                 <constraint firstAttribute="trailing" secondItem="iZB-zZ-jHo" secondAttribute="trailing" constant="17" id="Tdi-VN-eDd"/>

@@ -1,18 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "iconFavorites1.png",
       "idiom" : "universal",
+      "filename" : "iconFavorites1.png",
       "scale" : "1x"
     },
     {
-      "filename" : "iconFavorites1@2x.png",
       "idiom" : "universal",
+      "filename" : "iconFavorites1@2x.png",
       "scale" : "2x"
     },
     {
-      "filename" : "iconFavorites1@3x.png",
       "idiom" : "universal",
+      "filename" : "iconFavorites1@3x.png",
       "scale" : "3x"
     }
   ],

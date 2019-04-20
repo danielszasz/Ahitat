@@ -20,10 +20,10 @@ class DayCollectionViewCell: UICollectionViewCell {
 
     private func configureUI() {
         dayLabel.textColor = .slate
-        dayLabel.font = UIFont.dayText
+        dayLabel.font = UIFont.dayText.changeSizeIfIpad
 
         dayNumberLabel.textColor = .slate
-        dayNumberLabel.font = UIFont.dayNumber
+        dayNumberLabel.font = UIFont.dayNumber.changeSizeIfIpad
 
         selectionBackground.backgroundColor = .greyblue50
         selectionBackground.isHidden = true
@@ -43,15 +43,20 @@ class DayCollectionViewCell: UICollectionViewCell {
             : configureForDeselected(isSunday: date.isSunday)
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        selectionBackground.layer.cornerRadius = selectionBackground.frame.width/2
+    }
+
     private func configureForSelected() {
         dayNumberLabel.textColor = .white
-        dayNumberLabel.font = UIFont.systemMedium
+        dayNumberLabel.font = UIFont.systemMedium.changeSizeIfIpad
         selectionBackground.isHidden = false
     }
 
     private func configureForDeselected(isSunday: Bool) {
         dayNumberLabel.textColor = isSunday ? .greenBlue : .slate
-        dayNumberLabel.font = UIFont.dayNumber
+        dayNumberLabel.font = UIFont.dayNumber.changeSizeIfIpad
         selectionBackground.isHidden = true
     }
 }

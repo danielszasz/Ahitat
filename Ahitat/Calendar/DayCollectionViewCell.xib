@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="width" secondItem="abz-ZF-5T7" secondAttribute="height" multiplier="1:1" id="TNb-ur-dJO"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-Fc-OEc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgu-Fc-OEc">
                                 <rect key="frame" x="27" y="42" width="21" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -43,16 +43,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="abz-ZF-5T7" firstAttribute="trailing" secondItem="Sgu-Fc-OEc" secondAttribute="trailing" constant="8" id="3zS-4f-UJm"/>
-                            <constraint firstItem="Sgu-Fc-OEc" firstAttribute="leading" secondItem="abz-ZF-5T7" secondAttribute="leading" constant="8" id="5ho-fa-fNe"/>
                             <constraint firstItem="oq1-G3-G5r" firstAttribute="top" secondItem="oCH-Cq-dbX" secondAttribute="top" constant="3" id="F22-ck-GJ8"/>
-                            <constraint firstItem="abz-ZF-5T7" firstAttribute="bottom" secondItem="Sgu-Fc-OEc" secondAttribute="bottom" constant="8" id="MUa-9L-Rcm"/>
                             <constraint firstItem="abz-ZF-5T7" firstAttribute="centerX" secondItem="oCH-Cq-dbX" secondAttribute="centerX" id="T4T-Qh-dvQ"/>
-                            <constraint firstItem="Sgu-Fc-OEc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="abz-ZF-5T7" secondAttribute="top" constant="8" id="XHt-rr-P58"/>
                             <constraint firstItem="Sgu-Fc-OEc" firstAttribute="centerX" secondItem="abz-ZF-5T7" secondAttribute="centerX" id="YAa-BS-zwq"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="abz-ZF-5T7" secondAttribute="trailing" constant="5" id="cKD-Sc-adS"/>
                             <constraint firstAttribute="bottom" secondItem="abz-ZF-5T7" secondAttribute="bottom" id="ooh-FG-jH9"/>
-                            <constraint firstItem="abz-ZF-5T7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oq1-G3-G5r" secondAttribute="bottom" constant="10" id="pbs-2M-ZFz"/>
+                            <constraint firstItem="abz-ZF-5T7" firstAttribute="top" secondItem="oq1-G3-G5r" secondAttribute="bottom" constant="10" id="pbs-2M-ZFz"/>
                             <constraint firstItem="oq1-G3-G5r" firstAttribute="centerX" secondItem="oCH-Cq-dbX" secondAttribute="centerX" id="qYV-sm-hjH"/>
                             <constraint firstItem="abz-ZF-5T7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oCH-Cq-dbX" secondAttribute="leading" constant="5" id="v6L-gV-Mmk"/>
                             <constraint firstItem="Sgu-Fc-OEc" firstAttribute="centerY" secondItem="abz-ZF-5T7" secondAttribute="centerY" id="xZ9-gB-ueS"/>

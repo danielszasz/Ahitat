@@ -17,12 +17,12 @@ class ExpandableView: CustomView {
 
     override func configureUI() {
         super.configureUI()
-        titleLable.font = UIFont.authorLabel
+        titleLable.font = UIFont.authorLabel.changeSizeIfIpad
         titleLable.textColor = .slateTwo
         separatorView.backgroundColor = .paleBlue
 
         expandableIndicator.textColor = .slateTwo
-        expandableIndicator.font = .authorLabel
+        expandableIndicator.font = UIFont.authorLabel.changeSizeIfIpad
         expandableIndicator.text = "+"
         attachmentView.isHidden = true
         addTap()

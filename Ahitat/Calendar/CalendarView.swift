@@ -40,23 +40,23 @@ class CalendarView: CustomView {
         backgroundColor = .black16
 
         leftButton.setImage(#imageLiteral(resourceName: "iconBackChevron.png"), for: .normal)
-        leftButton.titleLabel?.font = UIFont.systemFontLight
+        leftButton.titleLabel?.font = UIFont.systemFontLight.changeSizeIfIpad
         leftButton.setTitleColor(.slateTwo, for: .normal)
         leftButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
         leftButton.addTarget(self, action: #selector(goToPreviousMonth), for: .touchUpInside)
 
         rightButton.setImage(#imageLiteral(resourceName: "iconForwardChevron.png"), for: .normal)
-        rightButton.titleLabel?.font = UIFont.systemFontLight
+        rightButton.titleLabel?.font = UIFont.systemFontLight.changeSizeIfIpad
         rightButton.semanticContentAttribute = .forceRightToLeft
         rightButton.setTitleColor(.slateTwo, for: .normal)
         rightButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         rightButton.addTarget(self, action: #selector(goToNextMonth), for: .touchUpInside)
 
         currentMonthLabel.textColor = UIColor.slate
-        currentMonthLabel.font = UIFont.systemFontSemibold
+        currentMonthLabel.font = UIFont.systemFontSemibold.changeSizeIfIpad
 
         currentDayLabel.textColor = .slate
-        currentDayLabel.font = UIFont.georgiaItalic
+        currentDayLabel.font = UIFont.georgiaItalic.changeSizeIfIpad
         currentDayContainerView.backgroundColor = .iceBlue
 
         configureToday()
@@ -70,7 +70,7 @@ class CalendarView: CustomView {
 
     private func configureToday() {
         todayLabel.textColor = .slate
-        todayLabel.font = UIFont.systemFontSemibold.withSize(12)
+        todayLabel.font = UIFont.systemFontSemibold.withSize(12).changeSizeIfIpad
         todayLabel.text = "Mai Áhitat"
         todayContainerView.backgroundColor = .greyblue50
         let tap = UITapGestureRecognizer(target: self, action: #selector(returnToToday))
@@ -174,9 +174,9 @@ extension CalendarView: UICollectionViewDelegate {
 
 extension CalendarView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let daysInARow: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 14 : 7
+        let daysInARow: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 13 : 7
         let width = UIScreen.main.bounds.width/daysInARow
-        let height: CGFloat = 65
+        let height: CGFloat = 68
         collectionViewHeightConstraint.constant = height
         return CGSize(width: width, height: height)
     }

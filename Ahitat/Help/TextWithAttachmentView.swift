@@ -33,7 +33,7 @@ class TextWithAttachmentView: CustomView {
     private func getTextAsAttributed(text: String) -> NSAttributedString {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.minimumLineHeight = 20
-        return NSMutableAttributedString(string: text, attributes: [.font: UIFont.proDisplayRegular,
+        return NSMutableAttributedString(string: text, attributes: [.font: UIFont.proDisplayRegular.changeSizeIfIpad,
                                                                             .foregroundColor: UIColor.slateTwo,
                                                                             .paragraphStyle: paragraphStyle])
 
@@ -51,7 +51,7 @@ class TextWithAttachmentView: CustomView {
         mutable.append(attributed)
 
         mutable.addAttributes([.foregroundColor: UIColor.greyblue50,
-                               .font: UIFont.proDisplayRegular],
+                               .font: UIFont.proDisplayRegular.changeSizeIfIpad],
                               range: NSRange(location: 0, length: mutable.length))
         return mutable
     }

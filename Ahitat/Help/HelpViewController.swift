@@ -35,25 +35,27 @@ class HelpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = viewModel.screenTitle
+
         iconImageView.image = UIImage(named: viewModel.icon)
 
-        titleLabel.font = UIFont.proDisplaySemibold
+        titleLabel.font = UIFont.proDisplaySemibold.changeSizeIfIpad
         titleLabel.textColor = .slateTwo
         titleLabel.text = viewModel.title
 
-        descriptionLabel.font = UIFont.proDisplayRegular
+        descriptionLabel.font = UIFont.proDisplayRegular.changeSizeIfIpad
         descriptionLabel.textColor = .slateTwo
         descriptionLabel.text = viewModel.description
 
-        sponsorLabel.font = UIFont.sponsorFont
+        sponsorLabel.font = UIFont.sponsorFont.changeSizeIfIpad
         sponsorLabel.textColor = .slateTwo
         sponsorLabel.text = viewModel.sponsor
 
-        copyrightLabel.font = UIFont.sponsorFont
+        copyrightLabel.font = UIFont.sponsorFont.changeSizeIfIpad
         copyrightLabel.textColor = .slateTwo
         copyrightLabel.text = viewModel.copyright
 
-        versionLabel.font = UIFont.versionFontTwo
+        versionLabel.font = UIFont.versionFontTwo.changeSizeIfIpad
         versionLabel.textColor = .greyblue50
         versionLabel.text = viewModel.version
 

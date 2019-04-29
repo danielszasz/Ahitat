@@ -44,7 +44,14 @@ class ExpandableView: CustomView {
     }
 
     @IBAction private func toggle() {
-        attachmentView.isHidden ? open() : close()
+        if attachmentView.isHidden {
+            UIView.animate(withDuration: 0.2) {
+                self.open()
+            }
+        } else {
+            self.close()
+        }
+
         viewPressed(self)
     }
 

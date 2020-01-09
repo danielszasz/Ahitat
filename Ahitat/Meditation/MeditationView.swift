@@ -84,31 +84,32 @@ class MeditationView: CustomView {
 
     private func addLink(textView: UITextView) {
         let sstring = textView.attributedText.string
-        let regex = try? NSRegularExpression(pattern: "[a-záéúőóüöA-Z1-9]+\\s+\\d{1,3}:+\\d{1,3}(-\\d{1,3})?", options: .caseInsensitive)
+        let regex = try? NSRegularExpression(pattern: "[a-záéúőóüöA-Z1-9]+\\s+\\d{1,3}:+\\s?+\\d{1,3}(-\\d{1,3})?", options: .caseInsensitive)
 
         guard let fs = regex?.matches(in: sstring, options: .reportCompletion,
-                                      range: NSRange(location: 0, length: sstring.count)),
-            let result = fs.first else {return}
-        let string = (sstring as NSString).substring(with: result.range)
-        let components = string.components(separatedBy: [":", " ", "-"])
+                                      range: NSRange(location: 0, length: sstring.count)) else {return}
+        for result in fs {
+            let string = (sstring as NSString).substring(with: result.range)
+            let components = string.components(separatedBy: [":", " ", "-"])
 
-        let book = components[0]
-        let chapter = components[1]
-        let verse = components[2]
+            let book = components[0]
+            let chapter = components[1]
+            let verse = components[2]
 
-        guard let attributed = textView.attributedText else {return}
+            guard let attributed = textView.attributedText else {return}
 
-        let mutable = NSMutableAttributedString(attributedString: attributed)
-        let link = LinkConstructor().getLink(book: book,
-                                             chapter: chapter,
-                                             firstVerse: verse)
-        guard let url = URL(string: link) else {return}
+            let mutable = NSMutableAttributedString(attributedString: attributed)
+            let link = LinkConstructor().getLink(book: book,
+                                                 chapter: chapter,
+                                                 firstVerse: verse)
+            guard let url = URL(string: link) else {return}
 
-        mutable.addAttributes([.link: url], range: result.range)
-        textView.attributedText = mutable
-        textView.isUserInteractionEnabled = true
-        textView.delegate = self
-        textView.linkTextAttributes = [.underlineStyle: NSUnderlineStyle.single.rawValue]
+            mutable.addAttributes([.link: url], range: result.range)
+            textView.attributedText = mutable
+            textView.isUserInteractionEnabled = true
+            textView.delegate = self
+            textView.linkTextAttributes = [.underlineStyle: NSUnderlineStyle.single.rawValue]
+        }
     }
 }
 

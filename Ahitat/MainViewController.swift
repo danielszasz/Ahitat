@@ -51,13 +51,14 @@ class MainViewController: UIViewController {
     private func configureSideMenu() {
         // Define the menus
         let vc = MenuViewController(delegate: self)
-        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: vc)
+        let menuLeftNavigationController = SideMenuNavigationController(rootViewController: vc)
 
-        SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
-        SideMenuManager.default.menuFadeStatusBar = false
-        SideMenuManager.default.menuPresentMode = .menuSlideIn
-        SideMenuManager.default.menuWidth = UIScreen.main.bounds.width * 0.56
-        SideMenuManager.default.menuAnimationFadeStrength = 0.4
+        menuLeftNavigationController.menuWidth = UIScreen.main.bounds.width * 0.56
+        menuLeftNavigationController.presentationStyle = .menuSlideIn
+        menuLeftNavigationController.statusBarEndAlpha = 0
+        menuLeftNavigationController.presentationStyle.presentingEndAlpha = 0.4
+
+        SideMenuManager.default.leftMenuNavigationController = menuLeftNavigationController
     }
 
     private func configureNavigationBar() {
@@ -118,7 +119,7 @@ class MainViewController: UIViewController {
     }
 
     @objc private func openSideMenu() {
-        present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
+        present(SideMenuManager.default.leftMenuNavigationController!, animated: true, completion: nil)
     }
 
     @objc private func nextDay() {

@@ -7,399 +7,419 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00A7E94E4E392A38891C255C3C274B92 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 24211DD10F4D381DBE34200892B36225 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A923E46564B2E7AB4002D62732B66BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		0E2940D392D58008BAD8A3FDA3C7F954 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8F92218E351F2EE697F05ABB5C18F /* Foundation.swift */; };
-		14C899375FEAFF0393CC1AFA05E2742B /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2CCBBB5D58140D6D5292013408CAB /* AggregateFunctions.swift */; };
-		17AD01B5AAD3E7DE66A2495DF4649488 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		19B0C61C22B074ED580846228595132C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D698DBDA2EC26A54D1D3C98EFED9C3 /* Errors.swift */; };
-		1CC4A6F82EFF0D048ED5DEF309D0B7B3 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4236261A323CAAE4A26B15AC515889 /* FTS5.swift */; };
-		1E8EB1DE8E0E20178872F74AF49115F3 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50DEF94F925CB79517E107C0EEAA70F /* Value.swift */; };
-		1F374D5C9D7EB4289846EB5F529B8B09 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDBC8FF41EA50EAD05C0E232270E0C /* CustomFunctions.swift */; };
-		271B2BCFFA5F4098A801E2A6A13FEEB7 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542AEFD20EAF7C8B249FFEDF9B7F1B6 /* Operators.swift */; };
-		29CA4D20AF21105F6A8BDD2FB77933A6 /* Pods-AhitatUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3569E4810EC170DEA99AE48C78CFDD57 /* Pods-AhitatUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35D60AB8185A5C8387BDB5E2E614AB53 /* Pods-Ahitat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC00C92C6AE65678944C9317C30D8FA /* Pods-Ahitat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37877B3D82463B9D7CDF4521CDF1FDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		47F2E7468B6C812F791ECE5262AB9C88 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D495EA9F7ACCE99D024E29A6284C72D /* Schema.swift */; };
-		5BC9D39B1B382B8901BB4786607FB6E1 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A73330CCCBAE700C3B6138FFC849EE /* Statement.swift */; };
-		5FA4557843F20A44070DDDFC9A370471 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 6160BF519BAE6889F150321DAE29F36B /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		605A8A8A43C6125BD19BB57641CC0D49 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8793198DA1218460899B9F9B6FA02 /* CoreFunctions.swift */; };
-		663196F389656D00ED6B4CE0B8F0AB0C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614325ED55F653BD483959D62BBC8D9 /* Helpers.swift */; };
-		672C9FECC3F69C2FFA2434ECE0098C98 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DF5391F7F5D9FC11D9DD0AD4F9228 /* RTree.swift */; };
-		68CD70510DEAA5B6077C5808D94976F9 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49154A13F5FF9DBFD486482FEA423E51 /* Blob.swift */; };
-		6A0F02F43D3D273FE47471115E7F0E34 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC275F0C1BA9A196D021A4029DD48313 /* SideMenu-dummy.m */; };
-		7DB9EF19DFB9A930EA3F363DDB49757F /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 936996AEB6F8FFEE441E2FCFA93AA8A0 /* SQLite.swift-dummy.m */; };
-		81CC3B06A24D258BB420CBE316453441 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56B5EE9BCD13B5A2F8BD68E69C0E0901 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86A23ED0B1F17181FAE14454B3BBAAC7 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADC086A2CE0B8F46D7B7340C5129432 /* Collation.swift */; };
-		8A8DC46FF4E75364BD972C83EF148E38 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB0C73A7BA33B3A79D89B719C616C94 /* UITableViewVibrantCell.swift */; };
-		8C751A9B58484C2CA728C92CD02EBC87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		8D5DC50540E903F6C2BBA8A9EEE5F3E2 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E21387317C658FBAF31BD37ABB7449F /* Connection.swift */; };
-		8FA6EB5C837E320CE0A798B6AC1E4AD1 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D94F1EFBAE352814096C9855EA69794 /* UISideMenuNavigationController.swift */; };
-		921F7F91787702CC244E84D12438E41D /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 573BA333FA9B8DCD4D5421879D083C9A /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		974641DDCDEE2B75A0AE1E128401FEFF /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB204D419CC43784F2256A8DFEBC28AE /* SideMenuManager.swift */; };
-		9D8BDEFC208CDDBA425CB614E6CE8E34 /* Pods-Ahitat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F00DDAA04E5EB0A1D3A24B8C67A0F2 /* Pods-Ahitat-dummy.m */; };
-		9FEB56300C0FABE9F167CB2C51A62C37 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C35F1260F1F3BBAADB15126FC510E9 /* FTS4.swift */; };
-		A22D1FD63D3AF48FF4058BFBDCBD9617 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0292B392744165A2AC722FF35C43FD /* Expression.swift */; };
-		A9D38952559103E3DDDF4B64572B2075 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD359E7915736ABE4801654235E6ADC1 /* DateAndTimeFunctions.swift */; };
-		B524E373E3E154A2BFA1D21A7E8B2F0B /* Pods-AhitatUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2623F8F9E5F2D533EE6A58805B25FCB3 /* Pods-AhitatUITests-dummy.m */; };
-		B950342A4034127BF4CD3DD950A2A6F1 /* Pods-AhitatTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9A853DA9814DA45924219F63238D30 /* Pods-AhitatTests-dummy.m */; };
-		C2DB074FB291C6E990B9BD7F11933A69 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 079C64DFDB940E09487BBBA284E98DD4 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C535C159A710F7344564855145D2CA7F /* Pods-AhitatTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 127CBDF9573B70C24C6E28C744384C37 /* Pods-AhitatTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDB309DA858FBBF4330586FAC6565796 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5777DADE864A2B4F287A1E1F23A13270 /* Setter.swift */; };
-		CDC88AEF9CB33F5E0083A68C7A0E24D2 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5869BBFE0FC8254509497E1E22A00C /* SideMenuTransition.swift */; };
-		F35B963BCB89E3EAFD11564FCB6D1975 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A76B4BBF269AB62FAA30BFD9155C6 /* Coding.swift */; };
-		F6DE6686A50A3A772F019F03D5AA9855 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E8F361C910EEB9CF1D855911AB2FE5 /* Query.swift */; };
-		FD0BD0DE0A370D4DC0F48DBDDD24A934 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		FF49B19610EE7C94D0D19E06A74C8412 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 073C69581C8C26A9F195D06B6F33CD65 /* SQLite-Bridging.m */; };
+		03F6349BC7F1C0F3BDFD63082CCE32DB /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6445A9D949314A55945C1C5B10AD8073 /* FTS4.swift */; };
+		08B5B89F28224381711F45A680C292D9 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 395F142FF5435588F50EA498EE4634CF /* SideMenu-dummy.m */; };
+		09A0A5D3733F69E93F553ABBCF02FB77 /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A919BF5614C1402D63AF2360889F36 /* SideMenuTransitionController.swift */; };
+		0BF562AB7904F48D0BC1C62D30D39C22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		13DC37325FD7C005D5757A7A24879CFB /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31CCDDF5CADC82E140F4D4E068AB78B /* Expression.swift */; };
+		16E32D96D226F5CA5ECE9021B4448A2C /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E56CDCA8DAB202E55969FC76A819DC /* Connection.swift */; };
+		18808F9C139BA0E9059E72980F0BF908 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1879ECAA613FD3E2258344835850E46 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		188E0D4F7200FED3C7A1245F9F913072 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6899E31963B1A567CF73CC26D9D41 /* Coding.swift */; };
+		1B13B36FAC4CB8F57794A2B328FDA679 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746EC1031B9265DDF2810B7A1104341A /* CoreFunctions.swift */; };
+		26EE96B1AB8C8A60095543991A37837E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		27D830F1CAC60B99CC0A135F583BFFF2 /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1BC0C16351B17CD602C9631FA8D523 /* SideMenuPresentationController.swift */; };
+		2C4F38367FEF4F7C72224D9EB87B7F71 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD10FD9589FBD48E8F1EFDCAF55BB420 /* Blob.swift */; };
+		2ED518A3FA8DCBE08E621AC5C32844A9 /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EBB0D0230E41C51A585F7B46AC907 /* SideMenuPushCoordinator.swift */; };
+		30B894A5D2D18E9366FF70D4F7219387 /* Pods-AhitatUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB8C213C099D165614233B1863F5DB1 /* Pods-AhitatUITests-dummy.m */; };
+		31AAD13A75FA67A504E265924E542827 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519056B11F0FF9B9C01D7436A0D32FCA /* Statement.swift */; };
+		348B481DC980D7B5252368E2A54CFBF9 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DEF80A3E25B0942AE76AB390A06E64 /* Foundation.swift */; };
+		3846AFE38D1B63A9F0D9073C4ABC6DAA /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43401634E3C97E1071D9A738457161 /* SideMenuNavigationController.swift */; };
+		3E18B004D34ED5441A193684EEB25BD3 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D848A91C7454964F7FCE15752AEE5E25 /* SideMenuPresentationStyle.swift */; };
+		444D048C8F52A4002F068AE6198AA5B7 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3318395BAD6DB6F150A1E2B0B8D0D8D /* Query.swift */; };
+		4A50D35274D871E14260F93489F87E32 /* SQLiteObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77C9068B1ACAA3266EFCC8EABECA60 /* SQLiteObjc.m */; };
+		4E3EDCB1C27B3725FD8AEFD7E61B9E17 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED3F5A2A3C858E5A71A4EBAE033B8D /* RTree.swift */; };
+		4E88B70410F6837FBD463EA4B6C33155 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE478C64B7E9C8DC5261967CD6249A /* Extensions.swift */; };
+		5AB7AA2D47C8BD4ED779FB58ADD2EB19 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF0862EF012CA3E0E7402FE5ED4DD0 /* Operators.swift */; };
+		5AE4DB3F42EF427874357B450B249BB9 /* Pods-AhitatTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B728554FB4549DECA245246F2A2A7 /* Pods-AhitatTests-dummy.m */; };
+		5BA891FB2BE2492499DD30FAD3D2F399 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192095419D2285FED3EC459F68DC44D8 /* Value.swift */; };
+		5D1D42009E941070E4EDDE947A881181 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95DBB472D4852D1037B73FD8A99FFBA /* Errors.swift */; };
+		5F75157A5075DECD1D4512F9A6744CA6 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = FD57F556BBD1409A29A58EEBE081E81F /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		67F339D752FFF174485AB6F96EC6FA7E /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FC376260628267E802B657D70A08F4 /* SQLite.swift-dummy.m */; };
+		77AF2098DDCCAAE0CE4A20725C466905 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D34EB71CA62F5149924387C499BB3 /* SideMenuManager.swift */; };
+		79E43357E56514CD6FE8A6F4B1D28C2E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC26CA514EB5FB2A1FE9AD423DF23154 /* Helpers.swift */; };
+		85955210CD6C781927D9A3A335A06813 /* Pods-Ahitat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B0607281E9780EB448F5E7560956FD /* Pods-Ahitat-dummy.m */; };
+		890FF25D0CCFF9BADECBA64DCCEFF4FF /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99A15F082D037D1AC070908509CFA1 /* SideMenuAnimationController.swift */; };
+		8C06632AA14D12278B1277AC0CC6A0B2 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05661878CEA89E0112AF8E5E8247DC67 /* SideMenuInteractionController.swift */; };
+		905A503F069C27E841BAD9F4EFD4F1AF /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3702C4398D31BAF92396F32986F6BBD5 /* Protected.swift */; };
+		9B3A040DEACD188FBA57F28AFAADB057 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D691A5D8509421AEC7A4615920177E24 /* AggregateFunctions.swift */; };
+		A03C59542AE5122B2732F01884F686CF /* Pods-AhitatTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC978756660B077D2A17BA7C22D4E04 /* Pods-AhitatTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42659683986F68D9D4F244F1DB71C2F /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3771EB15AB9D608F3774FF52618BEC6 /* FTS5.swift */; };
+		A966409E4EB7EB56CBE6C9DFA0FC5B94 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A2D6FAE5FBB647F4EBF30F58ACB56 /* DateAndTimeFunctions.swift */; };
+		B1D89872AC365C78155FF44EE9F28FEF /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A325240650EE4C256B9CE1A0AA8B47 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B27B12C5D2EF1BE7B3CBBBC8FA98110E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B986CEFB5AD2018AEC584B782D4BED2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C64E97D5FC0802B08D7CA36AEC74A422 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9935F34B63084615DB50730BF64122B5 /* CustomFunctions.swift */; };
+		C798DA148F7F666F393F2009DDF73E35 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21CA5C230F29935B7E270FE3D00415D /* Initializable.swift */; };
+		C96A55C2A869A97AC4CA628A7F2A2A21 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2387FA47B5488912FCB11A4971374 /* UITableViewVibrantCell.swift */; };
+		D1BD7393C7934049B3E51D9C5A5CD8A0 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440431861FD738465B5BE33D99916322 /* Print.swift */; };
+		D3D22BB8C279DC03EA91BFE3F5412477 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F07121AE188B8759A320D2F8421FB /* Deprecations.swift */; };
+		D6E6E2AA38E0E6B0B7D1E0891F4FD12D /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A27E7D63CF6A0C1E1C3CD0C04A8D487 /* Setter.swift */; };
+		D777716F0B6C0754B7B0230531743BC4 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E09713CC4E90CEE46660A0CCFFE61BF /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD44A17C7665842E6AE218DC4B0572A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EE966B1A61C1960A3BBC22A783C27272 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D9A8B9D5472838200835DB5FB8685 /* Collation.swift */; };
+		EF5E32C13CFA779B953F8F81AE3C67D6 /* SQLiteObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C0E56B1FD7413AD50334B0CD36F334 /* SQLiteObjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6BB6C198A2522FF0633261964EB2A24 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFD62A1CC0112E232D23B9BAB4F692 /* Schema.swift */; };
+		FCE9B3DBFD8EB12754404C35406B953E /* Pods-AhitatUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BAF6C567A81C720A0628730384505B /* Pods-AhitatUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD49384F9BB3690A8A4F20629D9D3B0D /* Pods-Ahitat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B66C24730BB729636367EF74F1A229 /* Pods-Ahitat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		378C9B4A46120AB8FFB243D03FDAF385 /* PBXContainerItemProxy */ = {
+		6E247B8A418AC39CFEDD7BF2667835D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A66E415BB3F9CE3891D1CD403F8223BB;
-			remoteInfo = "Pods-Ahitat";
-		};
-		85EF1C4C51EEDA087AB5A2DF60583953 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F0AA1DAEDA7ADAA9B7B6CDFD5D889318;
-			remoteInfo = SQLite.swift;
-		};
-		BD05621EE88E32001F9536648FA434BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7F7A882E51BDCE2A6F98F691A051EC1;
+			remoteGlobalIDString = C4A0A7D8591B67FB75E2E8D215E3735B;
 			remoteInfo = SideMenu;
 		};
-		D268F3105333B08056C33CE8D8E5CF79 /* PBXContainerItemProxy */ = {
+		E9FC28BDC851F7708AF95864CAC2EFA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A66E415BB3F9CE3891D1CD403F8223BB;
+			remoteGlobalIDString = 3F2C1776D90B62B156DB52C41A5C419C;
+			remoteInfo = SQLite.swift;
+		};
+		EED422724963980B4CE01C9002B8DB27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DDD7DDA26D556480F97AEFF8E4D997;
+			remoteInfo = "Pods-Ahitat";
+		};
+		F73083831047B045CDB83EE051BBEB20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DDD7DDA26D556480F97AEFF8E4D997;
 			remoteInfo = "Pods-Ahitat";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		073C69581C8C26A9F195D06B6F33CD65 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		079C64DFDB940E09487BBBA284E98DD4 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
-		0ADD6E66B530BB2770BAA6587EB038DE /* Pods-Ahitat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ahitat-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0E56149026827CCAB16C0A68605C23E1 /* Pods-AhitatTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AhitatTests-resources.sh"; sourceTree = "<group>"; };
-		127CBDF9573B70C24C6E28C744384C37 /* Pods-AhitatTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AhitatTests-umbrella.h"; sourceTree = "<group>"; };
-		159EFC64F4CC7DAD987CD489672A9CC1 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
-		1863A0DCB78AEFDFE1A7207A30A88E39 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		1AB5C73E5446FC1B01E57B3352CC8531 /* Pods_Ahitat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ahitat.framework; path = "Pods-Ahitat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		20E8F361C910EEB9CF1D855911AB2FE5 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
-		23C35F1260F1F3BBAADB15126FC510E9 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
-		24211DD10F4D381DBE34200892B36225 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2623F8F9E5F2D533EE6A58805B25FCB3 /* Pods-AhitatUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AhitatUITests-dummy.m"; sourceTree = "<group>"; };
-		2A222B82DC8F89F784F6DFB221018986 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EF99920C08418CEC90DC382B172657C /* Pods-AhitatTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AhitatTests-frameworks.sh"; sourceTree = "<group>"; };
-		3569E4810EC170DEA99AE48C78CFDD57 /* Pods-AhitatUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AhitatUITests-umbrella.h"; sourceTree = "<group>"; };
-		358C3BCD338BD728FF79608B6DAA187F /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		35C37A15CC0C2A13E31B82CFB97B99AC /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		3614325ED55F653BD483959D62BBC8D9 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		378E7824F22E17578CD1A9FB4E9B8CC7 /* Pods-Ahitat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ahitat-frameworks.sh"; sourceTree = "<group>"; };
-		387CB3EE38E26A5BAD414822A4802E21 /* Pods-AhitatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B4236261A323CAAE4A26B15AC515889 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		3ED8793198DA1218460899B9F9B6FA02 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		49154A13F5FF9DBFD486482FEA423E51 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		4D00EC0748887F4A192DDBCAAAEE41B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E21387317C658FBAF31BD37ABB7449F /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		50544DDB6AEDD3ED9D128E6BC06EC128 /* Pods-Ahitat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ahitat-acknowledgements.plist"; sourceTree = "<group>"; };
-		508DF5391F7F5D9FC11D9DD0AD4F9228 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
-		52A73330CCCBAE700C3B6138FFC849EE /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		561C03892EF7FABC35EC2B6C998D8D8C /* Pods-AhitatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatTests.release.xcconfig"; sourceTree = "<group>"; };
-		56B5EE9BCD13B5A2F8BD68E69C0E0901 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
-		573BA333FA9B8DCD4D5421879D083C9A /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		5777DADE864A2B4F287A1E1F23A13270 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
-		5E9982882BE3B5A70D949DACD206AB4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6160BF519BAE6889F150321DAE29F36B /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
-		61B14F18A5B589D5152486431735BC0E /* Pods-AhitatTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AhitatTests.modulemap"; sourceTree = "<group>"; };
-		633465067C118D1FDC85762BBF021C2F /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F25F089D36069BB4045103A3913972E /* Pods-AhitatUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AhitatUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7D94F1EFBAE352814096C9855EA69794 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
-		7FD2CCBBB5D58140D6D5292013408CAB /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
-		81CDBC8FF41EA50EAD05C0E232270E0C /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
-		81D26DEBF7038DE264B45BF47846C8BA /* Pods-Ahitat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ahitat.debug.xcconfig"; sourceTree = "<group>"; };
-		8B7EDD6B3F2039506E180237E52D73BF /* Pods-AhitatUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AhitatUITests-frameworks.sh"; sourceTree = "<group>"; };
-		8D495EA9F7ACCE99D024E29A6284C72D /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
-		936996AEB6F8FFEE441E2FCFA93AA8A0 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		96049E1E832AE13FDB71F10997981438 /* Pods-AhitatTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AhitatTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A405616901CAA441C9D22FEC3EDF3D94 /* Pods-AhitatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A47E0C8C96B4CB330D4991E946C0E370 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA0292B392744165A2AC722FF35C43FD /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
-		AADC086A2CE0B8F46D7B7340C5129432 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
-		AB204D419CC43784F2256A8DFEBC28AE /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
-		AC275F0C1BA9A196D021A4029DD48313 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
-		AEB0C73A7BA33B3A79D89B719C616C94 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
-		B1958967D5F4412CB5ED82C8C156C5DD /* Pods-AhitatUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AhitatUITests-resources.sh"; sourceTree = "<group>"; };
-		B50DEF94F925CB79517E107C0EEAA70F /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		B542AEFD20EAF7C8B249FFEDF9B7F1B6 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		B849C018C9D09C4D533D80BD3FC73740 /* Pods_AhitatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AhitatTests.framework; path = "Pods-AhitatTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C16E23E449EF009B8D69BD515E7D584F /* Pods-AhitatUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AhitatUITests.modulemap"; sourceTree = "<group>"; };
-		C24A53336E2F5B9D56F4C866A31888F7 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
-		C569F41DD63C346C68475FD8CE04AAEF /* Pods-Ahitat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ahitat.modulemap"; sourceTree = "<group>"; };
-		C5F00DDAA04E5EB0A1D3A24B8C67A0F2 /* Pods-Ahitat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ahitat-dummy.m"; sourceTree = "<group>"; };
-		C7A9AD51C3319BF57A9FAA954F233AE8 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CEA8F92218E351F2EE697F05ABB5C18F /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
-		DE7A76B4BBF269AB62FAA30BFD9155C6 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
-		DF5869BBFE0FC8254509497E1E22A00C /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
-		EA6C243A139293D75FB015A49124C2D9 /* Pods-AhitatTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AhitatTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EAC00C92C6AE65678944C9317C30D8FA /* Pods-Ahitat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ahitat-umbrella.h"; sourceTree = "<group>"; };
-		ED9A853DA9814DA45924219F63238D30 /* Pods-AhitatTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AhitatTests-dummy.m"; sourceTree = "<group>"; };
-		EDC72C83350CCF90672E27DB4439815C /* Pods-AhitatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AhitatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F0D698DBDA2EC26A54D1D3C98EFED9C3 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
-		F32EBA6F9112D379CCDA9E636A5CE0AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F371361370AA11DB91B2633C34FC3A98 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3F32C760B68C3BC7BC3623DB3B5C2B6 /* Pods-Ahitat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ahitat-resources.sh"; sourceTree = "<group>"; };
-		F5FC427CD22935AA2C7866EBC2044CD4 /* Pods-AhitatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F8FE305D5FE851409A31FB981018D010 /* Pods_AhitatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AhitatUITests.framework; path = "Pods-AhitatUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB50596D240B7FBE41BE4A918B11DC8B /* Pods-Ahitat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ahitat.release.xcconfig"; sourceTree = "<group>"; };
-		FD359E7915736ABE4801654235E6ADC1 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		00A325240650EE4C256B9CE1A0AA8B47 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		01314809ECDCDDE85CDB719E55130796 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+		05661878CEA89E0112AF8E5E8247DC67 /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
+		060263D9E9D82C3F7180D42E20EA8276 /* Pods_AhitatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AhitatTests.framework; path = "Pods-AhitatTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1112C473588FE0931E1199D4F26249B0 /* Pods-AhitatTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AhitatTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		11841B62ACEA5A57CFA1131F3598A68B /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		144F210F24FEB32CF9D6F111DAA572DB /* Pods-Ahitat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ahitat-frameworks.sh"; sourceTree = "<group>"; };
+		17ED3F5A2A3C858E5A71A4EBAE033B8D /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		192095419D2285FED3EC459F68DC44D8 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		2082A00F7BDD85B9BA1B6AB485DE2715 /* Pods-Ahitat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ahitat-Info.plist"; sourceTree = "<group>"; };
+		25C0E56B1FD7413AD50334B0CD36F334 /* SQLiteObjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLiteObjc.h; path = Sources/SQLiteObjc/include/SQLiteObjc.h; sourceTree = "<group>"; };
+		319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36E32FC136D5139D8FCA965EA47F75AE /* Pods-AhitatTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AhitatTests-Info.plist"; sourceTree = "<group>"; };
+		3702C4398D31BAF92396F32986F6BBD5 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
+		37AEB414723FE31121F3EC2835CA4BB6 /* Pods-AhitatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3850A49EA4B79DB6F8E46AD88C7EBBEE /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		395F142FF5435588F50EA498EE4634CF /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		3A77C9068B1ACAA3266EFCC8EABECA60 /* SQLiteObjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SQLiteObjc.m; path = Sources/SQLiteObjc/SQLiteObjc.m; sourceTree = "<group>"; };
+		4283444CBFB0F517E8F617BF984DB986 /* Pods-AhitatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatTests.release.xcconfig"; sourceTree = "<group>"; };
+		43C3F90EE0331A44016CF95F5E691B94 /* Pods-Ahitat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ahitat.debug.xcconfig"; sourceTree = "<group>"; };
+		440431861FD738465B5BE33D99916322 /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
+		4A27E7D63CF6A0C1E1C3CD0C04A8D487 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		502C79CDDF20E6157281197D68ED9833 /* Pods-Ahitat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ahitat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		519056B11F0FF9B9C01D7436A0D32FCA /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		57DEF80A3E25B0942AE76AB390A06E64 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		5A7D34EB71CA62F5149924387C499BB3 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		5DEFD62A1CC0112E232D23B9BAB4F692 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		5E09713CC4E90CEE46660A0CCFFE61BF /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		62B6899E31963B1A567CF73CC26D9D41 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
+		6445A9D949314A55945C1C5B10AD8073 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		67895D0B0442C36AD56E4D8483A358C3 /* Pods-AhitatUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AhitatUITests.modulemap"; sourceTree = "<group>"; };
+		67FC376260628267E802B657D70A08F4 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		68BAF6C567A81C720A0628730384505B /* Pods-AhitatUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AhitatUITests-umbrella.h"; sourceTree = "<group>"; };
+		6C1B9A703E88B533DC2A1917C25FDC75 /* Pods-AhitatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AhitatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		707FD476CF4B8DF27789B32C3AF10DEA /* Pods-Ahitat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ahitat.modulemap"; sourceTree = "<group>"; };
+		73EF0862EF012CA3E0E7402FE5ED4DD0 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		746EC1031B9265DDF2810B7A1104341A /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		76BCB8830B429B140D1F503E0302B998 /* Pods-AhitatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D01630340ED779F30CFC4F1514704CD /* SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenu-Info.plist"; sourceTree = "<group>"; };
+		935EBB0D0230E41C51A585F7B46AC907 /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
+		9935F34B63084615DB50730BF64122B5 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A050D07A5A1C8FA8ACE21CB8A1BFB87F /* Pods-AhitatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AhitatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0ACDB22BA2190E78AE844AB95610935 /* Pods-Ahitat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ahitat.release.xcconfig"; sourceTree = "<group>"; };
+		A2B0607281E9780EB448F5E7560956FD /* Pods-Ahitat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ahitat-dummy.m"; sourceTree = "<group>"; };
+		A50F07121AE188B8759A320D2F8421FB /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
+		A8B66C24730BB729636367EF74F1A229 /* Pods-Ahitat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ahitat-umbrella.h"; sourceTree = "<group>"; };
+		AA43401634E3C97E1071D9A738457161 /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
+		ABA19D7C445164196F39C208D1361D0B /* Pods-AhitatUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AhitatUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC99A15F082D037D1AC070908509CFA1 /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
+		B111F503E8C819F62DD6714503922E25 /* Pods-AhitatUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AhitatUITests-Info.plist"; sourceTree = "<group>"; };
+		B25B728554FB4549DECA245246F2A2A7 /* Pods-AhitatTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AhitatTests-dummy.m"; sourceTree = "<group>"; };
+		B3318395BAD6DB6F150A1E2B0B8D0D8D /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		B56C2A98B8128856C8E79BF385B0EC3E /* Pods_Ahitat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ahitat.framework; path = "Pods-Ahitat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A483D7D857B9A4CF2330AD48EEDFC2 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		B7F9704AA9C8E677CC16CD668A8709DA /* SQLite.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SQLite.swift-Info.plist"; sourceTree = "<group>"; };
+		BCB8C213C099D165614233B1863F5DB1 /* Pods-AhitatUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AhitatUITests-dummy.m"; sourceTree = "<group>"; };
+		BD10FD9589FBD48E8F1EFDCAF55BB420 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		BF1BC0C16351B17CD602C9631FA8D523 /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
+		C3771EB15AB9D608F3774FF52618BEC6 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		C40CBD45DF9CEDD8FC8CB51B0F211FBA /* Pods_AhitatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AhitatUITests.framework; path = "Pods-AhitatUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC978756660B077D2A17BA7C22D4E04 /* Pods-AhitatTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AhitatTests-umbrella.h"; sourceTree = "<group>"; };
+		D1E8E44862DD241E704885CDDDDCC3CC /* Pods-AhitatTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AhitatTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D33D8B8F552C9FD9F56E01118CAB724F /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		D46D9A8B9D5472838200835DB5FB8685 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		D691A5D8509421AEC7A4615920177E24 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		D7D49CF25EB97CF4A4859A1C0127F846 /* Pods-Ahitat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ahitat-acknowledgements.plist"; sourceTree = "<group>"; };
+		D7E324D5A5EF8F95BDE84F97BF0741D6 /* Pods-AhitatTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AhitatTests.modulemap"; sourceTree = "<group>"; };
+		D848A91C7454964F7FCE15752AEE5E25 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
+		E1879ECAA613FD3E2258344835850E46 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		E1E56CDCA8DAB202E55969FC76A819DC /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		E21CA5C230F29935B7E270FE3D00415D /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
+		E31CCDDF5CADC82E140F4D4E068AB78B /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		EB8A2D6FAE5FBB647F4EBF30F58ACB56 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		EBDE5F8428950877567467D9F4FE13D1 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		F2AE478C64B7E9C8DC5261967CD6249A /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
+		F2B2387FA47B5488912FCB11A4971374 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A919BF5614C1402D63AF2360889F36 /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
+		F95DBB472D4852D1037B73FD8A99FFBA /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
+		FC26CA514EB5FB2A1FE9AD423DF23154 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		FD57F556BBD1409A29A58EEBE081E81F /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1616CE29DCF90BD4312025E3E0D75E86 /* Frameworks */ = {
+		016FC4BD5B091840952132129F8649AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0BD0DE0A370D4DC0F48DBDDD24A934 /* Foundation.framework in Frameworks */,
+				B986CEFB5AD2018AEC584B782D4BED2E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C30170CE740CBCAD81D8139132C85C5 /* Frameworks */ = {
+		763BC0BD98A7F71DA4F24BFD0BB7D543 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37877B3D82463B9D7CDF4521CDF1FDA1 /* Foundation.framework in Frameworks */,
+				0BF562AB7904F48D0BC1C62D30D39C22 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1796D09E22352F8B0E89423D8745BBC /* Frameworks */ = {
+		A1DC26BE8ED6BB3E57EC282209CB9866 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C751A9B58484C2CA728C92CD02EBC87 /* Foundation.framework in Frameworks */,
+				DD44A17C7665842E6AE218DC4B0572A5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C33D359E76EE093FE927C88226AEA5F8 /* Frameworks */ = {
+		D458AA769766BA3830B385FC35BB9CEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17AD01B5AAD3E7DE66A2495DF4649488 /* Foundation.framework in Frameworks */,
+				26EE96B1AB8C8A60095543991A37837E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E72D852B8D8A78023017E1663C356955 /* Frameworks */ = {
+		D9D87C2BC8D3C4B8382407D4C6B16014 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A923E46564B2E7AB4002D62732B66BD /* Foundation.framework in Frameworks */,
+				B27B12C5D2EF1BE7B3CBBBC8FA98110E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A5A65131B35370DADA8728F68F44717 /* Targets Support Files */ = {
+		20E67973E6D98391B49351AD927012F2 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				8698EC51314B1D185FDF3BD819753EC6 /* Pods-Ahitat */,
-				103BDAEC763CCB5977E76130DD1EF993 /* Pods-AhitatTests */,
-				670440D555E113DBCA7B2FAF30E4B78C /* Pods-AhitatUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		103BDAEC763CCB5977E76130DD1EF993 /* Pods-AhitatTests */ = {
-			isa = PBXGroup;
-			children = (
-				5E9982882BE3B5A70D949DACD206AB4D /* Info.plist */,
-				61B14F18A5B589D5152486431735BC0E /* Pods-AhitatTests.modulemap */,
-				96049E1E832AE13FDB71F10997981438 /* Pods-AhitatTests-acknowledgements.markdown */,
-				EA6C243A139293D75FB015A49124C2D9 /* Pods-AhitatTests-acknowledgements.plist */,
-				ED9A853DA9814DA45924219F63238D30 /* Pods-AhitatTests-dummy.m */,
-				2EF99920C08418CEC90DC382B172657C /* Pods-AhitatTests-frameworks.sh */,
-				0E56149026827CCAB16C0A68605C23E1 /* Pods-AhitatTests-resources.sh */,
-				127CBDF9573B70C24C6E28C744384C37 /* Pods-AhitatTests-umbrella.h */,
-				A405616901CAA441C9D22FEC3EDF3D94 /* Pods-AhitatTests.debug.xcconfig */,
-				561C03892EF7FABC35EC2B6C998D8D8C /* Pods-AhitatTests.release.xcconfig */,
-			);
-			name = "Pods-AhitatTests";
-			path = "Target Support Files/Pods-AhitatTests";
-			sourceTree = "<group>";
-		};
-		1D451D8684B69AB2E342378ED4124E2F /* SideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				AB204D419CC43784F2256A8DFEBC28AE /* SideMenuManager.swift */,
-				DF5869BBFE0FC8254509497E1E22A00C /* SideMenuTransition.swift */,
-				7D94F1EFBAE352814096C9855EA69794 /* UISideMenuNavigationController.swift */,
-				AEB0C73A7BA33B3A79D89B719C616C94 /* UITableViewVibrantCell.swift */,
-				917A463ABF107D437A0615345226B0F0 /* Support Files */,
+				A50F07121AE188B8759A320D2F8421FB /* Deprecations.swift */,
+				F2AE478C64B7E9C8DC5261967CD6249A /* Extensions.swift */,
+				E21CA5C230F29935B7E270FE3D00415D /* Initializable.swift */,
+				440431861FD738465B5BE33D99916322 /* Print.swift */,
+				3702C4398D31BAF92396F32986F6BBD5 /* Protected.swift */,
+				AC99A15F082D037D1AC070908509CFA1 /* SideMenuAnimationController.swift */,
+				05661878CEA89E0112AF8E5E8247DC67 /* SideMenuInteractionController.swift */,
+				5A7D34EB71CA62F5149924387C499BB3 /* SideMenuManager.swift */,
+				AA43401634E3C97E1071D9A738457161 /* SideMenuNavigationController.swift */,
+				BF1BC0C16351B17CD602C9631FA8D523 /* SideMenuPresentationController.swift */,
+				D848A91C7454964F7FCE15752AEE5E25 /* SideMenuPresentationStyle.swift */,
+				935EBB0D0230E41C51A585F7B46AC907 /* SideMenuPushCoordinator.swift */,
+				F8A919BF5614C1402D63AF2360889F36 /* SideMenuTransitionController.swift */,
+				F2B2387FA47B5488912FCB11A4971374 /* UITableViewVibrantCell.swift */,
+				308E1ECEF907DC11966A10961499CFF1 /* Support Files */,
 			);
 			name = SideMenu;
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
-		3076AF54680F4ECD927503F2FE2DAB21 /* Pods */ = {
+		308E1ECEF907DC11966A10961499CFF1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1D451D8684B69AB2E342378ED4124E2F /* SideMenu */,
-				40D3A6923C33C20A150AE4D4658977EC /* SQLite.swift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		40D3A6923C33C20A150AE4D4658977EC /* SQLite.swift */ = {
-			isa = PBXGroup;
-			children = (
-				C843EFF16A5266ACF77C63A5C377CE25 /* standard */,
-				644C0E4E76F3E04F3760967B6A4CBFC1 /* Support Files */,
-			);
-			name = SQLite.swift;
-			path = SQLite.swift;
-			sourceTree = "<group>";
-		};
-		644C0E4E76F3E04F3760967B6A4CBFC1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F32EBA6F9112D379CCDA9E636A5CE0AC /* Info.plist */,
-				358C3BCD338BD728FF79608B6DAA187F /* SQLite.swift.modulemap */,
-				35C37A15CC0C2A13E31B82CFB97B99AC /* SQLite.swift.xcconfig */,
-				936996AEB6F8FFEE441E2FCFA93AA8A0 /* SQLite.swift-dummy.m */,
-				C24A53336E2F5B9D56F4C866A31888F7 /* SQLite.swift-prefix.pch */,
-				56B5EE9BCD13B5A2F8BD68E69C0E0901 /* SQLite.swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
-			sourceTree = "<group>";
-		};
-		670440D555E113DBCA7B2FAF30E4B78C /* Pods-AhitatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2A222B82DC8F89F784F6DFB221018986 /* Info.plist */,
-				C16E23E449EF009B8D69BD515E7D584F /* Pods-AhitatUITests.modulemap */,
-				EDC72C83350CCF90672E27DB4439815C /* Pods-AhitatUITests-acknowledgements.markdown */,
-				6F25F089D36069BB4045103A3913972E /* Pods-AhitatUITests-acknowledgements.plist */,
-				2623F8F9E5F2D533EE6A58805B25FCB3 /* Pods-AhitatUITests-dummy.m */,
-				8B7EDD6B3F2039506E180237E52D73BF /* Pods-AhitatUITests-frameworks.sh */,
-				B1958967D5F4412CB5ED82C8C156C5DD /* Pods-AhitatUITests-resources.sh */,
-				3569E4810EC170DEA99AE48C78CFDD57 /* Pods-AhitatUITests-umbrella.h */,
-				387CB3EE38E26A5BAD414822A4802E21 /* Pods-AhitatUITests.debug.xcconfig */,
-				F5FC427CD22935AA2C7866EBC2044CD4 /* Pods-AhitatUITests.release.xcconfig */,
-			);
-			name = "Pods-AhitatUITests";
-			path = "Target Support Files/Pods-AhitatUITests";
-			sourceTree = "<group>";
-		};
-		7345D983CAEF526768C542B6AE3E485B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1AB5C73E5446FC1B01E57B3352CC8531 /* Pods_Ahitat.framework */,
-				B849C018C9D09C4D533D80BD3FC73740 /* Pods_AhitatTests.framework */,
-				F8FE305D5FE851409A31FB981018D010 /* Pods_AhitatUITests.framework */,
-				633465067C118D1FDC85762BBF021C2F /* SideMenu.framework */,
-				F371361370AA11DB91B2633C34FC3A98 /* SQLite.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8698EC51314B1D185FDF3BD819753EC6 /* Pods-Ahitat */ = {
-			isa = PBXGroup;
-			children = (
-				4D00EC0748887F4A192DDBCAAAEE41B9 /* Info.plist */,
-				C569F41DD63C346C68475FD8CE04AAEF /* Pods-Ahitat.modulemap */,
-				0ADD6E66B530BB2770BAA6587EB038DE /* Pods-Ahitat-acknowledgements.markdown */,
-				50544DDB6AEDD3ED9D128E6BC06EC128 /* Pods-Ahitat-acknowledgements.plist */,
-				C5F00DDAA04E5EB0A1D3A24B8C67A0F2 /* Pods-Ahitat-dummy.m */,
-				378E7824F22E17578CD1A9FB4E9B8CC7 /* Pods-Ahitat-frameworks.sh */,
-				F3F32C760B68C3BC7BC3623DB3B5C2B6 /* Pods-Ahitat-resources.sh */,
-				EAC00C92C6AE65678944C9317C30D8FA /* Pods-Ahitat-umbrella.h */,
-				81D26DEBF7038DE264B45BF47846C8BA /* Pods-Ahitat.debug.xcconfig */,
-				FB50596D240B7FBE41BE4A918B11DC8B /* Pods-Ahitat.release.xcconfig */,
-			);
-			name = "Pods-Ahitat";
-			path = "Target Support Files/Pods-Ahitat";
-			sourceTree = "<group>";
-		};
-		917A463ABF107D437A0615345226B0F0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A47E0C8C96B4CB330D4991E946C0E370 /* Info.plist */,
-				1863A0DCB78AEFDFE1A7207A30A88E39 /* SideMenu.modulemap */,
-				159EFC64F4CC7DAD987CD489672A9CC1 /* SideMenu.xcconfig */,
-				AC275F0C1BA9A196D021A4029DD48313 /* SideMenu-dummy.m */,
-				C7A9AD51C3319BF57A9FAA954F233AE8 /* SideMenu-prefix.pch */,
-				573BA333FA9B8DCD4D5421879D083C9A /* SideMenu-umbrella.h */,
+				3850A49EA4B79DB6F8E46AD88C7EBBEE /* SideMenu.modulemap */,
+				01314809ECDCDDE85CDB719E55130796 /* SideMenu.xcconfig */,
+				395F142FF5435588F50EA498EE4634CF /* SideMenu-dummy.m */,
+				7D01630340ED779F30CFC4F1514704CD /* SideMenu-Info.plist */,
+				EBDE5F8428950877567467D9F4FE13D1 /* SideMenu-prefix.pch */,
+				5E09713CC4E90CEE46660A0CCFFE61BF /* SideMenu-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SideMenu";
 			sourceTree = "<group>";
 		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+		3B2E91F5F073E3F713C7BB86755C5CAD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+				B6A483D7D857B9A4CF2330AD48EEDFC2 /* SQLite.swift.modulemap */,
+				11841B62ACEA5A57CFA1131F3598A68B /* SQLite.swift.xcconfig */,
+				67FC376260628267E802B657D70A08F4 /* SQLite.swift-dummy.m */,
+				B7F9704AA9C8E677CC16CD668A8709DA /* SQLite.swift-Info.plist */,
+				D33D8B8F552C9FD9F56E01118CAB724F /* SQLite.swift-prefix.pch */,
+				E1879ECAA613FD3E2258344835850E46 /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
+		469F9A527FD15DCB2FEDB3F19B40EFC4 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				D691A5D8509421AEC7A4615920177E24 /* AggregateFunctions.swift */,
+				BD10FD9589FBD48E8F1EFDCAF55BB420 /* Blob.swift */,
+				62B6899E31963B1A567CF73CC26D9D41 /* Coding.swift */,
+				D46D9A8B9D5472838200835DB5FB8685 /* Collation.swift */,
+				E1E56CDCA8DAB202E55969FC76A819DC /* Connection.swift */,
+				746EC1031B9265DDF2810B7A1104341A /* CoreFunctions.swift */,
+				9935F34B63084615DB50730BF64122B5 /* CustomFunctions.swift */,
+				EB8A2D6FAE5FBB647F4EBF30F58ACB56 /* DateAndTimeFunctions.swift */,
+				F95DBB472D4852D1037B73FD8A99FFBA /* Errors.swift */,
+				E31CCDDF5CADC82E140F4D4E068AB78B /* Expression.swift */,
+				57DEF80A3E25B0942AE76AB390A06E64 /* Foundation.swift */,
+				FD57F556BBD1409A29A58EEBE081E81F /* fts3_tokenizer.h */,
+				6445A9D949314A55945C1C5B10AD8073 /* FTS4.swift */,
+				C3771EB15AB9D608F3774FF52618BEC6 /* FTS5.swift */,
+				FC26CA514EB5FB2A1FE9AD423DF23154 /* Helpers.swift */,
+				73EF0862EF012CA3E0E7402FE5ED4DD0 /* Operators.swift */,
+				B3318395BAD6DB6F150A1E2B0B8D0D8D /* Query.swift */,
+				17ED3F5A2A3C858E5A71A4EBAE033B8D /* RTree.swift */,
+				5DEFD62A1CC0112E232D23B9BAB4F692 /* Schema.swift */,
+				4A27E7D63CF6A0C1E1C3CD0C04A8D487 /* Setter.swift */,
+				00A325240650EE4C256B9CE1A0AA8B47 /* SQLite.h */,
+				25C0E56B1FD7413AD50334B0CD36F334 /* SQLiteObjc.h */,
+				3A77C9068B1ACAA3266EFCC8EABECA60 /* SQLiteObjc.m */,
+				519056B11F0FF9B9C01D7436A0D32FCA /* Statement.swift */,
+				192095419D2285FED3EC459F68DC44D8 /* Value.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		5020BEEB9F8D3F662F8B1C5443314E21 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAB42589330089EDD97FFE410E392E84 /* Pods-Ahitat */,
+				A99C021D1F682478127EA19FF6E63C28 /* Pods-AhitatTests */,
+				8E8D4C7D378CC5420EC34D276CD45B7B /* Pods-AhitatUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8E8D4C7D378CC5420EC34D276CD45B7B /* Pods-AhitatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67895D0B0442C36AD56E4D8483A358C3 /* Pods-AhitatUITests.modulemap */,
+				6C1B9A703E88B533DC2A1917C25FDC75 /* Pods-AhitatUITests-acknowledgements.markdown */,
+				ABA19D7C445164196F39C208D1361D0B /* Pods-AhitatUITests-acknowledgements.plist */,
+				BCB8C213C099D165614233B1863F5DB1 /* Pods-AhitatUITests-dummy.m */,
+				B111F503E8C819F62DD6714503922E25 /* Pods-AhitatUITests-Info.plist */,
+				68BAF6C567A81C720A0628730384505B /* Pods-AhitatUITests-umbrella.h */,
+				A050D07A5A1C8FA8ACE21CB8A1BFB87F /* Pods-AhitatUITests.debug.xcconfig */,
+				37AEB414723FE31121F3EC2835CA4BB6 /* Pods-AhitatUITests.release.xcconfig */,
+			);
+			name = "Pods-AhitatUITests";
+			path = "Target Support Files/Pods-AhitatUITests";
+			sourceTree = "<group>";
+		};
+		A99C021D1F682478127EA19FF6E63C28 /* Pods-AhitatTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7E324D5A5EF8F95BDE84F97BF0741D6 /* Pods-AhitatTests.modulemap */,
+				1112C473588FE0931E1199D4F26249B0 /* Pods-AhitatTests-acknowledgements.markdown */,
+				D1E8E44862DD241E704885CDDDDCC3CC /* Pods-AhitatTests-acknowledgements.plist */,
+				B25B728554FB4549DECA245246F2A2A7 /* Pods-AhitatTests-dummy.m */,
+				36E32FC136D5139D8FCA965EA47F75AE /* Pods-AhitatTests-Info.plist */,
+				CAC978756660B077D2A17BA7C22D4E04 /* Pods-AhitatTests-umbrella.h */,
+				76BCB8830B429B140D1F503E0302B998 /* Pods-AhitatTests.debug.xcconfig */,
+				4283444CBFB0F517E8F617BF984DB986 /* Pods-AhitatTests.release.xcconfig */,
+			);
+			name = "Pods-AhitatTests";
+			path = "Target Support Files/Pods-AhitatTests";
+			sourceTree = "<group>";
+		};
+		B821AFA84EF68B14C120B242B4147403 /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				469F9A527FD15DCB2FEDB3F19B40EFC4 /* standard */,
+				3B2E91F5F073E3F713C7BB86755C5CAD /* Support Files */,
+			);
+			name = SQLite.swift;
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C843EFF16A5266ACF77C63A5C377CE25 /* standard */ = {
+		C606915DB4D8B83776DA2E0C5CB313DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FD2CCBBB5D58140D6D5292013408CAB /* AggregateFunctions.swift */,
-				49154A13F5FF9DBFD486482FEA423E51 /* Blob.swift */,
-				DE7A76B4BBF269AB62FAA30BFD9155C6 /* Coding.swift */,
-				AADC086A2CE0B8F46D7B7340C5129432 /* Collation.swift */,
-				4E21387317C658FBAF31BD37ABB7449F /* Connection.swift */,
-				3ED8793198DA1218460899B9F9B6FA02 /* CoreFunctions.swift */,
-				81CDBC8FF41EA50EAD05C0E232270E0C /* CustomFunctions.swift */,
-				FD359E7915736ABE4801654235E6ADC1 /* DateAndTimeFunctions.swift */,
-				F0D698DBDA2EC26A54D1D3C98EFED9C3 /* Errors.swift */,
-				AA0292B392744165A2AC722FF35C43FD /* Expression.swift */,
-				CEA8F92218E351F2EE697F05ABB5C18F /* Foundation.swift */,
-				079C64DFDB940E09487BBBA284E98DD4 /* fts3_tokenizer.h */,
-				23C35F1260F1F3BBAADB15126FC510E9 /* FTS4.swift */,
-				3B4236261A323CAAE4A26B15AC515889 /* FTS5.swift */,
-				3614325ED55F653BD483959D62BBC8D9 /* Helpers.swift */,
-				B542AEFD20EAF7C8B249FFEDF9B7F1B6 /* Operators.swift */,
-				20E8F361C910EEB9CF1D855911AB2FE5 /* Query.swift */,
-				508DF5391F7F5D9FC11D9DD0AD4F9228 /* RTree.swift */,
-				8D495EA9F7ACCE99D024E29A6284C72D /* Schema.swift */,
-				5777DADE864A2B4F287A1E1F23A13270 /* Setter.swift */,
-				6160BF519BAE6889F150321DAE29F36B /* SQLite.h */,
-				24211DD10F4D381DBE34200892B36225 /* SQLite-Bridging.h */,
-				073C69581C8C26A9F195D06B6F33CD65 /* SQLite-Bridging.m */,
-				52A73330CCCBAE700C3B6138FFC849EE /* Statement.swift */,
-				B50DEF94F925CB79517E107C0EEAA70F /* Value.swift */,
+				B56C2A98B8128856C8E79BF385B0EC3E /* Pods_Ahitat.framework */,
+				060263D9E9D82C3F7180D42E20EA8276 /* Pods_AhitatTests.framework */,
+				C40CBD45DF9CEDD8FC8CB51B0F211FBA /* Pods_AhitatUITests.framework */,
+				319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */,
+				F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.framework */,
 			);
-			name = standard;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAB42589330089EDD97FFE410E392E84 /* Pods-Ahitat */ = {
+			isa = PBXGroup;
+			children = (
+				707FD476CF4B8DF27789B32C3AF10DEA /* Pods-Ahitat.modulemap */,
+				502C79CDDF20E6157281197D68ED9833 /* Pods-Ahitat-acknowledgements.markdown */,
+				D7D49CF25EB97CF4A4859A1C0127F846 /* Pods-Ahitat-acknowledgements.plist */,
+				A2B0607281E9780EB448F5E7560956FD /* Pods-Ahitat-dummy.m */,
+				144F210F24FEB32CF9D6F111DAA572DB /* Pods-Ahitat-frameworks.sh */,
+				2082A00F7BDD85B9BA1B6AB485DE2715 /* Pods-Ahitat-Info.plist */,
+				A8B66C24730BB729636367EF74F1A229 /* Pods-Ahitat-umbrella.h */,
+				43C3F90EE0331A44016CF95F5E691B94 /* Pods-Ahitat.debug.xcconfig */,
+				A0ACDB22BA2190E78AE844AB95610935 /* Pods-Ahitat.release.xcconfig */,
+			);
+			name = "Pods-Ahitat";
+			path = "Target Support Files/Pods-Ahitat";
+			sourceTree = "<group>";
+		};
+		CAC6E6F1AD3B5DC5B72FBD6BE045B6D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20E67973E6D98391B49351AD927012F2 /* SideMenu */,
+				B821AFA84EF68B14C120B242B4147403 /* SQLite.swift */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				3076AF54680F4ECD927503F2FE2DAB21 /* Pods */,
-				7345D983CAEF526768C542B6AE3E485B /* Products */,
-				0A5A65131B35370DADA8728F68F44717 /* Targets Support Files */,
+				CAC6E6F1AD3B5DC5B72FBD6BE045B6D6 /* Pods */,
+				C606915DB4D8B83776DA2E0C5CB313DB /* Products */,
+				5020BEEB9F8D3F662F8B1C5443314E21 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -407,136 +427,99 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0161733ABB1CBE4FEAC766A6FD71F870 /* Headers */ = {
+		28761BD3C505CCB36997450A19676357 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				921F7F91787702CC244E84D12438E41D /* SideMenu-umbrella.h in Headers */,
+				D777716F0B6C0754B7B0230531743BC4 /* SideMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B4D5F5A4C29DE018A8891B5633EFD39 /* Headers */ = {
+		3526C8023FBC9FAB1F0084EB9A0FCAA6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C535C159A710F7344564855145D2CA7F /* Pods-AhitatTests-umbrella.h in Headers */,
+				A03C59542AE5122B2732F01884F686CF /* Pods-AhitatTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B819BD7160E12DF40D1B51BE7DC36EC /* Headers */ = {
+		96E96E7F98796026C6760BA3D13C69C9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DB074FB291C6E990B9BD7F11933A69 /* fts3_tokenizer.h in Headers */,
-				00A7E94E4E392A38891C255C3C274B92 /* SQLite-Bridging.h in Headers */,
-				5FA4557843F20A44070DDDFC9A370471 /* SQLite.h in Headers */,
-				81CC3B06A24D258BB420CBE316453441 /* SQLite.swift-umbrella.h in Headers */,
+				5F75157A5075DECD1D4512F9A6744CA6 /* fts3_tokenizer.h in Headers */,
+				B1D89872AC365C78155FF44EE9F28FEF /* SQLite.h in Headers */,
+				18808F9C139BA0E9059E72980F0BF908 /* SQLite.swift-umbrella.h in Headers */,
+				EF5E32C13CFA779B953F8F81AE3C67D6 /* SQLiteObjc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EBEC41C835D83156BD307F5D2308F43 /* Headers */ = {
+		C92AE7F00DF843A779E9F21265E021C1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29CA4D20AF21105F6A8BDD2FB77933A6 /* Pods-AhitatUITests-umbrella.h in Headers */,
+				FCE9B3DBFD8EB12754404C35406B953E /* Pods-AhitatUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAE61F5C4BD56EC9E864E6C8FD0C439A /* Headers */ = {
+		D327F2C2E82E82ED97C53ACB9635E4CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35D60AB8185A5C8387BDB5E2E614AB53 /* Pods-Ahitat-umbrella.h in Headers */,
+				FD49384F9BB3690A8A4F20629D9D3B0D /* Pods-Ahitat-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		046138875E39D5E5D5AB9C0FBE2E4D67 /* Pods-AhitatUITests */ = {
+		2404188032B422D440369ACF3AC5722B /* Pods-AhitatUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15D939EC7181C17B9FBFC816D953B416 /* Build configuration list for PBXNativeTarget "Pods-AhitatUITests" */;
+			buildConfigurationList = 2083DCC21C63AF093441FEDB3E38517C /* Build configuration list for PBXNativeTarget "Pods-AhitatUITests" */;
 			buildPhases = (
-				6EBEC41C835D83156BD307F5D2308F43 /* Headers */,
-				DF682643E7027642AB47A0B7A52C2397 /* Sources */,
-				7C30170CE740CBCAD81D8139132C85C5 /* Frameworks */,
-				E0F705656EF3374F893ABE0ABBDBC3F0 /* Resources */,
+				C92AE7F00DF843A779E9F21265E021C1 /* Headers */,
+				13F083555AB6ED0B8DFFE6BB6FA3DC43 /* Sources */,
+				D458AA769766BA3830B385FC35BB9CEB /* Frameworks */,
+				FF25FE067A782230301665E4FAE24B15 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B0938C8EDDB6F5CA97B81B790B6FF8DD /* PBXTargetDependency */,
+				939003A13E9DDF7AAC8F96BB32825BB1 /* PBXTargetDependency */,
 			);
 			name = "Pods-AhitatUITests";
 			productName = "Pods-AhitatUITests";
-			productReference = F8FE305D5FE851409A31FB981018D010 /* Pods_AhitatUITests.framework */;
+			productReference = C40CBD45DF9CEDD8FC8CB51B0F211FBA /* Pods_AhitatUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A66E415BB3F9CE3891D1CD403F8223BB /* Pods-Ahitat */ = {
+		27DDD7DDA26D556480F97AEFF8E4D997 /* Pods-Ahitat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D20953996F9E3919CAAFF13B2A749C69 /* Build configuration list for PBXNativeTarget "Pods-Ahitat" */;
+			buildConfigurationList = F858CDC5617E3A6DED2118D9709310A9 /* Build configuration list for PBXNativeTarget "Pods-Ahitat" */;
 			buildPhases = (
-				DAE61F5C4BD56EC9E864E6C8FD0C439A /* Headers */,
-				456B84D9507D30C9BA98F01064BE4EF2 /* Sources */,
-				1616CE29DCF90BD4312025E3E0D75E86 /* Frameworks */,
-				41AB21FD78B5075B604B1C92488834A7 /* Resources */,
+				D327F2C2E82E82ED97C53ACB9635E4CF /* Headers */,
+				81CD3210D6B0A51AADD0EDFB1DFC3917 /* Sources */,
+				016FC4BD5B091840952132129F8649AB /* Frameworks */,
+				060D99B364B2D5169D9F9FC2829343E9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3CF551E1CADC0A5815CDAF8B77C9B908 /* PBXTargetDependency */,
-				3CFA03CDE87A82139FF25D5B95B63059 /* PBXTargetDependency */,
+				F03A4E77C077F7B26D19A98820A46FD9 /* PBXTargetDependency */,
+				11D84E6339425ACE6753472649B081D7 /* PBXTargetDependency */,
 			);
 			name = "Pods-Ahitat";
 			productName = "Pods-Ahitat";
-			productReference = 1AB5C73E5446FC1B01E57B3352CC8531 /* Pods_Ahitat.framework */;
+			productReference = B56C2A98B8128856C8E79BF385B0EC3E /* Pods_Ahitat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A7F7A882E51BDCE2A6F98F691A051EC1 /* SideMenu */ = {
+		3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C398EEC9B1AB89AE7F4A58C791F36072 /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildConfigurationList = 5E1D3A8318F603D191D121F70943FF08 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
 			buildPhases = (
-				0161733ABB1CBE4FEAC766A6FD71F870 /* Headers */,
-				55CC7AED4644BBD26BE3E44340AD62CF /* Sources */,
-				B1796D09E22352F8B0E89423D8745BBC /* Frameworks */,
-				7F69FB05D6EE4CE0D27C3E6A3215BABA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SideMenu;
-			productName = SideMenu;
-			productReference = 633465067C118D1FDC85762BBF021C2F /* SideMenu.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DA73B99F1A0C0EFF9CD4FBABA0EC25E0 /* Pods-AhitatTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 85E4D41671FE7666BB8335496F888485 /* Build configuration list for PBXNativeTarget "Pods-AhitatTests" */;
-			buildPhases = (
-				4B4D5F5A4C29DE018A8891B5633EFD39 /* Headers */,
-				43C32C81462D3668D729BE581F7D6CF6 /* Sources */,
-				E72D852B8D8A78023017E1663C356955 /* Frameworks */,
-				6D0D4BD0922BDE919DABCE0F127CB2F2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8977168492200E520CE9340BE39F618 /* PBXTargetDependency */,
-			);
-			name = "Pods-AhitatTests";
-			productName = "Pods-AhitatTests";
-			productReference = B849C018C9D09C4D533D80BD3FC73740 /* Pods_AhitatTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F0AA1DAEDA7ADAA9B7B6CDFD5D889318 /* SQLite.swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6EDB8A28B7EC9E0764A9970A8E6BEB01 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
-			buildPhases = (
-				4B819BD7160E12DF40D1B51BE7DC36EC /* Headers */,
-				54E4279F8B2EA771B5E9B18D3E90F8E9 /* Sources */,
-				C33D359E76EE093FE927C88226AEA5F8 /* Frameworks */,
-				1D9D0A7FB8D23B916206A9C5E16F05C8 /* Resources */,
+				96E96E7F98796026C6760BA3D13C69C9 /* Headers */,
+				B91BEE056ED605FA41420BC2F6F79D91 /* Sources */,
+				A1DC26BE8ED6BB3E57EC282209CB9866 /* Frameworks */,
+				437C6008F3714B5A8E869C50746FC132 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -544,7 +527,44 @@
 			);
 			name = SQLite.swift;
 			productName = SQLite.swift;
-			productReference = F371361370AA11DB91B2633C34FC3A98 /* SQLite.framework */;
+			productReference = F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93350801786164B9A465249D8F992559 /* Pods-AhitatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5934C56E35161000A2ECF125E80133 /* Build configuration list for PBXNativeTarget "Pods-AhitatTests" */;
+			buildPhases = (
+				3526C8023FBC9FAB1F0084EB9A0FCAA6 /* Headers */,
+				B8D3C6BAD54F7477D192566934683911 /* Sources */,
+				763BC0BD98A7F71DA4F24BFD0BB7D543 /* Frameworks */,
+				111C31F2D9F363DFB1FCDFE314CB057D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F5FC9F904B7CA0A1943C6B7DA4D0B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-AhitatTests";
+			productName = "Pods-AhitatTests";
+			productReference = 060263D9E9D82C3F7180D42E20EA8276 /* Pods_AhitatTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92707F899E1CD6FD63DCC66A3882B68C /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildPhases = (
+				28761BD3C505CCB36997450A19676357 /* Headers */,
+				8B7A6B51F5DD73DE3F3F294B1BF713BE /* Sources */,
+				D9D87C2BC8D3C4B8382407D4C6B16014 /* Frameworks */,
+				E880A6A8817A45BC1BDE085DEC3399E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideMenu;
+			productName = SideMenu;
+			productReference = 319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -553,60 +573,60 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 7345D983CAEF526768C542B6AE3E485B /* Products */;
+			productRefGroup = C606915DB4D8B83776DA2E0C5CB313DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A66E415BB3F9CE3891D1CD403F8223BB /* Pods-Ahitat */,
-				DA73B99F1A0C0EFF9CD4FBABA0EC25E0 /* Pods-AhitatTests */,
-				046138875E39D5E5D5AB9C0FBE2E4D67 /* Pods-AhitatUITests */,
-				A7F7A882E51BDCE2A6F98F691A051EC1 /* SideMenu */,
-				F0AA1DAEDA7ADAA9B7B6CDFD5D889318 /* SQLite.swift */,
+				27DDD7DDA26D556480F97AEFF8E4D997 /* Pods-Ahitat */,
+				93350801786164B9A465249D8F992559 /* Pods-AhitatTests */,
+				2404188032B422D440369ACF3AC5722B /* Pods-AhitatUITests */,
+				C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */,
+				3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1D9D0A7FB8D23B916206A9C5E16F05C8 /* Resources */ = {
+		060D99B364B2D5169D9F9FC2829343E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41AB21FD78B5075B604B1C92488834A7 /* Resources */ = {
+		111C31F2D9F363DFB1FCDFE314CB057D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D0D4BD0922BDE919DABCE0F127CB2F2 /* Resources */ = {
+		437C6008F3714B5A8E869C50746FC132 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F69FB05D6EE4CE0D27C3E6A3215BABA /* Resources */ = {
+		E880A6A8817A45BC1BDE085DEC3399E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0F705656EF3374F893ABE0ABBDBC3F0 /* Resources */ = {
+		FF25FE067A782230301665E4FAE24B15 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -616,141 +636,115 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		43C32C81462D3668D729BE581F7D6CF6 /* Sources */ = {
+		13F083555AB6ED0B8DFFE6BB6FA3DC43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B950342A4034127BF4CD3DD950A2A6F1 /* Pods-AhitatTests-dummy.m in Sources */,
+				30B894A5D2D18E9366FF70D4F7219387 /* Pods-AhitatUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		456B84D9507D30C9BA98F01064BE4EF2 /* Sources */ = {
+		81CD3210D6B0A51AADD0EDFB1DFC3917 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8BDEFC208CDDBA425CB614E6CE8E34 /* Pods-Ahitat-dummy.m in Sources */,
+				85955210CD6C781927D9A3A335A06813 /* Pods-Ahitat-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54E4279F8B2EA771B5E9B18D3E90F8E9 /* Sources */ = {
+		8B7A6B51F5DD73DE3F3F294B1BF713BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C899375FEAFF0393CC1AFA05E2742B /* AggregateFunctions.swift in Sources */,
-				68CD70510DEAA5B6077C5808D94976F9 /* Blob.swift in Sources */,
-				F35B963BCB89E3EAFD11564FCB6D1975 /* Coding.swift in Sources */,
-				86A23ED0B1F17181FAE14454B3BBAAC7 /* Collation.swift in Sources */,
-				8D5DC50540E903F6C2BBA8A9EEE5F3E2 /* Connection.swift in Sources */,
-				605A8A8A43C6125BD19BB57641CC0D49 /* CoreFunctions.swift in Sources */,
-				1F374D5C9D7EB4289846EB5F529B8B09 /* CustomFunctions.swift in Sources */,
-				A9D38952559103E3DDDF4B64572B2075 /* DateAndTimeFunctions.swift in Sources */,
-				19B0C61C22B074ED580846228595132C /* Errors.swift in Sources */,
-				A22D1FD63D3AF48FF4058BFBDCBD9617 /* Expression.swift in Sources */,
-				0E2940D392D58008BAD8A3FDA3C7F954 /* Foundation.swift in Sources */,
-				9FEB56300C0FABE9F167CB2C51A62C37 /* FTS4.swift in Sources */,
-				1CC4A6F82EFF0D048ED5DEF309D0B7B3 /* FTS5.swift in Sources */,
-				663196F389656D00ED6B4CE0B8F0AB0C /* Helpers.swift in Sources */,
-				271B2BCFFA5F4098A801E2A6A13FEEB7 /* Operators.swift in Sources */,
-				F6DE6686A50A3A772F019F03D5AA9855 /* Query.swift in Sources */,
-				672C9FECC3F69C2FFA2434ECE0098C98 /* RTree.swift in Sources */,
-				47F2E7468B6C812F791ECE5262AB9C88 /* Schema.swift in Sources */,
-				CDB309DA858FBBF4330586FAC6565796 /* Setter.swift in Sources */,
-				FF49B19610EE7C94D0D19E06A74C8412 /* SQLite-Bridging.m in Sources */,
-				7DB9EF19DFB9A930EA3F363DDB49757F /* SQLite.swift-dummy.m in Sources */,
-				5BC9D39B1B382B8901BB4786607FB6E1 /* Statement.swift in Sources */,
-				1E8EB1DE8E0E20178872F74AF49115F3 /* Value.swift in Sources */,
+				D3D22BB8C279DC03EA91BFE3F5412477 /* Deprecations.swift in Sources */,
+				4E88B70410F6837FBD463EA4B6C33155 /* Extensions.swift in Sources */,
+				C798DA148F7F666F393F2009DDF73E35 /* Initializable.swift in Sources */,
+				D1BD7393C7934049B3E51D9C5A5CD8A0 /* Print.swift in Sources */,
+				905A503F069C27E841BAD9F4EFD4F1AF /* Protected.swift in Sources */,
+				08B5B89F28224381711F45A680C292D9 /* SideMenu-dummy.m in Sources */,
+				890FF25D0CCFF9BADECBA64DCCEFF4FF /* SideMenuAnimationController.swift in Sources */,
+				8C06632AA14D12278B1277AC0CC6A0B2 /* SideMenuInteractionController.swift in Sources */,
+				77AF2098DDCCAAE0CE4A20725C466905 /* SideMenuManager.swift in Sources */,
+				3846AFE38D1B63A9F0D9073C4ABC6DAA /* SideMenuNavigationController.swift in Sources */,
+				27D830F1CAC60B99CC0A135F583BFFF2 /* SideMenuPresentationController.swift in Sources */,
+				3E18B004D34ED5441A193684EEB25BD3 /* SideMenuPresentationStyle.swift in Sources */,
+				2ED518A3FA8DCBE08E621AC5C32844A9 /* SideMenuPushCoordinator.swift in Sources */,
+				09A0A5D3733F69E93F553ABBCF02FB77 /* SideMenuTransitionController.swift in Sources */,
+				C96A55C2A869A97AC4CA628A7F2A2A21 /* UITableViewVibrantCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55CC7AED4644BBD26BE3E44340AD62CF /* Sources */ = {
+		B8D3C6BAD54F7477D192566934683911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A0F02F43D3D273FE47471115E7F0E34 /* SideMenu-dummy.m in Sources */,
-				974641DDCDEE2B75A0AE1E128401FEFF /* SideMenuManager.swift in Sources */,
-				CDC88AEF9CB33F5E0083A68C7A0E24D2 /* SideMenuTransition.swift in Sources */,
-				8FA6EB5C837E320CE0A798B6AC1E4AD1 /* UISideMenuNavigationController.swift in Sources */,
-				8A8DC46FF4E75364BD972C83EF148E38 /* UITableViewVibrantCell.swift in Sources */,
+				5AE4DB3F42EF427874357B450B249BB9 /* Pods-AhitatTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF682643E7027642AB47A0B7A52C2397 /* Sources */ = {
+		B91BEE056ED605FA41420BC2F6F79D91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B524E373E3E154A2BFA1D21A7E8B2F0B /* Pods-AhitatUITests-dummy.m in Sources */,
+				9B3A040DEACD188FBA57F28AFAADB057 /* AggregateFunctions.swift in Sources */,
+				2C4F38367FEF4F7C72224D9EB87B7F71 /* Blob.swift in Sources */,
+				188E0D4F7200FED3C7A1245F9F913072 /* Coding.swift in Sources */,
+				EE966B1A61C1960A3BBC22A783C27272 /* Collation.swift in Sources */,
+				16E32D96D226F5CA5ECE9021B4448A2C /* Connection.swift in Sources */,
+				1B13B36FAC4CB8F57794A2B328FDA679 /* CoreFunctions.swift in Sources */,
+				C64E97D5FC0802B08D7CA36AEC74A422 /* CustomFunctions.swift in Sources */,
+				A966409E4EB7EB56CBE6C9DFA0FC5B94 /* DateAndTimeFunctions.swift in Sources */,
+				5D1D42009E941070E4EDDE947A881181 /* Errors.swift in Sources */,
+				13DC37325FD7C005D5757A7A24879CFB /* Expression.swift in Sources */,
+				348B481DC980D7B5252368E2A54CFBF9 /* Foundation.swift in Sources */,
+				03F6349BC7F1C0F3BDFD63082CCE32DB /* FTS4.swift in Sources */,
+				A42659683986F68D9D4F244F1DB71C2F /* FTS5.swift in Sources */,
+				79E43357E56514CD6FE8A6F4B1D28C2E /* Helpers.swift in Sources */,
+				5AB7AA2D47C8BD4ED779FB58ADD2EB19 /* Operators.swift in Sources */,
+				444D048C8F52A4002F068AE6198AA5B7 /* Query.swift in Sources */,
+				4E3EDCB1C27B3725FD8AEFD7E61B9E17 /* RTree.swift in Sources */,
+				F6BB6C198A2522FF0633261964EB2A24 /* Schema.swift in Sources */,
+				D6E6E2AA38E0E6B0B7D1E0891F4FD12D /* Setter.swift in Sources */,
+				67F339D752FFF174485AB6F96EC6FA7E /* SQLite.swift-dummy.m in Sources */,
+				4A50D35274D871E14260F93489F87E32 /* SQLiteObjc.m in Sources */,
+				31AAD13A75FA67A504E265924E542827 /* Statement.swift in Sources */,
+				5BA891FB2BE2492499DD30FAD3D2F399 /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3CF551E1CADC0A5815CDAF8B77C9B908 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLite.swift;
-			target = F0AA1DAEDA7ADAA9B7B6CDFD5D889318 /* SQLite.swift */;
-			targetProxy = 85EF1C4C51EEDA087AB5A2DF60583953 /* PBXContainerItemProxy */;
-		};
-		3CFA03CDE87A82139FF25D5B95B63059 /* PBXTargetDependency */ = {
+		11D84E6339425ACE6753472649B081D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SideMenu;
-			target = A7F7A882E51BDCE2A6F98F691A051EC1 /* SideMenu */;
-			targetProxy = BD05621EE88E32001F9536648FA434BE /* PBXContainerItemProxy */;
+			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
+			targetProxy = 6E247B8A418AC39CFEDD7BF2667835D5 /* PBXContainerItemProxy */;
 		};
-		A8977168492200E520CE9340BE39F618 /* PBXTargetDependency */ = {
+		939003A13E9DDF7AAC8F96BB32825BB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Ahitat";
-			target = A66E415BB3F9CE3891D1CD403F8223BB /* Pods-Ahitat */;
-			targetProxy = D268F3105333B08056C33CE8D8E5CF79 /* PBXContainerItemProxy */;
+			target = 27DDD7DDA26D556480F97AEFF8E4D997 /* Pods-Ahitat */;
+			targetProxy = EED422724963980B4CE01C9002B8DB27 /* PBXContainerItemProxy */;
 		};
-		B0938C8EDDB6F5CA97B81B790B6FF8DD /* PBXTargetDependency */ = {
+		D9F5FC9F904B7CA0A1943C6B7DA4D0B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Ahitat";
-			target = A66E415BB3F9CE3891D1CD403F8223BB /* Pods-Ahitat */;
-			targetProxy = 378C9B4A46120AB8FFB243D03FDAF385 /* PBXContainerItemProxy */;
+			target = 27DDD7DDA26D556480F97AEFF8E4D997 /* Pods-Ahitat */;
+			targetProxy = F73083831047B045CDB83EE051BBEB20 /* PBXContainerItemProxy */;
+		};
+		F03A4E77C077F7B26D19A98820A46FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */;
+			targetProxy = E9FC28BDC851F7708AF95864CAC2EFA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07E8808ED2BA59E398C120BDEE84657F /* Debug */ = {
+		1664405C9B96EFCA12687CBDEF232C4E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 159EFC64F4CC7DAD987CD489672A9CC1 /* SideMenu.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_MODULE_NAME = SideMenu;
-				PRODUCT_NAME = SideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1747212827EA20CABA8299436EEB378F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 387CB3EE38E26A5BAD414822A4802E21 /* Pods-AhitatUITests.debug.xcconfig */;
+			baseConfigurationReference = 37AEB414723FE31121F3EC2835CA4BB6 /* Pods-AhitatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -763,7 +757,46 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AhitatUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27003B9087874A37CA3F7808D0F969EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A050D07A5A1C8FA8ACE21CB8A1BFB87F /* Pods-AhitatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -786,7 +819,7 @@
 			};
 			name = Debug;
 		};
-		1DB8FC8CCBBEBEA3DC929B55A0F4602E /* Debug */ = {
+		3C73BDAC02BF6A4D61D6D97D384D8842 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -818,8 +851,290 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5BC4EE95296853DE505ED1D9D25E0E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0ACDB22BA2190E78AE844AB95610935 /* Pods-Ahitat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ahitat/Pods-Ahitat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ahitat/Pods-Ahitat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6957D7F3826F9B061FA690D6549842C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11841B62ACEA5A57CFA1131F3598A68B /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/SQLite.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				PRODUCT_MODULE_NAME = SQLite;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		770B68DA9F16B41CD7CDCD9737A856A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01314809ECDCDDE85CDB719E55130796 /* SideMenu.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/SideMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_MODULE_NAME = SideMenu;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AF578EF61A3CC4C0D8327F2F282B110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01314809ECDCDDE85CDB719E55130796 /* SideMenu.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/SideMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_MODULE_NAME = SideMenu;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		926AAA75DAAA08A676F408F1A3CB165C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C3F90EE0331A44016CF95F5E691B94 /* Pods-Ahitat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ahitat/Pods-Ahitat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ahitat/Pods-Ahitat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F9FE6CC861395701B5C35C129CBD529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76BCB8830B429B140D1F503E0302B998 /* Pods-AhitatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AhitatTests/Pods-AhitatTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AhitatTests/Pods-AhitatTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB09B621ED251839D4FA17E44F361111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -847,14 +1162,14 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		2B2603EF2730B736F10DD9DF874E03CC /* Release */ = {
+		B657FFA1E47F56D3C8E57979CA30544F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35C37A15CC0C2A13E31B82CFB97B99AC /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 11841B62ACEA5A57CFA1131F3598A68B /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -866,7 +1181,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/SQLite.swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -880,17 +1195,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		4E97C3B3696C95520341926160BBD704 /* Release */ = {
+		BB78CC202D4E22179447DA0CCC4199F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 561C03892EF7FABC35EC2B6C998D8D8C /* Pods-AhitatTests.release.xcconfig */;
+			baseConfigurationReference = 4283444CBFB0F517E8F617BF984DB986 /* Pods-AhitatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -903,7 +1217,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AhitatTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AhitatTests/Pods-AhitatTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -926,303 +1240,15 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		501247897276FA1C2D46955DE6DD0222 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35C37A15CC0C2A13E31B82CFB97B99AC /* SQLite.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				PRODUCT_MODULE_NAME = SQLite;
-				PRODUCT_NAME = SQLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B81093A00C42DF01474BC689F47041C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 159EFC64F4CC7DAD987CD489672A9CC1 /* SideMenu.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				PRODUCT_MODULE_NAME = SideMenu;
-				PRODUCT_NAME = SideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C031D8066E71AEDBBDB6243D5411C91C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		D8B96ED6FA3650C3C2F9A4152FDAF772 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB50596D240B7FBE41BE4A918B11DC8B /* Pods-Ahitat.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Ahitat/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Ahitat/Pods-Ahitat.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D9CB981ACCB59EFEE515FE0C114BBC5C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5FC427CD22935AA2C7866EBC2044CD4 /* Pods-AhitatUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AhitatUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E819B3B85BD0F35F0BC9E39983972435 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81D26DEBF7038DE264B45BF47846C8BA /* Pods-Ahitat.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Ahitat/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Ahitat/Pods-Ahitat.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FCD92DC4B3A7A17CE6EA3643C2C5585C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A405616901CAA441C9D22FEC3EDF3D94 /* Pods-AhitatTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AhitatTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AhitatTests/Pods-AhitatTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15D939EC7181C17B9FBFC816D953B416 /* Build configuration list for PBXNativeTarget "Pods-AhitatUITests" */ = {
+		2083DCC21C63AF093441FEDB3E38517C /* Build configuration list for PBXNativeTarget "Pods-AhitatUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1747212827EA20CABA8299436EEB378F /* Debug */,
-				D9CB981ACCB59EFEE515FE0C114BBC5C /* Release */,
+				27003B9087874A37CA3F7808D0F969EF /* Debug */,
+				1664405C9B96EFCA12687CBDEF232C4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1230,44 +1256,44 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DB8FC8CCBBEBEA3DC929B55A0F4602E /* Debug */,
-				C031D8066E71AEDBBDB6243D5411C91C /* Release */,
+				AB09B621ED251839D4FA17E44F361111 /* Debug */,
+				3C73BDAC02BF6A4D61D6D97D384D8842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6EDB8A28B7EC9E0764A9970A8E6BEB01 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+		5E1D3A8318F603D191D121F70943FF08 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				501247897276FA1C2D46955DE6DD0222 /* Debug */,
-				2B2603EF2730B736F10DD9DF874E03CC /* Release */,
+				B657FFA1E47F56D3C8E57979CA30544F /* Debug */,
+				6957D7F3826F9B061FA690D6549842C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85E4D41671FE7666BB8335496F888485 /* Build configuration list for PBXNativeTarget "Pods-AhitatTests" */ = {
+		92707F899E1CD6FD63DCC66A3882B68C /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCD92DC4B3A7A17CE6EA3643C2C5585C /* Debug */,
-				4E97C3B3696C95520341926160BBD704 /* Release */,
+				8AF578EF61A3CC4C0D8327F2F282B110 /* Debug */,
+				770B68DA9F16B41CD7CDCD9737A856A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C398EEC9B1AB89AE7F4A58C791F36072 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+		AA5934C56E35161000A2ECF125E80133 /* Build configuration list for PBXNativeTarget "Pods-AhitatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07E8808ED2BA59E398C120BDEE84657F /* Debug */,
-				B81093A00C42DF01474BC689F47041C7 /* Release */,
+				9F9FE6CC861395701B5C35C129CBD529 /* Debug */,
+				BB78CC202D4E22179447DA0CCC4199F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D20953996F9E3919CAAFF13B2A749C69 /* Build configuration list for PBXNativeTarget "Pods-Ahitat" */ = {
+		F858CDC5617E3A6DED2118D9709310A9 /* Build configuration list for PBXNativeTarget "Pods-Ahitat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E819B3B85BD0F35F0BC9E39983972435 /* Debug */,
-				D8B96ED6FA3650C3C2F9A4152FDAF772 /* Release */,
+				926AAA75DAAA08A676F408F1A3CB165C /* Debug */,
+				5BC4EE95296853DE505ED1D9D25E0E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

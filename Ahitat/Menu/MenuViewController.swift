@@ -48,6 +48,7 @@ class MenuViewController: UIViewController {
         tableView.separatorColor = .iceBlue
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView()
 
         navigationController?.setNavigationBarHidden(true, animated: false)
     }

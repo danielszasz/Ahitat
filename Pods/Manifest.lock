@@ -1,22 +1,22 @@
 PODS:
-  - SideMenu (5.0.3)
-  - SQLite.swift (0.11.5):
-    - SQLite.swift/standard (= 0.11.5)
-  - SQLite.swift/standard (0.11.5)
+  - SideMenu (6.4.7)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
 
 DEPENDENCIES:
   - SideMenu
   - SQLite.swift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - SideMenu
     - SQLite.swift
 
 SPEC CHECKSUMS:
-  SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
-  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
 
-PODFILE CHECKSUM: 4aacf847510f5a5c4c599b457fff0f5df01f55f1
+PODFILE CHECKSUM: df16c36539d5e5785f395e2b98c3210dd83a1f76
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.3

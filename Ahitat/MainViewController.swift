@@ -180,7 +180,7 @@ class MainViewController: UIViewController {
 extension MainViewController: CalendarViewDelegate {
     func didSelect(date: Date) {
         print(#function)
-        currentMeditation = meditations.filter({$0.date.isSameDay(with: date)}).first
+        currentMeditation = meditations.filter({$0.date.isSameDay(with: date)}).first ?? meditations.last
     }
 }
 

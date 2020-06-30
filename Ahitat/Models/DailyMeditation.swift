@@ -19,8 +19,8 @@ struct DailyMeditation: Decodable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decode(Int.self, forKey: .id)
-        bibliaora = try values.decode(String.self, forKey: .bibliaora)
-        imaora = try values.decode(String.self, forKey: .imaora)
+        bibliaora = (try? values.decode(String.self, forKey: .bibliaora)) ?? ""
+        imaora = (try? values.decode(String.self, forKey: .imaora)) ?? ""
 
         let stringDate = try values.decode(String.self, forKey: .datum)
         let dateFormatter = DateFormatter()

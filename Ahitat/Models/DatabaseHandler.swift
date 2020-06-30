@@ -17,10 +17,15 @@ final class DatabaseHandler {
     func getMeditations() -> [DailyMeditation] {
         let meditations = Table("ahitatok")
 
-        let dailyMeditations: [DailyMeditation] = try! database?.prepare(meditations).map { row in
-            return try row.decode()
-        } ?? []
+        do {
+            let dailyMeditations: [DailyMeditation] = try database?.prepare(meditations).map { row in
+                return try row.decode()
+                } ?? []
 
-        return dailyMeditations
+            return dailyMeditations
+        } catch {
+            print(error)
+            return []
+        }
     }
 }

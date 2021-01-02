@@ -24,7 +24,6 @@
 		0F30FE9121D78CB800FE6481 /* Ahitat + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9021D78CB800FE6481 /* Ahitat + String.swift */; };
 		0F30FE9321D825D400FE6481 /* BibliaoraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9221D825D400FE6481 /* BibliaoraView.swift */; };
 		0F30FE9521D825DD00FE6481 /* BibliaoraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */; };
-		0F30FE9721D82A4400FE6481 /* devotional2017.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */; };
 		0F30FE9A21D9109200FE6481 /* AddToFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9921D9109200FE6481 /* AddToFavorites.swift */; };
 		0F30FE9C21D915B400FE6481 /* Ahitat + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */; };
 		0F30FEA021D97BD200FE6481 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30FE9E21D97BD200FE6481 /* MenuTableViewCell.swift */; };
@@ -74,6 +73,7 @@
 		0F9F94552247D983003F6E4C /* ExpandableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F94542247D983003F6E4C /* ExpandableViewModel.swift */; };
 		1F0AA631C783D9F193475A34 /* Pods_Ahitat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D5B0DE9FCA05A02B352B7E /* Pods_Ahitat.framework */; };
 		1F99FB93D3D1A62090364ED4 /* Pods_AhitatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5D43F57293EFCB77FE1260 /* Pods_AhitatTests.framework */; };
+		52FB408725A07159009BF472 /* devotional2021.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 52FB408625A07159009BF472 /* devotional2021.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,7 +112,6 @@
 		0F30FE9021D78CB800FE6481 /* Ahitat + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + String.swift"; sourceTree = "<group>"; };
 		0F30FE9221D825D400FE6481 /* BibliaoraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliaoraView.swift; sourceTree = "<group>"; };
 		0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliaoraView.xib; sourceTree = "<group>"; };
-		0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2017.sqlite; sourceTree = "<group>"; };
 		0F30FE9921D9109200FE6481 /* AddToFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToFavorites.swift; sourceTree = "<group>"; };
 		0F30FE9B21D915B400FE6481 /* Ahitat + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ahitat + UIView.swift"; sourceTree = "<group>"; };
 		0F30FE9E21D97BD200FE6481 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -169,6 +168,7 @@
 		2F5D43F57293EFCB77FE1260 /* Pods_AhitatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AhitatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D5302D79E059E9A99A295E /* Pods-AhitatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhitatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		353D3B72D34834E3F82CE665 /* Pods-Ahitat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ahitat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ahitat/Pods-Ahitat.release.xcconfig"; sourceTree = "<group>"; };
+		52FB408625A07159009BF472 /* devotional2021.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2021.sqlite; sourceTree = "<group>"; };
 		8409BFBE338F845E044BFB58 /* Pods-AhitatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhitatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AhitatTests/Pods-AhitatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6F18AFE734C4EA497A2D072 /* Pods-AhitatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhitatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AhitatTests/Pods-AhitatTests.release.xcconfig"; sourceTree = "<group>"; };
 		B36FEAD06D1B26A2D3C2B6F3 /* Pods-AhitatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AhitatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AhitatUITests/Pods-AhitatUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -334,8 +334,8 @@
 		0F3B5DD9214D0C2C00B93F54 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0F30FE9621D82A4400FE6481 /* devotional2017.sqlite */,
 				0F30FE8921D7881800FE6481 /* SF-Pro-Display-SemiboldItalic.otf */,
+				52FB408625A07159009BF472 /* devotional2021.sqlite */,
 				0F30FE8C21D7887600FE6481 /* SF-Pro-Display-Regular.otf */,
 				0F30FE8B21D7887600FE6481 /* SF-Pro-Display-Semibold.otf */,
 			);
@@ -484,7 +484,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Daniel Szasz";
 				TargetAttributes = {
 					0F3B5D98214C435500B93F54 = {
@@ -531,6 +531,7 @@
 			files = (
 				0F057E4E21D39B29002559F2 /* CalendarView.xib in Resources */,
 				0F30FE8821D64B8500FE6481 /* MeditationView.xib in Resources */,
+				52FB408725A07159009BF472 /* devotional2021.sqlite in Resources */,
 				0F3B5DA7214C435600B93F54 /* LaunchScreen.storyboard in Resources */,
 				0F30FE8A21D7881800FE6481 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
 				0F9F944D2246CE32003F6E4C /* ExpandableView.xib in Resources */,
@@ -542,7 +543,6 @@
 				0F30FEA121D97BD200FE6481 /* MenuTableViewCell.xib in Resources */,
 				0F30FE8D21D7887600FE6481 /* SF-Pro-Display-Semibold.otf in Resources */,
 				0F30FE9521D825DD00FE6481 /* BibliaoraView.xib in Resources */,
-				0F30FE9721D82A4400FE6481 /* devotional2017.sqlite in Resources */,
 				0F30FE8E21D7887600FE6481 /* SF-Pro-Display-Regular.otf in Resources */,
 				0F98684821DFBD9A00BBB03F /* FavoritesTableViewCell.xib in Resources */,
 				0F3214B721D4D82600ED72DF /* DayCollectionViewCell.xib in Resources */,
@@ -771,6 +771,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -796,7 +797,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -832,6 +833,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -851,7 +853,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;

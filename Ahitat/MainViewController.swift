@@ -9,7 +9,7 @@
 import UIKit
 import SideMenu
 
-protocol MainDelegate: class {
+protocol MainDelegate: AnyObject {
     func openMeditation(with date: Date, isAfterNoon: Bool)
 }
 

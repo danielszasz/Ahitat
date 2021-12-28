@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CalendarViewDelegate: class {
+protocol CalendarViewDelegate: AnyObject {
     func didSelect(date: Date)
 }
 

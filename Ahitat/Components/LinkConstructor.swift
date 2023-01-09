@@ -14,6 +14,6 @@ class LinkConstructor {
     }
     func getLink(book: String, chapter: String, firstVerse: String) -> String {
         let abbreviation = BibleBookManager.getAbbreviation(book: book)
-        return "\(baseUrl)/\(abbreviation)/\(chapter)/#\(firstVerse)"
+        return "\(baseUrl)/\(abbreviation)/\(chapter)#\(firstVerse)"
     }
 }

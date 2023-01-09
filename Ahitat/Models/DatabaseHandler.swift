@@ -7,10 +7,11 @@
 //
 
 import SQLite
+import Foundation
 
 final class DatabaseHandler {
     private var database: Connection? {
-        let path = Bundle.main.path(forResource: "devotional2022", ofType: "sqlite") ?? ""
+        let path = Bundle.main.path(forResource: "devotional2023", ofType: "sqlite") ?? ""
         return try? Connection(path, readonly: true)
     }
 

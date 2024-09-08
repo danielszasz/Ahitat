@@ -53,7 +53,6 @@
 		0F702BA52252A6CD00413964 /* ChoosingMeditationTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F702BA42252A6CD00413964 /* ChoosingMeditationTexts.swift */; };
 		0F8BC5D42260F066007C54AE /* WeMadeThisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8BC5D32260F066007C54AE /* WeMadeThisView.swift */; };
 		0F8BC5D62261D076007C54AE /* WeMadeThisView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8BC5D52261D076007C54AE /* WeMadeThisView.xib */; };
-		0F97EEFA2263C38A002FE8EF /* VerseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F97EEF92263C38A002FE8EF /* VerseDecoder.swift */; };
 		0F97EEFC2263C3A1002FE8EF /* BibleBookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F97EEFB2263C3A1002FE8EF /* BibleBookManager.swift */; };
 		0F97EF0022650E20002FE8EF /* LinkConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F97EEFF22650E20002FE8EF /* LinkConstructor.swift */; };
 		0F98684421DFBD8600BBB03F /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98684321DFBD8600BBB03F /* FavoritesTableViewController.swift */; };
@@ -146,7 +145,6 @@
 		0F702BA42252A6CD00413964 /* ChoosingMeditationTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosingMeditationTexts.swift; sourceTree = "<group>"; };
 		0F8BC5D32260F066007C54AE /* WeMadeThisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeMadeThisView.swift; sourceTree = "<group>"; };
 		0F8BC5D52261D076007C54AE /* WeMadeThisView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeMadeThisView.xib; sourceTree = "<group>"; };
-		0F97EEF92263C38A002FE8EF /* VerseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseDecoder.swift; sourceTree = "<group>"; };
 		0F97EEFB2263C3A1002FE8EF /* BibleBookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleBookManager.swift; sourceTree = "<group>"; };
 		0F97EEFF22650E20002FE8EF /* LinkConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkConstructor.swift; sourceTree = "<group>"; };
 		0F98684321DFBD8600BBB03F /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 				0F30FE9921D9109200FE6481 /* AddToFavorites.swift */,
 				0F97EEFF22650E20002FE8EF /* LinkConstructor.swift */,
 				0F98684C21E0BC3D00BBB03F /* AhitatUserDefaults.swift */,
-				0F97EEF92263C38A002FE8EF /* VerseDecoder.swift */,
 				0F97EEFB2263C3A1002FE8EF /* BibleBookManager.swift */,
 			);
 			path = Components;
@@ -586,7 +583,6 @@
 				0F30FEA021D97BD200FE6481 /* MenuTableViewCell.swift in Sources */,
 				0F5F81E4226001C800D9512D /* AboutScreenTexts.swift in Sources */,
 				0F3B5DD5214CFD7000B93F54 /* Ahitat + UINavigationController.swift in Sources */,
-				0F97EEFA2263C38A002FE8EF /* VerseDecoder.swift in Sources */,
 				0F702BA52252A6CD00413964 /* ChoosingMeditationTexts.swift in Sources */,
 				0F9F94512247CE24003F6E4C /* TextWithAttachmentView.swift in Sources */,
 				0F98684721DFBD9A00BBB03F /* FavoritesTableViewCell.swift in Sources */,
@@ -811,7 +807,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -835,7 +831,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

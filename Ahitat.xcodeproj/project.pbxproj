@@ -71,7 +71,7 @@
 		0F9F94552247D983003F6E4C /* ExpandableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F94542247D983003F6E4C /* ExpandableViewModel.swift */; };
 		73869077296C379D00A2521D /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 73869076296C379D00A2521D /* SideMenu */; };
 		7386907A296C37F400A2521D /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 73869079296C37F400A2521D /* SQLite */; };
-		73B48AB12B59439D00DCED5E /* devotional2024.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 73B48AB02B59439C00DCED5E /* devotional2024.sqlite */; };
+		7393CF642D22C9B5004D5527 /* devotional2025.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7393CF632D22C9B5004D5527 /* devotional2025.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,7 +161,7 @@
 		0F9F94502247CE24003F6E4C /* TextWithAttachmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithAttachmentView.swift; sourceTree = "<group>"; };
 		0F9F94522247CE2D003F6E4C /* TextWithAttachmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextWithAttachmentView.xib; sourceTree = "<group>"; };
 		0F9F94542247D983003F6E4C /* ExpandableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableViewModel.swift; sourceTree = "<group>"; };
-		73B48AB02B59439C00DCED5E /* devotional2024.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2024.sqlite; sourceTree = "<group>"; };
+		7393CF632D22C9B5004D5527 /* devotional2025.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2025.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,8 +318,8 @@
 		0F3B5DD9214D0C2C00B93F54 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7393CF632D22C9B5004D5527 /* devotional2025.sqlite */,
 				0F30FE8921D7881800FE6481 /* SF-Pro-Display-SemiboldItalic.otf */,
-				73B48AB02B59439C00DCED5E /* devotional2024.sqlite */,
 				0F30FE8C21D7887600FE6481 /* SF-Pro-Display-Regular.otf */,
 				0F30FE8B21D7887600FE6481 /* SF-Pro-Display-Semibold.otf */,
 			);
@@ -501,7 +501,6 @@
 				0F3B5DA7214C435600B93F54 /* LaunchScreen.storyboard in Resources */,
 				0F30FE8A21D7881800FE6481 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
 				0F9F944D2246CE32003F6E4C /* ExpandableView.xib in Resources */,
-				73B48AB12B59439D00DCED5E /* devotional2024.sqlite in Resources */,
 				0F057E5421D3A239002559F2 /* Localizable.strings in Resources */,
 				0F3B5DCF214C4F6C00B93F54 /* MainViewController.xib in Resources */,
 				0F3B5DA4214C435600B93F54 /* Assets.xcassets in Resources */,
@@ -515,6 +514,7 @@
 				0F3214B721D4D82600ED72DF /* DayCollectionViewCell.xib in Resources */,
 				0F9F94532247CE2D003F6E4C /* TextWithAttachmentView.xib in Resources */,
 				0F9F944A2246CE02003F6E4C /* HelpViewController.xib in Resources */,
+				7393CF642D22C9B5004D5527 /* devotional2025.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,7 +807,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -831,7 +831,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

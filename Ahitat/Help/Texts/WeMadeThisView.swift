@@ -37,7 +37,7 @@ class WeMadeThisView: CustomView {
         szucsNameLabel.font = UIFont.authorLabel.changeSizeIfIpad
         szucsNameLabel.textColor = .slateTwo
 
-        szaszLocationLabel.text = "(Nagyvárad - szasz.daniel@yahoo.com)"
+        szaszLocationLabel.text = "(Nagyvárad - daniel.szasz88@gmail.com)"
         szaszLocationLabel.font = UIFont.sponsorFont.changeSizeIfIpad
         szaszLocationLabel.textColor = .slateTwo
 

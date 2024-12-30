@@ -11,7 +11,7 @@ import Foundation
 
 final class DatabaseHandler {
     private var database: Connection? {
-        let path = Bundle.main.path(forResource: "devotional2024", ofType: "sqlite") ?? ""
+        let path = Bundle.main.path(forResource: "devotional2025", ofType: "sqlite") ?? ""
         return try? Connection(path, readonly: true)
     }
 

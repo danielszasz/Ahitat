@@ -69,9 +69,9 @@
 		0F9F94512247CE24003F6E4C /* TextWithAttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F94502247CE24003F6E4C /* TextWithAttachmentView.swift */; };
 		0F9F94532247CE2D003F6E4C /* TextWithAttachmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9F94522247CE2D003F6E4C /* TextWithAttachmentView.xib */; };
 		0F9F94552247D983003F6E4C /* ExpandableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F94542247D983003F6E4C /* ExpandableViewModel.swift */; };
+		734BD73B2F03C6B8004B6CE1 /* devotional2026.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 734BD73A2F03C6B8004B6CE1 /* devotional2026.sqlite */; };
 		73869077296C379D00A2521D /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 73869076296C379D00A2521D /* SideMenu */; };
 		7386907A296C37F400A2521D /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 73869079296C37F400A2521D /* SQLite */; };
-		7393CF642D22C9B5004D5527 /* devotional2025.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7393CF632D22C9B5004D5527 /* devotional2025.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,7 +161,7 @@
 		0F9F94502247CE24003F6E4C /* TextWithAttachmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithAttachmentView.swift; sourceTree = "<group>"; };
 		0F9F94522247CE2D003F6E4C /* TextWithAttachmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextWithAttachmentView.xib; sourceTree = "<group>"; };
 		0F9F94542247D983003F6E4C /* ExpandableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableViewModel.swift; sourceTree = "<group>"; };
-		7393CF632D22C9B5004D5527 /* devotional2025.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2025.sqlite; sourceTree = "<group>"; };
+		734BD73A2F03C6B8004B6CE1 /* devotional2026.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2026.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,7 +318,7 @@
 		0F3B5DD9214D0C2C00B93F54 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7393CF632D22C9B5004D5527 /* devotional2025.sqlite */,
+				734BD73A2F03C6B8004B6CE1 /* devotional2026.sqlite */,
 				0F30FE8921D7881800FE6481 /* SF-Pro-Display-SemiboldItalic.otf */,
 				0F30FE8C21D7887600FE6481 /* SF-Pro-Display-Regular.otf */,
 				0F30FE8B21D7887600FE6481 /* SF-Pro-Display-Semibold.otf */,
@@ -508,13 +508,13 @@
 				0F3B5DD3214C521E00B93F54 /* MenuViewController.xib in Resources */,
 				0F30FEA121D97BD200FE6481 /* MenuTableViewCell.xib in Resources */,
 				0F30FE8D21D7887600FE6481 /* SF-Pro-Display-Semibold.otf in Resources */,
+				734BD73B2F03C6B8004B6CE1 /* devotional2026.sqlite in Resources */,
 				0F30FE9521D825DD00FE6481 /* BibliaoraView.xib in Resources */,
 				0F30FE8E21D7887600FE6481 /* SF-Pro-Display-Regular.otf in Resources */,
 				0F98684821DFBD9A00BBB03F /* FavoritesTableViewCell.xib in Resources */,
 				0F3214B721D4D82600ED72DF /* DayCollectionViewCell.xib in Resources */,
 				0F9F94532247CE2D003F6E4C /* TextWithAttachmentView.xib in Resources */,
 				0F9F944A2246CE02003F6E4C /* HelpViewController.xib in Resources */,
-				7393CF642D22C9B5004D5527 /* devotional2025.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,10 +807,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 1.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -831,10 +835,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 1.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielszasz.Ahitat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

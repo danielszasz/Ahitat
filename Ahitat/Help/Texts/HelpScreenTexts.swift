@@ -32,7 +32,7 @@ extension InfoScreenViewModel {
     }
 
     var copyright: String {
-        return  "© 2018-2025 Minden jog fenntartva."
+        return  "© 2018-2026 Minden jog fenntartva."
     }
 
     var version: String {

@@ -22,6 +22,10 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView!
 
     private var meditations: [DailyMeditation] = []
+    private let audioPlayer = AudioPlayerManager.shared
+    private let audioBaseURL = "https://your-base-url.com"
+    private var currentPlayingView: MeditationView?
+    
     private var currentMeditation: DailyMeditation? {
         didSet {
             guard let med = currentMeditation else {return}
@@ -75,11 +79,18 @@ class MainViewController: UIViewController {
         beforeNoonMeditation.configure(headerTitle: "Délelőtti Sorozat", date: meditation.date,
                                        meditation: meditation.beforeNoon, isFavorite: isBeforeFavorite,
                                        share: self.share(meditation: self.currentMeditation?.beforeNoon),
-                                       addToFavorites: favoritePressed(meditation: meditation.beforeNoon))
+                                       addToFavorites: favoritePressed(meditation: meditation.beforeNoon),
+                                       onPlayPressed: handlePlayPressed(view: beforeNoonMeditation, isAfterNoon: false))
 
         let isAfterFavorite = AhitatUserDefaults().isFavorite(with: meditation.id, isAfterNoon: true)
 
-        afternoonMeditation.configure(headerTitle: "Délutáni Sorozat", date: meditation.date, meditation: meditation.afterNoon, isFavorite: isAfterFavorite, share: self.share(meditation: self.currentMeditation?.afterNoon), addToFavorites: favoritePressed(meditation: meditation.afterNoon))
+        afternoonMeditation.configure(headerTitle: "Délutáni Sorozat",
+                                      date: meditation.date,
+                                      meditation: meditation.afterNoon,
+                                      isFavorite: isAfterFavorite,
+                                      share: self.share(meditation: self.currentMeditation?.afterNoon),
+                                      addToFavorites: favoritePressed(meditation: meditation.afterNoon),
+                                      onPlayPressed: handlePlayPressed(view: afternoonMeditation, isAfterNoon: true))
 
         if meditation.bibliaora.isEmpty == false {
             let view = BibliaoraView()
@@ -174,6 +185,43 @@ class MainViewController: UIViewController {
                 ? AhitatUserDefaults().add(model: model)
                 : AhitatUserDefaults().delete(model: model)
         }
+    }
+    
+    // MARK: - Audio Handling
+    
+    private func handlePlayPressed(meditation: Meditation) -> (Date, Meditation) -> Bool {
+        return { [weak self] date, meditation in
+            guard let self = self else { return false }
+            
+            // If another meditation is playing, stop it first
+            if let currentPlayingView = self.currentPlayingView, currentPlayingView != view {
+                currentPlayingView.stopAudio()
+                self.audioPlayer.stop()
+            }
+            
+            // Generate audio URL based on date
+            let audioUrl = self.generateAudioURL(for: date, isAfterNoon: isAfterNoon)
+            
+            // Toggle play/pause
+            let isPlaying = self.audioPlayer.togglePlayPause(
+                urlString: audioUrl,
+                title: meditation.title,
+                artist: meditation.author
+            )
+            
+            // Update current playing view
+            self.currentPlayingView = isPlaying ? view : nil
+            
+            return isPlaying
+        }
+    }
+    
+    private func generateAudioURL(for date: Date, isAfterNoon: Bool) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy_MM_dd"
+        let dateString = formatter.string(from: date)
+        let suffix = isAfterNoon ? "du" : "de"
+        return "\(audioBaseURL)/\(dateString)_\(suffix).mp3"
     }
 }
 

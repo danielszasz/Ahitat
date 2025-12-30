@@ -15,6 +15,7 @@ class MeditationView: CustomView {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var titleTextView: UITextView!
     @IBOutlet weak var versesTextView: UITextView!
     @IBOutlet weak var contentTextView: UITextView!
@@ -22,6 +23,10 @@ class MeditationView: CustomView {
 
     private var share: () -> Void = {}
     private var addToFavorites: (Bool) -> Void = {_ in}
+    private var onPlayPressed: (Date, Meditation) -> Bool = { _, _ in false }
+    
+    private var currentMeditation: Meditation?
+    private var currentDate: Date?
     
     override func configureUI() {
         headerView.backgroundColor = .iceBlue
@@ -49,12 +54,20 @@ class MeditationView: CustomView {
 
         favoriteButton.setImage(UIImage(named: "iconFavorites0"), for: .normal)
         favoriteButton.setImage(UIImage(named: "iconFavorites1"), for: .selected)
+        favoriteButton.adjustsImageWhenHighlighted = false
+
+        playButton.tintColor = .buttonGreen
+        playButton.isExclusiveTouch = true
+        playButton.setImage(UIImage(named: "playCircle"), for: .normal)
+        playButton.setImage(UIImage(named: "pauseCircle"), for: .selected)
+        playButton.adjustsImageWhenHighlighted = false
 
         shareButton.addTarget(self, action: #selector(shareButtonPressed), for: .touchUpInside)
         shareButton.isExclusiveTouch = true
+        shareButton.adjustsImageWhenHighlighted = false
     }
     
-    func configure(headerTitle: String, date: Date, meditation: Meditation, isFavorite: Bool, share: @escaping @autoclosure () -> Void, addToFavorites: @escaping (Bool) -> Void) {
+    func configure(headerTitle: String, date: Date, meditation: Meditation, isFavorite: Bool, share: @escaping @autoclosure () -> Void, addToFavorites: @escaping (Bool) -> Void, onPlayPressed: @escaping (Date, Meditation) -> Bool) {
 
         headerTitleLabel.text = headerTitle
         dateLabel.text = date.longDate
@@ -71,6 +84,15 @@ class MeditationView: CustomView {
 
         self.share = share
         self.addToFavorites = addToFavorites
+        self.onPlayPressed = onPlayPressed
+        self.currentMeditation = meditation
+        self.currentDate = date
+        
+        // Reset play button state when new meditation is loaded
+        playButton.isSelected = false
+        
+        // Play button is always enabled
+        playButton.isEnabled = true
     }
 
     @objc private func shareButtonPressed() {
@@ -80,6 +102,15 @@ class MeditationView: CustomView {
     @IBAction func favoritePressed(_ sender: UIButton) {
         sender.isSelected.toggle()
         addToFavorites(sender.isSelected)
+    }
+
+    @IBAction func playPressed(_ sender: UIButton) {
+        guard let meditation = currentMeditation,
+              let date = currentDate else {
+            return
+        }
+        
+        sender.isSelected = onPlayPressed(date, meditation)
     }
 
     private func addLink(textView: UITextView) {
@@ -111,6 +142,12 @@ class MeditationView: CustomView {
             textView.linkTextAttributes = [.underlineStyle: NSUnderlineStyle.single.rawValue]
         }
     }
+    
+    // MARK: - Audio Control
+    
+    func stopAudio() {
+        playButton.isSelected = false
+    }
 }
 
 extension MeditationView: UITextViewDelegate {
@@ -120,3 +157,4 @@ extension MeditationView: UITextViewDelegate {
         return true
     }
 }
+

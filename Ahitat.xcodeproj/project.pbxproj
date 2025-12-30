@@ -72,6 +72,8 @@
 		73869077296C379D00A2521D /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 73869076296C379D00A2521D /* SideMenu */; };
 		7386907A296C37F400A2521D /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 73869079296C37F400A2521D /* SQLite */; };
 		7393CF642D22C9B5004D5527 /* devotional2025.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7393CF632D22C9B5004D5527 /* devotional2025.sqlite */; };
+		73B1E9192EF6D06000BA2E73 /* devotional2026.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 73B1E9182EF6D06000BA2E73 /* devotional2026.sqlite */; };
+		73B1E91B2EF73D1A00BA2E73 /* Color+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B1E91A2EF73D1A00BA2E73 /* Color+UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +164,8 @@
 		0F9F94522247CE2D003F6E4C /* TextWithAttachmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextWithAttachmentView.xib; sourceTree = "<group>"; };
 		0F9F94542247D983003F6E4C /* ExpandableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableViewModel.swift; sourceTree = "<group>"; };
 		7393CF632D22C9B5004D5527 /* devotional2025.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2025.sqlite; sourceTree = "<group>"; };
+		73B1E9182EF6D06000BA2E73 /* devotional2026.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2026.sqlite; sourceTree = "<group>"; };
+		73B1E91A2EF73D1A00BA2E73 /* Color+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,7 @@
 				0F30FE9421D825DD00FE6481 /* BibliaoraView.xib */,
 				0F30FE8521D64B7800FE6481 /* MeditationView.swift */,
 				0F30FE8721D64B8500FE6481 /* MeditationView.xib */,
+				73B1E91A2EF73D1A00BA2E73 /* Color+UIColor.swift */,
 			);
 			path = Meditation;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 		0F3B5DD9214D0C2C00B93F54 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				73B1E9182EF6D06000BA2E73 /* devotional2026.sqlite */,
 				7393CF632D22C9B5004D5527 /* devotional2025.sqlite */,
 				0F30FE8921D7881800FE6481 /* SF-Pro-Display-SemiboldItalic.otf */,
 				0F30FE8C21D7887600FE6481 /* SF-Pro-Display-Regular.otf */,
@@ -446,8 +452,9 @@
 		0F3B5D91214C435500B93F54 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 2610;
 				ORGANIZATIONNAME = "Daniel Szasz";
 				TargetAttributes = {
 					0F3B5D98214C435500B93F54 = {
@@ -508,6 +515,7 @@
 				0F3B5DD3214C521E00B93F54 /* MenuViewController.xib in Resources */,
 				0F30FEA121D97BD200FE6481 /* MenuTableViewCell.xib in Resources */,
 				0F30FE8D21D7887600FE6481 /* SF-Pro-Display-Semibold.otf in Resources */,
+				73B1E9192EF6D06000BA2E73 /* devotional2026.sqlite in Resources */,
 				0F30FE9521D825DD00FE6481 /* BibliaoraView.xib in Resources */,
 				0F30FE8E21D7887600FE6481 /* SF-Pro-Display-Regular.otf in Resources */,
 				0F98684821DFBD9A00BBB03F /* FavoritesTableViewCell.xib in Resources */,
@@ -586,6 +594,7 @@
 				0F702BA52252A6CD00413964 /* ChoosingMeditationTexts.swift in Sources */,
 				0F9F94512247CE24003F6E4C /* TextWithAttachmentView.swift in Sources */,
 				0F98684721DFBD9A00BBB03F /* FavoritesTableViewCell.swift in Sources */,
+				73B1E91B2EF73D1A00BA2E73 /* Color+UIColor.swift in Sources */,
 				0F057E5A21D3A4CC002559F2 /* Ahitat + UIFont.swift in Sources */,
 				0F98684421DFBD8600BBB03F /* FavoritesTableViewController.swift in Sources */,
 				0F9F94492246CE02003F6E4C /* HelpViewController.swift in Sources */,
@@ -679,6 +688,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -712,8 +722,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -732,6 +744,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -741,6 +754,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -774,8 +788,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -787,6 +803,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -800,9 +817,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				INFOPLIST_FILE = Ahitat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -824,9 +840,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				INFOPLIST_FILE = Ahitat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -843,10 +858,8 @@
 		0F3B5DC5214C435600B93F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				INFOPLIST_FILE = AhitatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -864,10 +877,8 @@
 		0F3B5DC6214C435600B93F54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				INFOPLIST_FILE = AhitatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -885,9 +896,7 @@
 		0F3B5DC8214C435600B93F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				INFOPLIST_FILE = AhitatUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -905,9 +914,7 @@
 		0F3B5DC9214C435600B93F54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				INFOPLIST_FILE = AhitatUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

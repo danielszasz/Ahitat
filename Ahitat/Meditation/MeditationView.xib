@@ -47,21 +47,15 @@
                             <state key="normal" image="iconShare"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLy-Bt-123">
-                            <rect key="frame" x="205" y="17" width="28.5" height="27"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="pLy-Bt-123" secondAttribute="height" multiplier="18:17" id="pLy-Wdth-123"/>
-                            </constraints>
-                            <state key="normal" image="play.circle.fill" catalog="system"/>
+                            <rect key="frame" x="113.5" y="-33.5" width="128" height="128"/>
+                            <state key="normal" image="play.circle"/>
                             <connections>
                                 <action selector="playPressed:" destination="-1" eventType="touchUpInside" id="pLy-Act-123"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-yk-avw">
-                            <rect key="frame" x="253.5" y="17" width="28.5" height="27"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="V1N-yk-avw" secondAttribute="height" multiplier="18:17" id="Yi4-Qq-zEx"/>
-                            </constraints>
-                            <state key="normal" image="iconFavorites0"/>
+                            <rect key="frame" x="261.5" y="19.5" width="20.5" height="22"/>
+                            <state key="normal" image="heart" catalog="system"/>
                             <connections>
                                 <action selector="favoritePressed:" destination="-1" eventType="touchUpInside" id="Jth-nL-zfP"/>
                             </connections>
@@ -69,7 +63,6 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="V1N-yk-avw" firstAttribute="height" secondItem="3hk-Xo-21V" secondAttribute="height" id="GEx-vM-hyg"/>
                         <constraint firstItem="5jv-46-Gbx" firstAttribute="leading" secondItem="v7J-sH-lWs" secondAttribute="leading" id="Ht8-zX-r8c"/>
                         <constraint firstItem="3hk-Xo-21V" firstAttribute="centerY" secondItem="roU-oG-Xag" secondAttribute="centerY" id="JoS-yi-mGS"/>
                         <constraint firstAttribute="trailing" secondItem="3hk-Xo-21V" secondAttribute="trailing" constant="20" id="S6d-D2-lNW"/>
@@ -81,7 +74,6 @@
                         <constraint firstAttribute="bottom" secondItem="5jv-46-Gbx" secondAttribute="bottom" constant="7" id="lb8-E5-Lan"/>
                         <constraint firstItem="v7J-sH-lWs" firstAttribute="leading" secondItem="roU-oG-Xag" secondAttribute="leading" constant="15" id="oaw-co-3Dw"/>
                         <constraint firstItem="pLy-Bt-123" firstAttribute="centerY" secondItem="roU-oG-Xag" secondAttribute="centerY" id="pLy-CtrY-123"/>
-                        <constraint firstItem="pLy-Bt-123" firstAttribute="height" secondItem="3hk-Xo-21V" secondAttribute="height" id="pLy-Hgt-123"/>
                         <constraint firstItem="3hk-Xo-21V" firstAttribute="leading" secondItem="V1N-yk-avw" secondAttribute="trailing" constant="20" id="pLy-Ld-123"/>
                         <constraint firstItem="pLy-Bt-123" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5jv-46-Gbx" secondAttribute="trailing" constant="10" id="xmg-5Q-KjV"/>
                     </constraints>
@@ -135,8 +127,8 @@
         </view>
     </objects>
     <resources>
-        <image name="iconFavorites0" width="36" height="34.5"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="iconShare" width="19" height="27.5"/>
-        <image name="play.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="play.circle" width="128" height="128"/>
     </resources>
 </document>

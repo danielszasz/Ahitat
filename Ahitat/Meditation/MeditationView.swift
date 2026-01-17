@@ -53,9 +53,15 @@ class MeditationView: CustomView {
 
         versesTextView.textContainerInset = .zero
 
-        favoriteButton.setImage(UIImage(named: "iconFavorites0"), for: .normal)
-        favoriteButton.setImage(UIImage(named: "iconFavorites1"), for: .selected)
+        // Configure favorite button with SF Symbols
+        favoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
+        favoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .selected)
+        favoriteButton.setImage(UIImage(systemName: "heart.fill"), for: [.selected, .highlighted])
+        favoriteButton.tintColor = .greyblue50
+        favoriteButton.imageEdgeInsets = .zero
+        favoriteButton.contentEdgeInsets = .zero
         favoriteButton.adjustsImageWhenHighlighted = false
+        favoriteButton.showsTouchWhenHighlighted = false
         
         // Configure play button with SF Symbols
         playButton.setImage(UIImage(systemName: "play.circle.fill"), for: .normal)
@@ -69,9 +75,15 @@ class MeditationView: CustomView {
         playButton.showsTouchWhenHighlighted = false
         playButton.isHidden = true // Hidden by default until file check
 
+        // Configure share button with SF Symbols
+        shareButton.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
+        shareButton.tintColor = .greyblue50
+        shareButton.imageEdgeInsets = .zero
+        shareButton.contentEdgeInsets = .zero
         shareButton.addTarget(self, action: #selector(shareButtonPressed), for: .touchUpInside)
         shareButton.isExclusiveTouch = true
         shareButton.adjustsImageWhenHighlighted = false
+        shareButton.showsTouchWhenHighlighted = false
         
         setupProgressBorder()
     }

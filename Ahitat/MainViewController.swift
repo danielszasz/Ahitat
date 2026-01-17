@@ -22,6 +22,10 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView!
 
     private var meditations: [DailyMeditation] = []
+    private let audioPlayer = AudioPlayerManager.shared
+    private let audioBaseURL = "https://ahitat.rmbgysz.ro/hangosahitat"
+    private var currentPlayingView: MeditationView?
+    
     private var currentMeditation: DailyMeditation? {
         didSet {
             guard let med = currentMeditation else {return}
@@ -41,6 +45,7 @@ class MainViewController: UIViewController {
         addNavBarButtons()
         addPanGestures()
         configureNavigationBar()
+        setupAudioPlayerCallbacks()
 
         meditations = DatabaseHandler().getMeditations()
         calendarView.configure(dates: meditations.map({$0.date}), delegate: self)
@@ -75,11 +80,25 @@ class MainViewController: UIViewController {
         beforeNoonMeditation.configure(headerTitle: "Délelőtti Sorozat", date: meditation.date,
                                        meditation: meditation.beforeNoon, isFavorite: isBeforeFavorite,
                                        share: self.share(meditation: self.currentMeditation?.beforeNoon),
-                                       addToFavorites: favoritePressed(meditation: meditation.beforeNoon))
+                                       addToFavorites: favoritePressed(meditation: meditation.beforeNoon),
+                                       onPlayPressed: handlePlayPressed(view: beforeNoonMeditation, isAfterNoon: false))
 
         let isAfterFavorite = AhitatUserDefaults().isFavorite(with: meditation.id, isAfterNoon: true)
 
-        afternoonMeditation.configure(headerTitle: "Délutáni Sorozat", date: meditation.date, meditation: meditation.afterNoon, isFavorite: isAfterFavorite, share: self.share(meditation: self.currentMeditation?.afterNoon), addToFavorites: favoritePressed(meditation: meditation.afterNoon))
+        afternoonMeditation.configure(headerTitle: "Délutáni Sorozat", date: meditation.date,
+                                      meditation: meditation.afterNoon, isFavorite: isAfterFavorite,
+                                      share: self.share(meditation: self.currentMeditation?.afterNoon),
+                                      addToFavorites: favoritePressed(meditation: meditation.afterNoon),
+                                      onPlayPressed: handlePlayPressed(view: afternoonMeditation, isAfterNoon: true))
+
+        // Check audio file availability
+        checkAudioAvailability(for: meditation.date, isAfterNoon: false) { [weak self] exists in
+            self?.beforeNoonMeditation.setPlayButtonVisibility(exists)
+        }
+        
+        checkAudioAvailability(for: meditation.date, isAfterNoon: true) { [weak self] exists in
+            self?.afternoonMeditation.setPlayButtonVisibility(exists)
+        }
 
         if meditation.bibliaora.isEmpty == false {
             let view = BibliaoraView()
@@ -175,6 +194,81 @@ class MainViewController: UIViewController {
                 : AhitatUserDefaults().delete(model: model)
         }
     }
+    
+    // MARK: - Audio Handling
+    
+    private func setupAudioPlayerCallbacks() {
+        audioPlayer.onPlaybackFinished = { [weak self] in
+            // Reset both meditation views when playback finishes
+            self?.beforeNoonMeditation.stopAudio()
+            self?.afternoonMeditation.stopAudio()
+            self?.currentPlayingView = nil
+        }
+        
+        audioPlayer.onProgressUpdate = { [weak self] progress in
+            // Update progress on the currently playing view
+            self?.currentPlayingView?.updateProgress(progress)
+        }
+    }
+    
+    private func handlePlayPressed(view: MeditationView, isAfterNoon: Bool) -> (Date, Meditation) -> Bool {
+        return { [weak self] date, meditation in
+            guard let self = self else { return false }
+            
+            // If another meditation is playing, stop it first
+            if let currentPlayingView = self.currentPlayingView, currentPlayingView != view {
+                currentPlayingView.stopAudio()
+                self.audioPlayer.stop()
+            }
+            
+            // Generate audio URL based on date
+            let audioUrl = self.generateAudioURL(for: date, isAfterNoon: isAfterNoon)
+            
+            // Toggle play/pause
+            let isPlaying = self.audioPlayer.togglePlayPause(
+                urlString: audioUrl,
+                title: meditation.title,
+                artist: meditation.author
+            )
+            
+            // Update current playing view
+            self.currentPlayingView = isPlaying ? view : nil
+            
+            return isPlaying
+        }
+    }
+    
+    private func generateAudioURL(for date: Date, isAfterNoon: Bool) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let dateString = formatter.string(from: date)
+        let suffix = isAfterNoon ? "du" : "de"
+        return "\(audioBaseURL)/\(dateString)_\(suffix).mp3"
+    }
+    
+    private func checkAudioAvailability(for date: Date, isAfterNoon: Bool, completion: @escaping (Bool) -> Void) {
+        let audioUrl = generateAudioURL(for: date, isAfterNoon: isAfterNoon)
+        
+        guard let url = URL(string: audioUrl) else {
+            completion(false)
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "HEAD"
+        request.timeoutInterval = 5.0
+        
+        let task = URLSession.shared.dataTask(with: request) { _, response, _ in
+            DispatchQueue.main.async {
+                if let httpResponse = response as? HTTPURLResponse {
+                    completion(httpResponse.statusCode == 200)
+                } else {
+                    completion(false)
+                }
+            }
+        }
+        task.resume()
+    }
 }
 
 extension MainViewController: CalendarViewDelegate {
@@ -183,6 +277,13 @@ extension MainViewController: CalendarViewDelegate {
 
         if currentMeditation != self.currentMeditation {
             print(#function)
+            
+            // Stop audio and reset progress when changing meditation
+            audioPlayer.stop()
+            beforeNoonMeditation.stopAudio()
+            afternoonMeditation.stopAudio()
+            currentPlayingView = nil
+            
             self.currentMeditation = currentMeditation
         }
     }

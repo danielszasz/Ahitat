@@ -15,6 +15,7 @@ class MeditationView: CustomView {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var titleTextView: UITextView!
     @IBOutlet weak var versesTextView: UITextView!
     @IBOutlet weak var contentTextView: UITextView!
@@ -22,6 +23,11 @@ class MeditationView: CustomView {
 
     private var share: () -> Void = {}
     private var addToFavorites: (Bool) -> Void = {_ in}
+    private var onPlayPressed: (Date, Meditation) -> Bool = { _, _ in false }
+    
+    private var currentMeditation: Meditation?
+    private var currentDate: Date?
+    private var progressLayer: CAShapeLayer?
     
     override func configureUI() {
         headerView.backgroundColor = .iceBlue
@@ -49,12 +55,65 @@ class MeditationView: CustomView {
 
         favoriteButton.setImage(UIImage(named: "iconFavorites0"), for: .normal)
         favoriteButton.setImage(UIImage(named: "iconFavorites1"), for: .selected)
+        favoriteButton.adjustsImageWhenHighlighted = false
+        
+        // Configure play button with SF Symbols
+        playButton.setImage(UIImage(systemName: "play.circle.fill"), for: .normal)
+        playButton.setImage(UIImage(systemName: "pause.circle.fill"), for: .selected)
+        playButton.setImage(UIImage(systemName: "pause.circle.fill"), for: [.selected, .highlighted])
+        playButton.tintColor = .greyblue50
+        playButton.imageEdgeInsets = .zero
+        playButton.contentEdgeInsets = .zero
+        playButton.isExclusiveTouch = true
+        playButton.adjustsImageWhenHighlighted = false
+        playButton.showsTouchWhenHighlighted = false
+        playButton.isHidden = true // Hidden by default until file check
 
         shareButton.addTarget(self, action: #selector(shareButtonPressed), for: .touchUpInside)
         shareButton.isExclusiveTouch = true
+        shareButton.adjustsImageWhenHighlighted = false
+        
+        setupProgressBorder()
     }
     
-    func configure(headerTitle: String, date: Date, meditation: Meditation, isFavorite: Bool, share: @escaping @autoclosure () -> Void, addToFavorites: @escaping (Bool) -> Void) {
+    private func setupProgressBorder() {
+        // Remove existing layer if any
+        progressLayer?.removeFromSuperlayer()
+        
+        // Ensure headerView clips to bounds with rounded corners
+        headerView.clipsToBounds = true
+        
+        // Create shape layer that fills from left to right with darker overlay
+        let layer = CAShapeLayer()
+        layer.frame = headerView.bounds
+        layer.backgroundColor = UIColor.black.withAlphaComponent(0.15).cgColor
+        
+        // Start with zero width
+        layer.frame.size.width = 0
+        
+        // Add to header view at the back
+        headerView.layer.insertSublayer(layer, at: 0)
+        progressLayer = layer
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // Update progress layer frame when view bounds change
+        if let progressLayer = progressLayer {
+            let currentProgress = progressLayer.frame.width / progressLayer.frame.height > 0 
+                ? progressLayer.frame.width / headerView.bounds.width 
+                : 0
+            progressLayer.frame = CGRect(
+                x: 0,
+                y: 0,
+                width: headerView.bounds.width * currentProgress,
+                height: headerView.bounds.height
+            )
+        }
+    }
+    
+    func configure(headerTitle: String, date: Date, meditation: Meditation, isFavorite: Bool, share: @escaping @autoclosure () -> Void, addToFavorites: @escaping (Bool) -> Void, onPlayPressed: @escaping (Date, Meditation) -> Bool) {
 
         headerTitleLabel.text = headerTitle
         dateLabel.text = date.longDate
@@ -71,6 +130,12 @@ class MeditationView: CustomView {
 
         self.share = share
         self.addToFavorites = addToFavorites
+        self.onPlayPressed = onPlayPressed
+        self.currentMeditation = meditation
+        self.currentDate = date
+        
+        // Reset play button state
+        playButton.isSelected = false
     }
 
     @objc private func shareButtonPressed() {
@@ -80,6 +145,44 @@ class MeditationView: CustomView {
     @IBAction func favoritePressed(_ sender: UIButton) {
         sender.isSelected.toggle()
         addToFavorites(sender.isSelected)
+    }
+    
+    @IBAction func playPressed(_ sender: UIButton) {
+        guard let meditation = currentMeditation,
+              let date = currentDate else {
+            return
+        }
+        
+        sender.isSelected = onPlayPressed(date, meditation)
+    }
+    
+    // MARK: - Audio Control
+    
+    func setPlayButtonVisibility(_ visible: Bool) {
+        playButton.isHidden = !visible
+    }
+    
+    func stopAudio() {
+        playButton.isSelected = false
+        resetProgress()
+    }
+    
+    func updateProgress(_ progress: Double) {
+        guard let progressLayer = progressLayer else { return }
+        
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        progressLayer.frame.size.width = headerView.bounds.width * CGFloat(progress)
+        CATransaction.commit()
+    }
+    
+    func resetProgress() {
+        guard let progressLayer = progressLayer else { return }
+        
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        progressLayer.frame.size.width = 0
+        CATransaction.commit()
     }
 
     private func addLink(textView: UITextView) {

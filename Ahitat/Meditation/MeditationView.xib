@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,6 +16,7 @@
                 <outlet property="favoriteButton" destination="V1N-yk-avw" id="617-x9-YFq"/>
                 <outlet property="headerTitleLabel" destination="v7J-sH-lWs" id="J0Z-rX-VQL"/>
                 <outlet property="headerView" destination="roU-oG-Xag" id="GRs-Mb-uMB"/>
+                <outlet property="playButton" destination="pLy-Bt-123" id="pLy-Bt-456"/>
                 <outlet property="shareButton" destination="3hk-Xo-21V" id="eaM-ou-yba"/>
                 <outlet property="titleTextView" destination="IOe-3y-LOx" id="dzL-1o-olm"/>
                 <outlet property="versesTextView" destination="brM-kR-b15" id="HZt-2Q-ubz"/>
@@ -47,6 +46,16 @@
                             <rect key="frame" x="302" y="17" width="19" height="27"/>
                             <state key="normal" image="iconShare"/>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLy-Bt-123">
+                            <rect key="frame" x="205" y="17" width="28.5" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pLy-Bt-123" secondAttribute="height" multiplier="18:17" id="pLy-Wdth-123"/>
+                            </constraints>
+                            <state key="normal" image="play.circle.fill" catalog="system"/>
+                            <connections>
+                                <action selector="playPressed:" destination="-1" eventType="touchUpInside" id="pLy-Act-123"/>
+                            </connections>
+                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1N-yk-avw">
                             <rect key="frame" x="253.5" y="17" width="28.5" height="27"/>
                             <constraints>
@@ -68,10 +77,13 @@
                         <constraint firstItem="V1N-yk-avw" firstAttribute="centerY" secondItem="roU-oG-Xag" secondAttribute="centerY" id="Vsj-kz-qfY"/>
                         <constraint firstAttribute="trailing" secondItem="v7J-sH-lWs" secondAttribute="trailing" constant="15" id="WjG-2i-vhn"/>
                         <constraint firstItem="v7J-sH-lWs" firstAttribute="top" secondItem="roU-oG-Xag" secondAttribute="top" constant="7" id="anh-V4-YUN"/>
-                        <constraint firstItem="3hk-Xo-21V" firstAttribute="leading" secondItem="V1N-yk-avw" secondAttribute="trailing" constant="20" id="dvR-OD-0Xw"/>
+                        <constraint firstItem="V1N-yk-avw" firstAttribute="leading" secondItem="pLy-Bt-123" secondAttribute="trailing" constant="20" id="dvR-OD-0Xw"/>
                         <constraint firstAttribute="bottom" secondItem="5jv-46-Gbx" secondAttribute="bottom" constant="7" id="lb8-E5-Lan"/>
                         <constraint firstItem="v7J-sH-lWs" firstAttribute="leading" secondItem="roU-oG-Xag" secondAttribute="leading" constant="15" id="oaw-co-3Dw"/>
-                        <constraint firstItem="V1N-yk-avw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5jv-46-Gbx" secondAttribute="trailing" constant="10" id="xmg-5Q-KjV"/>
+                        <constraint firstItem="pLy-Bt-123" firstAttribute="centerY" secondItem="roU-oG-Xag" secondAttribute="centerY" id="pLy-CtrY-123"/>
+                        <constraint firstItem="pLy-Bt-123" firstAttribute="height" secondItem="3hk-Xo-21V" secondAttribute="height" id="pLy-Hgt-123"/>
+                        <constraint firstItem="3hk-Xo-21V" firstAttribute="leading" secondItem="V1N-yk-avw" secondAttribute="trailing" constant="20" id="pLy-Ld-123"/>
+                        <constraint firstItem="pLy-Bt-123" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5jv-46-Gbx" secondAttribute="trailing" constant="10" id="xmg-5Q-KjV"/>
                     </constraints>
                 </view>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incidid" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IOe-3y-LOx">
@@ -100,6 +112,7 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="IOe-3y-LOx" firstAttribute="top" secondItem="roU-oG-Xag" secondAttribute="bottom" constant="25" id="2dy-QV-NaY"/>
@@ -118,12 +131,12 @@
                 <constraint firstItem="MZt-gi-erX" firstAttribute="top" secondItem="brM-kR-b15" secondAttribute="bottom" constant="16" id="vC5-Ga-VIf"/>
                 <constraint firstItem="roU-oG-Xag" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="zlF-Sl-wzL"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>
     </objects>
     <resources>
         <image name="iconFavorites0" width="36" height="34.5"/>
         <image name="iconShare" width="19" height="27.5"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="123"/>
     </resources>
 </document>

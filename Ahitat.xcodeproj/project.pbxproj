@@ -70,6 +70,7 @@
 		0F9F94532247CE2D003F6E4C /* TextWithAttachmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9F94522247CE2D003F6E4C /* TextWithAttachmentView.xib */; };
 		0F9F94552247D983003F6E4C /* ExpandableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F94542247D983003F6E4C /* ExpandableViewModel.swift */; };
 		734BD73B2F03C6B8004B6CE1 /* devotional2026.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 734BD73A2F03C6B8004B6CE1 /* devotional2026.sqlite */; };
+		73725A732F1BEF1500C7190F /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73725A722F1BEF1500C7190F /* AudioPlayerManager.swift */; };
 		73869077296C379D00A2521D /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 73869076296C379D00A2521D /* SideMenu */; };
 		7386907A296C37F400A2521D /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 73869079296C37F400A2521D /* SQLite */; };
 /* End PBXBuildFile section */
@@ -162,6 +163,7 @@
 		0F9F94522247CE2D003F6E4C /* TextWithAttachmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextWithAttachmentView.xib; sourceTree = "<group>"; };
 		0F9F94542247D983003F6E4C /* ExpandableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableViewModel.swift; sourceTree = "<group>"; };
 		734BD73A2F03C6B8004B6CE1 /* devotional2026.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = devotional2026.sqlite; sourceTree = "<group>"; };
+		73725A722F1BEF1500C7190F /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				0F97EEFF22650E20002FE8EF /* LinkConstructor.swift */,
 				0F98684C21E0BC3D00BBB03F /* AhitatUserDefaults.swift */,
 				0F97EEFB2263C3A1002FE8EF /* BibleBookManager.swift */,
+				73725A722F1BEF1500C7190F /* AudioPlayerManager.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				0F9F94492246CE02003F6E4C /* HelpViewController.swift in Sources */,
 				0F5F81D6225FF4B900D9512D /* OpeningTheBibleTexts.swift in Sources */,
 				0F057E5C21D4A93C002559F2 /* AhitatButton.swift in Sources */,
+				73725A732F1BEF1500C7190F /* AudioPlayerManager.swift in Sources */,
 				0F8BC5D42260F066007C54AE /* WeMadeThisView.swift in Sources */,
 				0F702BA32252A3F400413964 /* Ahitat + Bundle.swift in Sources */,
 				0F3B5D9D214C435500B93F54 /* AppDelegate.swift in Sources */,
@@ -728,7 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -784,7 +788,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -802,7 +806,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				INFOPLIST_FILE = Ahitat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -830,7 +834,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = WKC3H7A7ZG;
 				INFOPLIST_FILE = Ahitat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

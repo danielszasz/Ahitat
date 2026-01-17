@@ -123,6 +123,10 @@ class CalendarView: CustomView {
     func configure(dates: [Date], delegate: CalendarViewDelegate) {
         self.dates = dates
         self.delegate = delegate
+        
+        // Initialize selectedDate to current date to ensure current month is shown
+        self.selectedDate = Date()
+        
         self.calendarCollectionView.reloadData()
     }
 

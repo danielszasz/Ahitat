@@ -37,10 +37,16 @@ class DayCollectionViewCell: UICollectionViewCell {
         dayNumberLabel.text = date.dayNumber
         dayNumberLabel.alpha = isPastToday ? 0.5 : 1
 
+        // Update selection state
+        if isSelected {
+            configureForSelected()
+        } else {
+            configureForDeselected(isSunday: date.isSunday)
+        }
+        
+        // Ensure corner radius is set after frame is available
+        layoutIfNeeded()
         selectionBackground.layer.cornerRadius = selectionBackground.frame.width/2
-        _ = isSelected
-            ? configureForSelected()
-            : configureForDeselected(isSunday: date.isSunday)
     }
 
     override func layoutSubviews() {
